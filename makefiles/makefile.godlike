@@ -1,0 +1,59 @@
+CXX=g++
+CXXFLAGS=-Wall -std=c++11 -fPIC -MP -MD
+SOURCES_CXX=$(wildcard *.cpp)
+HEADERS_CXX=$(wildcard *.hpp)
+
+OBJECTS_CXX=$(SOURCES_CXX:.cpp=.o)
+OBJECTS_PATH = ../objs
+OBJECTS_FULL = $(patsubst %,$(OBJECTS_PATH)/%,$(OBJECTS_CXX))
+
+DEPS_CXX=$(SOURCES_CXX:.cpp=.d)
+DEPS_PATH = ../deps
+
+LIB_NAME=libcrypt
+STATIC_LIB:=$(LIB_NAME).a
+SHARED_LIB:=$(LIB_NAME).so
+LD_FLAGS=-shared -Wl,-soname,$(SHARED_LIB)
+
+
+
+
+all: static shared
+
+# Target for all object files and moves the dependencies
+$(OBJECTS_PATH)/%.o: %.cpp | $(OBJECTS_PATH) $(DEPS_PATH)
+	$(CXX) $(CXXFLAGS) -c $< -o $@; mv -u $(patsubst %.o,%.d,$@) $(patsubst %,%/,$(DEPS_PATH));
+
+# Target for the shared library
+$(SHARED_LIB): $(OBJECTS_FULL)
+	$(CXX) $(LD_FLAGS) -o $(SHARED_LIB) $(OBJECTS_FULL)
+
+
+# Target for the static library
+$(STATIC_LIB): $(OBJECTS_FULL)
+	ar rvs $(STATIC_LIB) $(OBJECTS_FULL)
+	ranlib $(STATIC_LIB)
+	
+
+# Create objects folder if it doesnt exist
+$(OBJECTS_PATH):
+	mkdir -p $(OBJECTS_PATH)
+
+# Create Dependencies folder if it doesnt exist
+$(DEPS_PATH):
+	mkdir -p $(DEPS_PATH)
+
+.PHONY: static shared clean
+
+# Target for the static library
+static:  $(OBJECTS_FULL) $(STATIC_LIB)
+
+# Target for the shared library
+shared: $(OBJECTS_FULL) $(SHARED_LIB)
+
+clean:
+	rm -f $(patsubst %,$(DEPS_PATH)/%,$(DEPS_CXX)) $(OBJECTS_FULL) $(STATIC_LIB) $(SHARED_LIB)
+
+# Remove the predefined rule for cpp files
+#%.o : %.cpp
+	

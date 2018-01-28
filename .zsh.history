@@ -1,0 +1,605 @@
+ls
+ll
+ll -a
+vim .zshenv
+mv .zsh.history .zsh
+ll
+ll -a
+chmod 700 .zsh
+vim .zshenv
+vim .zshrc
+vim .zshenv
+vim .zshrc
+mv .zshenv .zsh
+zsh
+exit
+vim .zshenv
+vim .zshrc
+zsh
+htop
+tmux -a
+exit
+ls
+crypto2
+cd RSA
+git staus
+git status
+git add random_bytes
+git add sources/random_bytes.java sources/testPrimes.java
+git commit -m "Added some ranomd bytes maker"
+git push origin master
+ls
+vim primesTest.txt
+git status
+rm 1024.pri 1024.pub
+vim decrypted
+rm decrypted
+rm output
+rm sources/random_bytes.cpp
+mv primesTest.txt tests
+cd tests
+ssh hydra23
+vim ../sources/RandomGen.java
+htop
+ls
+vim test_inputs.c
+vim test_inputs.c
+..
+vim Makefile
+mv tests/test_inputs.c sources
+ls
+make test_inputs
+vim Makefile
+make test_inputs
+ls
+./test_inputs
+vim sources/test_inputs.c
+man dirent
+man dirent.h
+ls
+fg
+vim sources/test_inputs.c
+man dirent.h
+fg
+make
+make test_inputs
+vim sources/test_inputs.c
+make test_inputs
+./test_inputs
+vim sources/test_inputs.c
+make test_inputs
+./test_inputs
+cd sources
+mv test_inputs.c test_inputs.cpp
+vim test_inputs.cpp
+vim ../Makefile
+make -C .. test_inputs
+vim test_inputs.cpp
+make -C .. test_inputs
+vim test_inputs.cpp
+make -C .. test_inputs
+vim test_inputs.cpp
+make -C .. test_inputs
+vim test_inputs.cpp
+make -C .. test_inputs
+vim test_inputs.cpp
+make -C .. test_inputs
+vim test_inputs.cpp
+make -C .. test_inputs
+..
+cd sources
+vim test_inputs.cpp
+make -C .. test_inputs
+vim test_inputs.cpp
+make -C .. test_inputs
+..
+./test_inputs
+ls
+cd sources
+vim test_inputs.cpp
+make -C .. test_inputs
+..
+./test_inputs
+vim sources/test_inputs.cpp
+make
+make test_inputs
+vim sources/test_inputs.cpp
+make test_inputs
+./test_inputs
+vim sources/test_inputs.cpp
+ssh hydra23
+ls
+vim sources/test_inputs.cpp
+make
+make test_inputs
+vim sources/test_inputs.cpp
+make test_inputs
+vim sources/test_inputs.cpp
+make test_inputs
+./test_inputs
+./test_inputs > out
+vim out
+ls
+ll
+rm out
+ls
+vim sources/test_inputs.cpp
+make
+make test_inputs
+vim sources/test_inputs.cpp
+make
+make test_inputs
+vim sources/test_inputs.cpp
+make
+make test_inputs
+./test_inputs
+./test_inputs > out
+vim out
+rm out
+vim sources/test_inputs
+vim sources/test_inputs.cpp
+make
+make test_inputs
+vim sources/test_inputs.cpp
+make
+make test_inputs
+vim sources/test_inputs.cpp
+make
+make test_inputs
+vim sources/test_inputs.cpp
+make
+make test_inputs
+./test_inputs
+vim sources/test_inputs.cpp
+make
+make test_inputs
+./test_inputs
+vim sources/test_inputs.cpp
+make test_inputs
+./test_inputs
+vim sources/test_inputs.cpp
+make test_inputs
+./test_inputs
+vim sources/test_inputs.cpp
+make
+make test_inputs
+vim sources/test_inputs.cpp
+vim sources/test_inputs.cpp
+make test_inputs
+./test_inputs
+vim sources/test_inputs.cpp
+make test_inputs
+./test_inputs
+vim sources/test_inputs.cpp
+make test_inputs
+./test_inputs
+vim sources/test_inputs.cpp
+make test_inputs
+vim sources/test_inputs.cpp
+vim sources/test_inputs.cpp
+make test_inputs
+vim sources/test_inputs.cpp
+make test_inputs
+ssh hydra23
+./test_inputs
+ls tests/encrypted_files
+ls
+vim sources/test_inputs.cpp
+make test_inputs
+./test_inputs
+vim sources/test_inputs.cpp
+make test_inputs
+./test_inputs
+vim sources/test_inputs.cpp
+make test_inputs
+./test_inputs
+vim sources/test_inputs.cpp
+cd tests
+vim ../sources/test_inputs.cpp
+..
+make test_inputs
+./test_inputs
+vim ../sources/test_inputs.cpp
+vim sources/test_inputs.cpp
+vim sources/RSA.java
+make
+cd tests
+cd inputs
+..
+cd outputs
+..
+cd public_keys
+ls
+mv 8.public ..
+cd ../private_keys
+mv 8.private ..
+..
+..
+./test_inputs
+vim sources/test_inputs.cpp
+make test_inputs
+vim sources/test_inputs.cpp
+make test_inputs
+./test_inputs
+ls tests/inputs
+vim 0002.in
+vim 0004.in
+vim 1916.in
+ls
+cd tests
+vim gen_inputs.sh
+../random_bytes
+../random_bytes 1
+../random_bytes 4
+..
+vim sources/random_bytes.java
+cp sources/random_bytes.java sources/random_bits.java
+vim sources/random_bits.java
+make
+vim sources/random_bits.java
+make
+cp random_bytes random_bits
+vim random_bits
+./random_bits 2
+./random_bits 1
+./random_bits 40
+vim tests/gen_inputs.sh
+cd tests
+sh gen_inputs.sh
+ls
+cat inputs/4094.in
+cat inputs/0002.in
+vim gen_inputs.sh
+../random_bits 2
+../random_bits 2
+vim gen_inputs.sh
+sh gen_inputs.sh
+cat inputs/0002.in
+cat inputs/0004.in
+..
+./test_inputs
+vim sources/RSA.java
+make
+./test_inputs
+vim sources/RSA.java
+./rsa-en
+./rsa-enc
+vim input
+./rsa-enc -k tests/test-pubkey -i input -o output
+./rsa-enc -k tests/public_keys/0016.pub -i input -o output
+./rsa-enc -k tests/public_keys/16.public -i input -o output
+./rsa-enc -k tests/public_keys/24.public -i input -o output
+vim sources/RSA.java
+./rsa-enc -k tests/public_keys/31.public -i input -o output
+./rsa-enc -k tests/public_keys/32.public -i input -o output
+./rsa-enc -k tests/public_keys/40.public -i input -o output
+./rsa-enc -k tests/public_keys/48.public -i input -o output
+./rsa-enc -k tests/public_keys/56.public -i input -o output
+vim tests
+cd tests
+mv 8.public public_keys
+mv 8.private private_keys
+..
+vim sources/test_inputs.cpp
+make
+make test_inputs
+./test_inputs
+ls
+cd tests
+cd outputs
+vim 40_2
+cmp 40_2 ../inputs/0002.in
+vim 0002.in
+cat 0002.in
+cd ..
+cd inputs
+cat 0002.in
+cmp 0002.in ../outputs/40_2
+od 0002.in
+od ../outputs/40_2
+..
+vim gen_inputs.sh
+cat EOF
+ls
+vim a
+od a
+`\EOF` >>> a
+`\EOF` >> a
+'\EOF' >> a
+"\EOF" >> a
+od outputs/40_2
+hexdump outputs/40_2
+cmp outputs/40_2 inputs/0002.in
+man cmp
+cmp outputs/40_2 inputs/0002.in -b
+cmp -b outputs/40_2 inputs/0002.in
+od -c outputs/40_2
+od -c inputs/0002.in
+vim gen_inputs.sh
+sh gen_inputs.sh
+vim gen_inputs.sh
+..
+./test_inputs
+cd tests
+vim gen_inputs.sh
+sh gen_inputs.sh
+..
+./test_inputs
+vim sources/test_inputs.cpp
+make
+make test_inputs
+./test_inputs
+vim sources/RSA.java
+make
+./test_inputs
+ls
+du -h tests
+vim sources/test_inputs.cpp
+make test_inputs
+vim sources/test_inputs.cpp
+make test_inputs
+./test_inputs
+vim sources/RSA.java
+make
+./test_inputs
+vim test_inputs
+vim sources/test_inputs.cpp
+php
+vim test.php
+php test.php
+vim test.php
+php test.php
+vim test.php
+php test.php
+php test.php
+rm test.php
+vim sources/test_inputs.cpp
+make test_inputs
+./test_inputs
+cd tests
+cd inputs
+ls
+vim 04d.in
+ll 04d.in
+rm 04d.in
+..
+..
+vim RSA.java
+vim sources/RSA.java
+make
+./test_inputs
+vim sources/RSA.java
+vim sources/test_inputs.cpp
+make test_inputs
+./test_inputs
+make
+vim sources/test_inputs.cpp
+make test_inputs
+./test_inputs
+vim sources/test_inputs.cpp
+make test_inputs
+./test_inputs
+cat tests/inputs/0002.in
+cat tests/inputs/0004.in
+cat tests/inputs/0005.in
+cat tests/inputs/0006.in
+./rsa-enc -k tests/public_keys/40.public -i tests/inputs/0016.in -o output
+./rsa-enc -k tests/public_keys/40.public -i tests/inputs/0016.in -o output; echo $?
+./rsa-enc -k tests/public_keys/40.public -i tests/inputs/0014.in -o output; echo $?
+vim sources/test_inputs.cpp
+make test_inputs
+vim sources/RSA.java
+make
+./rsa-enc -k tests/public_keys/40.public -i tests/inputs/0014.in -o output; echo $?
+./rsa-enc -k tests/public_keys/40.public -i tests/inputs/0016.in -o output; echo $?
+vim sources/RSA.java
+make
+./rsa-enc -k tests/public_keys/40.public -i tests/inputs/0016.in -o output; echo $?
+vim sources/RSA.java
+git blame
+vim RSA.java
+vim sources/RSA.java
+git blame sources/RSA.java -L 124,124
+vim sources/RSA.java
+ssh hydra23
+vim sources/test_inputs.cpp
+make test_inputs
+./test_inputs
+vim sources/test_inputs.cpp
+make test_inputs
+./test_inputs
+vim sources/RSA.java
+vim sources/test_inputs.cpp
+make test_inputs
+make
+./test_inputs
+tmux
+ssh hydra23
+cs tests
+cd tests
+vim primesTest.txt
+rm a
+..
+..
+du -h RSA
+..
+..
+..
+du -h rriedel1
+man du
+quota -s
+du -sk * .?* | sort -n
+~
+du -sk * .?* | sort -n
+cd .cache
+..
+du -sk * .?* | sort -n
+cd .config
+..
+ls
+ll
+vim .zshrc
+make
+ll
+cd .cache
+du
+du | sort -n
+..
+rm -r .cache
+ll
+ll -a
+vim .bashrc
+vim .bashrc
+vim .zshrc
+rm .bashrc
+ls
+ll -a .?*
+ll -a .*
+ll -a \.
+vim .cshrc
+rm .cshrc
+rm -r .csh_files
+ls
+ll
+ll -a
+cd .dbus
+cd session-bus
+..
+..
+rm -r .dbus
+ll -a
+vim .dmrc
+rm .dmrc
+ll -a
+rm -r .emacs.d
+vim .esd_auth
+rm .esd_auth
+vim .exrc
+vim .exrc
+rm .exrc
+rm -r .gnome/
+rm -r .gnome2
+rm -r .gnome2_private
+cd .gnupg
+vim gpg.conf
+vim secring.gpg
+vim secring.gpg
+vim pubring.gpg
+vim trustdb.gpg
+..
+ll -a
+cd .gconf
+cd desktop
+..
+..
+rm -r .gconf
+ls -a
+cd .gstreamer-0.10
+..
+rm -r .gstreamer-0.10
+rm .gtk-bookmarks
+cd .gvfs
+..
+rm -r .gvfs
+vim .ICEauthority
+cd .idlerc
+..
+rm -r .idlerc
+cd .java
+cd fonts
+..
+..
+ll 
+ll -a
+cd .jssc
+cd linux
+..
+.
+..
+cd .jssc
+cd linux
+..
+..
+ll -a
+cd .kde
+cd cache-hydra21
+..
+ll -a
+vim .lesshst
+cd .local
+cd share
+..
+..
+ls -a
+cd .mission-control
+cd accounts
+..
+..
+rm -r .mission-control .matplotlib .mozilla .matlab .pulse .python27_compiled .sudoku 
+ls -a
+cd .oracle_jre_usage
+vim e25e2e0c7e2eb146.timestamp
+..
+rm -r .oracle_jre_usage
+cd .pki
+cd nssdb
+vim pkcs11.txt
+..
+..
+ll -a
+cd .nv
+..
+rm -r .nv
+rm -r .kde
+rm -r .java
+rm -r .jssc
+ls
+ll
+ls -a
+cd .config
+..
+ls
+ls -a
+cd .spyder2
+cd db
+..
+cd defaults
+..
+vim spyder.ini
+ll -a
+..
+vim .Xauthority
+man xauth
+ls
+ll -a
+rm .xsession-errors.old .xsession-errors
+ll
+ll -a
+rm Skeleton-2.0.4.zip
+ll -a
+cd .subversion
+..
+..
+cd rriedel1
+rm -r .subversion
+ll -a
+vim .zshrc
+mkdir .zsh
+vim .zshrc
+mv .zsh.aliases .zsh
+mv .zsh.manpath .zsh
+mv .zsh.prompt .zsh
+mv .zsh.path .zsh
+zsh
+tmux -a
+exit
+ls
+./test_inputs
+./test_inputs
+ls
+du -h .
+ls
+cd tests
+cd outputs
+vim 1808_8]
+vim 1808_8

@@ -1,0 +1,30 @@
+CXX?=g++
+CXXFLAGS?=-Wall -std=c++11 -fPIC
+SOURCES_CXX=$(wildcard *.cpp)
+HEADERS_CXX=$(wildcard *.hpp)
+
+OBJECTS_CXX=$(SOURCES_CXX:.cpp=.o)
+OBJECTS_PATH = ../objs
+
+LIB_NAME=libcrypto
+STATIC_LIB:=$(LIB_NAME).a
+SHARED_LIB:=$(LIB_NAME).so
+LD_FLAGS=-shared -Wl,-soname,$(SHARED_LIB)
+
+all: static shared
+
+.PHONY: static
+static: $(OBJECTS_CXX)
+	ar r $(STATIC_LIB) $(OBJECTS_CXX)
+
+.PHONY: shared
+shared: $(OBJECTS_CXX)
+	$(CXX) $(LD_FLAGS) -o $(SHARED_LIB) $(OBJECTS)
+
+
+%.o: %.cpp makefile
+	$(CXX) -c $(CXXFLAGS) $< -o $@
+
+.PHONY: clean
+clean:
+	rm -f $(OBJECTS_CXX) $(STATIC_LIB) $(SHARED_LIB)
