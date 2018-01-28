@@ -1,0 +1,9 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =7
+let g:netrw_dirhist_1='/home/rriedel1/ece471'
+let g:netrw_dirhist_2='/home/rriedel1/ece471/lab1'
+let g:netrw_dirhist_3='/home/rriedel1/test'
+let g:netrw_dirhist_4='/home/rriedel1/scripts'
+let g:netrw_dirhist_5='/home/rriedel1/test'
+let g:netrw_dirhist_6='/home/rriedel1/cs583/lab2/RSA/tests'
+let g:netrw_dirhist_7='/home/rriedel1/cs340/TeamSegfaults/crypt'
