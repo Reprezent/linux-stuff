@@ -1,0 +1,5340 @@
+: 1517253054:0;make
+: 1517253054:0;./rsa-sign -k tests/private_keys/48.private -m tests/inputs/0002.in -s ayyy
+: 1517253054:0;./rsa-validate -k tests/public_keys/48.public -m tests/inputs/0002.in -s ayyy
+: 1517253054:0;vim sources/RSA.java
+: 1517253054:0;make
+: 1517253054:0;./rsa-sign -k tests/private_keys/48.private -m tests/inputs/0002.in -s ayyy
+: 1517253054:0;./rsa-validate -k tests/public_keys/48.public -m tests/inputs/0002.in -s ayyy
+: 1517253054:0;vim sources/RSA.java
+: 1517253054:0;make
+: 1517253054:0;vim sources/RSA.java
+: 1517253054:0;make
+: 1517253054:0;vim sources/RSA.java
+: 1517253054:0;make
+: 1517253054:0;vim sources/RSA.java
+: 1517253054:0;make
+: 1517253054:0;./rsa-sign -k tests/private_keys/48.private -m tests/inputs/0002.in -s ayyy
+: 1517253054:0;./rsa-validate -k tests/public_keys/48.public -m tests/inputs/0002.in -s ayyy
+: 1517253054:0;vim sources/RSA.java
+: 1517253054:0;make
+: 1517253054:0;./rsa-sign -k tests/private_keys/48.private -m tests/inputs/0002.in -s ayyy
+: 1517253054:0;./rsa-validate -k tests/public_keys/48.public -m tests/inputs/0002.in -s ayyy
+: 1517253054:0;git status
+: 1517253054:0;git add sources/RSA.java sources/utils.java
+: 1517253054:0;git commit -m "Fixed RSA Sign"
+: 1517253054:0;git push origin master
+: 1517253054:0;ls
+: 1517253054:0;cd sources
+: 1517253054:0;vim Locker.java
+: 1517253054:0;vim Unlocker.java
+: 1517253054:0;..
+: 1517253054:0;make
+: 1517253054:0;ls
+: 1517253054:0;cp cbcmac-tag lock
+: 1517253054:0;vim lock
+: 1517253054:0;cp cbcmac-tag unlock
+: 1517253054:0;vim unlock
+: 1517253054:0;./unlock
+: 1517253054:0;vim lock
+: 1517253054:0;./lock
+: 1517253054:0;vim sources/FileLockerCommandLineArgParser.java
+: 1517253054:0;make
+: 1517253054:0;./unlock
+: 1517253054:0;vim Locker.java
+: 1517253054:0;vim sources/FileLockerCommandLineArgParser.java
+: 1517253054:0;make
+: 1517253054:0;./unlock
+: 1517253054:0;./lock
+: 1517253054:0;ls
+: 1517253054:0;cd tests
+: 1517253054:0;mkdir test_dir
+: 1517253054:0;cp gen_inputs.sh gen_dir.sh
+: 1517253054:0;vim gen_dir.sh
+: 1517253054:0;sh gen_dir.sh
+: 1517253054:0;vim gen_inputs.sh
+: 1517253054:0;vim gen_dir.sh
+: 1517253054:0;ls gen_dir.sh
+: 1517253054:0;..
+: 1517253054:0;./lock
+: 1517253054:0;./lock -d tests/test_dir -p tests/public_keys/512.public -r tests/private_keys/560.private -vk tests/public_keys/512.public
+: 1517253054:0;vim sources/Locker.java
+: 1517253054:0;vim sources/FileLocker.java
+: 1517253054:0;make
+: 1517253054:0;./lock -d tests/test_dir -p tests/public_keys/512.public -r tests/private_keys/560.private -vk tests/public_keys/512.public
+: 1517253054:0;cd tests
+: 1517253054:0;cd test_dir
+: 1517253054:0;rm *
+: 1517253054:0;..
+: 1517253054:0;sh gen_dir.sh
+: 1517253054:0;vim gen_dir.sh
+: 1517253054:0;rm test_dir/*
+: 1517253054:0;sh gen_dir.sh
+: 1517253054:0;cp test_dir bak
+: 1517253054:0;cd bak
+: 1517253054:0;ls
+: 1517253054:0;mkdir bak
+: 1517253054:0;cp test_dir/* bak/*
+: 1517253054:0;cp test_dir/* bak
+: 1517253054:0;ls bak
+: 1517253054:0;..
+: 1517253054:0;./lock -d tests/test_dir -p tests/public_keys/512.public -r tests/private_keys/560.private -vk tests/public_keys/512.public
+: 1517253054:0;vim sources/FileLocker.java
+: 1517253054:0;make
+: 1517253054:0;./lock -d tests/test_dir -p tests/public_keys/512.public -r tests/private_keys/560.private -vk tests/public_keys/512.public
+: 1517253054:0;ls
+: 1517253054:0;cd tests
+: 1517253054:0;mv bak/* test_dir
+: 1517253054:0;..
+: 1517253054:0;./lock -d tests/test_dir -p tests/public_keys/512.public -r tests/private_keys/560.private -vk tests/public_keys/512.public
+: 1517253054:0;vim sources/FileLocker.java
+: 1517253054:0;make
+: 1517253054:0;vim sources/FileLocker.java
+: 1517253054:0;make
+: 1517253054:0;./lock -d tests/test_dir -p tests/public_keys/512.public -r tests/private_keys/560.private -vk tests/public_keys/512.public
+: 1517253054:0;vim sources/FileLocker.java
+: 1517253054:0;make
+: 1517253054:0;./lock -d tests/test_dir -p tests/public_keys/512.public -r tests/private_keys/560.private -vk tests/public_keys/512.public
+: 1517253054:0;ls
+: 1517253054:0;cd tests
+: 1517253054:0;cd test_dir
+: 1517253054:0;..
+: 1517253054:0;cd test_dir
+: 1517253054:0;rm *
+: 1517253054:0;..
+: 1517253054:0;..
+: 1517253054:0;vim reset.sh
+: 1517253054:0;sh reset.sh
+: 1517253054:0;vim reset.sh
+: 1517253054:0;sh reset.sh
+: 1517253054:0;ls tests/test_dir
+: 1517253054:0;vim reset.sh
+: 1517253054:0;sh reset.sh
+: 1517253054:0;cd tests
+: 1517253054:0;cd test_dir
+: 1517253054:0;rm -rf bak
+: 1517253054:0;ls
+: 1517253054:0;..
+: 1517253054:0;man cp
+: 1517253054:0;..
+: 1517253054:0;vim reset.sh
+: 1517253054:0;chmod _x reset.sh
+: 1517253054:0;chmod +x reset.sh
+: 1517253054:0;./reset.sh
+: 1517253054:0;vim reset.sh
+: 1517253054:0;./reset.sh
+: 1517253054:0;vim reset.sh
+: 1517253054:0;./reset.sh
+: 1517253054:0;vim reset.sh
+: 1517253054:0;./reset.sh
+: 1517253054:0;vim reset.sh
+: 1517253054:0;./reset.sh
+: 1517253054:0;vim reset.sh
+: 1517253054:0;./reset.sh
+: 1517253054:0;ls
+: 1517253054:0;vim reset.sh
+: 1517253054:0;./reset.sh
+: 1517253054:0;vim reset.sh
+: 1517253054:0;./reset.sh
+: 1517253054:0;vim reset.sh
+: 1517253054:0;cd tests
+: 1517253054:0;cd bak
+: 1517253054:0;cd test_dir
+: 1517253054:0;..
+: 1517253054:0;cd test_dir
+: 1517253054:0;..
+: 1517253054:0;sh gen_keys.sh
+: 1517253054:0;sh gen_dir.sh
+: 1517253054:0;cp test_dir/* bak
+: 1517253054:0;ls bak
+: 1517253054:0;..
+: 1517253054:0;./reset.sh
+: 1517253054:0;vim reset.sh
+: 1517253054:0;./reset.sh
+: 1517253054:0;vim reset.sh
+: 1517253054:0;./reset.sh
+: 1517253054:0;ls
+: 1517253054:0;cd tests
+: 1517253054:0;cd test_dir
+: 1517253054:0;..
+: 1517253054:0;cd bak
+: 1517253054:0;echo "abchjklfdsjkl;" > wow
+: 1517253054:0;..
+: 1517253054:0;..
+: 1517253054:0;./reset.sh
+: 1517253054:0;cd test
+: 1517253054:0;tests
+: 1517253054:0;test_dir
+: 1517253054:0;rm wow
+: 1517253054:0;..
+: 1517253054:0;..
+: 1517253054:0;./lock -d tests/test_dir -p tests/public_keys/512.public -r tests/private_keys/560.private -vk tests/public_keys/512.public
+: 1517253054:0;vim sources/FileLocker
+: 1517253054:0;vim sources/FileLocker.ja
+: 1517253054:0;vim sources/FileLocker.java
+: 1517253054:0;make
+: 1517253054:0;./unlock
+: 1517253054:0;./unlock -d tests/test_dir -p tests/public_keys/560.public -r tests/private_keys/512.private -vk tests/public_keys/560.public
+: 1517253054:0;ls
+: 1517253054:0;cd tests
+: 1517253054:0;ls test_dir
+: 1517253054:0;cat test_dir/key.manifest
+: 1517253054:0;..
+: 1517253054:0;vim sources/FileLocker.java
+: 1517253054:0;ls tests/private_keys
+: 1517253054:0;cat tests/private_keys/512.private
+: 1517253054:0;ls
+: 1517253054:0;vim sources/Unlocker.java
+: 1517253054:0;make
+: 1517253054:0;./unlock -d tests/test_dir -p tests/public_keys/560.public -r tests/private_keys/512.private -vk tests/public_keys/560.public
+: 1517253054:0;vim sources/Unlocker.java
+: 1517253054:0;vim sources/FileLocker.java
+: 1517253054:0;make
+: 1517253054:0;./unlock -d tests/test_dir -p tests/public_keys/560.public -r tests/private_keys/512.private -vk tests/public_keys/560.public
+: 1517253054:0;vim sources/FileLocker.java
+: 1517253054:0;cd tests
+: 1517253054:0;cd test_dir
+: 1517253054:0;ls key.manifest
+: 1517253054:0;cat key.manifest
+: 1517253054:0;..
+: 1517253054:0;..
+: 1517253054:0;vim sources/RSA.java
+: 1517253054:0;./reset.sh
+: 1517253054:0;cd tests
+: 1517253054:0;vim gen_inputs.sh
+: 1517253054:0;vim gen_dir.sh
+: 1517253054:0;rm test_dir/* bak/*
+: 1517253054:0;sh gen_dir.sh
+: 1517253054:0;vim gen_dir.sh
+: 1517253054:0;sh gen_dir.sh
+: 1517253054:0;cp test_dir/* bak
+: 1517253054:0;..
+: 1517253054:0;./lock -d tests/test_dir -p tests/public_keys/512.public -r tests/private_keys/560.private -vk tests/public_keys/512.public
+: 1517253054:0;./unlock -d tests/test_dir -p tests/public_keys/560.public -r tests/private_keys/512.private -vk tests/public_keys/560.public
+: 1517253054:0;reset.sh
+: 1517253054:0;./reset.sh
+: 1517253054:0;ls
+: 1517253054:0;cd tests
+: 1517253054:0;ls public_keys
+: 1517253054:0;./lock -d tests/test_dir -p tests/public_keys/880.public -r tests/private_keys/864.private -vk tests/public_keys/880.public
+: 1517253054:0;..
+: 1517253054:0;./lock -d tests/test_dir -p tests/public_keys/880.public -r tests/private_keys/864.private -vk tests/public_keys/880.public
+: 1517253054:0;cat tests/public_keys/880.public
+: 1517253054:0;./lock -d tests/test_dir -p tests/public_keys/880.public -r tests/private_keys/864.private -vk tests/public_keys/880.public
+: 1517253054:0;vim sources/FileLocker.java
+: 1517253054:0;make
+: 1517253054:0;cd tests/public_keys
+: 1517253054:0;cat 880.public-casig
+: 1517253054:0;rm *
+: 1517253054:0;..
+: 1517253054:0;./gen_keys.sh
+: 1517253054:0;sh gen_keys.sh
+: 1517253054:0;ls
+: 1517253054:0;cd public_keys
+: 1517253054:0;cat 400.public-casig
+: 1517253054:0;PuTTY..
+: 1517253054:0;..
+: 1517253054:0;rm public_keys/*
+: 1517253054:0;rm private_keys/*
+: 1517253054:0;sh gen_keys.sh
+: 1517253054:0;kill 10564
+: 1517253054:0;fg
+: 1517253054:0;..
+: 1517253054:0;./lock -d tests/test_dir -p tests/public_keys/880.public -r tests/private_keys/864.private -vk tests/public_keys/880.public
+: 1517253054:0;./unlock -d tests/test_dir -p tests/public_keys/864.public -r tests/private_keys/880.private -vk tests/public_keys/864.public
+: 1517253054:0;cat tests/public_keys/864.public-casig
+: 1517253054:0;vim sources/FileLocker.java
+: 1517253054:0;make
+: 1517253054:0;vim sources/FileLocker.java
+: 1517253054:0;make
+: 1517253054:0;./unlock -d tests/test_dir -p tests/public_keys/864.public -r tests/private_keys/880.private -vk tests/public_keys/864.public
+: 1517253054:0;vim sources/FileLocker.java
+: 1517253054:0;make
+: 1517253054:0;./unlock -d tests/test_dir -p tests/public_keys/864.public -r tests/private_keys/880.private -vk tests/public_keys/864.public
+: 1517253054:0;vim sources/RSA.java
+: 1517253054:0;make
+: 1517253054:0;./unlock -d tests/test_dir -p tests/public_keys/864.public -r tests/private_keys/880.private -vk tests/public_keys/864.public
+: 1517253054:0;vim sources/RSA.java
+: 1517253054:0;make
+: 1517253054:0;./unlock -d tests/test_dir -p tests/public_keys/864.public -r tests/private_keys/880.private -vk tests/public_keys/864.public
+: 1517253054:0;ls
+: 1517253054:0;ls
+: 1517253054:0;hex dump tests/test_dir/key.manifest
+: 1517253054:0;he dump tests/test_dir/key.manifest
+: 1517253054:0;hexdump tests/test_dir/key.manifest
+: 1517253054:0;vim sources/RSA.java
+: 1517253054:0;make
+: 1517253054:0;vim sources/FileLocker.java
+: 1517253054:0;make
+: 1517253054:0;./unlock -d tests/test_dir -p tests/public_keys/864.public -r tests/private_keys/880.private -vk tests/public_keys/864.public
+: 1517253054:0;vim sources/RSA.java
+: 1517253054:0;make
+: 1517253054:0;./unlock -d tests/test_dir -p tests/public_keys/864.public -r tests/private_keys/880.private -vk tests/public_keys/864.public
+: 1517253054:0;vim sources/RSA.java
+: 1517253054:0;make
+: 1517253054:0;./unlock -d tests/test_dir -p tests/public_keys/864.public -r tests/private_keys/880.private -vk tests/public_keys/864.public
+: 1517253054:0;vim sources/RSA.java
+: 1517253054:0;vim sources/FileLocker.java
+: 1517253054:0;make
+: 1517253054:0;./unlock -d tests/test_dir -p tests/public_keys/864.public -r tests/private_keys/880.private -vk tests/public_keys/864.public
+: 1517253054:0;vim sources/FileLocker.java
+: 1517253054:0;make
+: 1517253054:0;vim sources/FileLocker.java
+: 1517253054:0;make
+: 1517253054:0;./unlock -d tests/test_dir -p tests/public_keys/864.public -r tests/private_keys/880.private -vk tests/public_keys/864.public
+: 1517253054:0;vim sources/FileLocker.java
+: 1517253054:0;make
+: 1517253054:0;vim sources/FileLocker.java
+: 1517253054:0;make
+: 1517253054:0;vim sources/FileLocker.java
+: 1517253054:0;make
+: 1517253054:0;vim sources/FileLocker.java
+: 1517253054:0;make
+: 1517253054:0;./unlock -d tests/test_dir -p tests/public_keys/864.public -r tests/private_keys/880.private -vk tests/public_keys/864.public
+: 1517253054:0;vim sources/FileLocker.java
+: 1517253054:0;make
+: 1517253054:0;vim sources/FileLocker.java
+: 1517253054:0;make
+: 1517253054:0;vim sources/FileLocker.java
+: 1517253054:0;make
+: 1517253054:0;vim sources/FileLocker.java
+: 1517253054:0;make
+: 1517253054:0;./unlock -d tests/test_dir -p tests/public_keys/864.public -r tests/private_keys/880.private -vk tests/public_keys/864.public
+: 1517253054:0;vim sources/FileLocker.java
+: 1517253054:0;make
+: 1517253054:0;./unlock -d tests/test_dir -p tests/public_keys/864.public -r tests/private_keys/880.private -vk tests/public_keys/864.public
+: 1517253054:0;vim sources/FileLocker.java
+: 1517253054:0;make
+: 1517253054:0;vim sources/FileLocker.java
+: 1517253054:0;make
+: 1517253054:0;./unlock -d tests/test_dir -p tests/public_keys/864.public -r tests/private_keys/880.private -vk tests/public_keys/864.public
+: 1517253054:0;vim sources/FileLocker.java
+: 1517253054:0;make
+: 1517253054:0;./unlock -d tests/test_dir -p tests/public_keys/864.public -r tests/private_keys/880.private -vk tests/public_keys/864.public
+: 1517253054:0;vim sources/FileLocker.java
+: 1517253054:0;make
+: 1517253054:0;./unlock -d tests/test_dir -p tests/public_keys/864.public -r tests/private_keys/880.private -vk tests/public_keys/864.public
+: 1517253054:0;vim sources/FileLocker.java
+: 1517253054:0;fg
+: 1517253054:0;./unlock -d tests/test_dir -p tests/public_keys/864.public -r tests/private_keys/880.private -vk tests/public_keys/864.public
+: 1517253054:0;make
+: 1517253054:0;vim sources/FileLocker.java
+: 1517253054:0;make
+: 1517253054:0;./unlock -d tests/test_dir -p tests/public_keys/864.public -r tests/private_keys/880.private -vk tests/public_keys/864.public
+: 1517253054:0;cat 1
+: 1517253054:0;./reset.sh
+: 1517253054:0;./unlock -d tests/test_dir -p tests/public_keys/864.public -r tests/private_keys/880.private -vk tests/public_keys/864.public
+: 1517253054:0;./lock -d tests/test_dir -p tests/public_keys/880.public -r tests/private_keys/864.private -vk tests/public_keys/880.public
+: 1517253054:0;./unlock -d tests/test_dir -p tests/public_keys/864.public -r tests/private_keys/880.private -vk tests/public_keys/864.public
+: 1517253054:0;vim sources/FileLocker.java
+: 1517253054:0;make
+: 1517253054:0;./unlock -d tests/test_dir -p tests/public_keys/864.public -r tests/private_keys/880.private -vk tests/public_keys/864.public
+: 1517253054:0;ls
+: 1517253054:0;cd tests
+: 1517253054:0;cd test_dir
+: 1517253054:0;cat 1
+: 1517253054:0;..
+: 1517253054:0;..
+: 1517253054:0;vim sources/FileLocker.java
+: 1517253054:0;make
+: 1517253054:0;./reset.sh
+: 1517253054:0;./lock -d tests/test_dir -p tests/public_keys/880.public -r tests/private_keys/864.private -vk tests/public_keys/880.public
+: 1517253054:0;./unlock -d tests/test_dir -p tests/public_keys/864.public -r tests/private_keys/880.private -vk tests/public_keys/864.public
+: 1517253054:0;vim sources/FileLocker.java
+: 1517253054:0;make
+: 1517253054:0;vim sources/FileLocker.java
+: 1517253054:0;make
+: 1517253054:0;./unlock -d tests/test_dir -p tests/public_keys/864.public -r tests/private_keys/880.private -vk tests/public_keys/864.public
+: 1517253054:0;vim sources/FileLocker.java
+: 1517253054:0;make
+: 1517253054:0;./unlock -d tests/test_dir -p tests/public_keys/864.public -r tests/private_keys/880.private -vk tests/public_keys/864.public
+: 1517253054:0;vim sources/FileLocker.java
+: 1517253054:0;make
+: 1517253054:0;vim sources/FileLocker.java
+: 1517253054:0;make
+: 1517253054:0;./reset.sh
+: 1517253054:0;./lock -d tests/test_dir -p tests/public_keys/880.public -r tests/private_keys/864.private -vk tests/public_keys/880.public
+: 1517253054:0;./reset.sh
+: 1517253054:0;vim sources/FileLocker.java
+: 1517253054:0;make
+: 1517253054:0;sh reset.sh
+: 1517253054:0;./lock -d tests/test_dir -p tests/public_keys/880.public -r tests/private_keys/864.private -vk tests/public_keys/880.public
+: 1517253054:0;./unlock -d tests/test_dir -p tests/public_keys/864.public -r tests/private_keys/880.private -vk tests/public_keys/864.public
+: 1517253054:0;vim sources/FileLocker.java
+: 1517253054:0;make
+: 1517253054:0;vim sources/FileLocker.java
+: 1517253054:0;make
+: 1517253054:0;./unlock -d tests/test_dir -p tests/public_keys/864.public -r tests/private_keys/880.private -vk tests/public_keys/864.public
+: 1517253054:0;ls
+: 1517253054:0;cd tests
+: 1517253054:0;cd test_dir
+: 1517253054:0;..
+: 1517253054:0;..
+: 1517253054:0;vim sources/FileLocker.java
+: 1517253054:0;sh res
+: 1517253054:0;sh resest.sh
+: 1517253054:0;./reset.sh
+: 1517253054:0;./lock -d tests/test_dir -p tests/public_keys/880.public -r tests/private_keys/864.private -vk tests/public_keys/880.public
+: 1517253054:0;./unlock -d tests/test_dir -p tests/public_keys/864.public -r tests/private_keys/880.private -vk tests/public_keys/864.public
+: 1517253054:0;cd tests
+: 1517253054:0;cd test_dir
+: 1517253054:0;cpm 1 ../bak/1
+: 1517253054:0;cmp 1 ../bak/1
+: 1517253054:0;..
+: 1517253054:0;..
+: 1517253054:0;vim sources/FileLocker.java
+: 1517253054:0;make
+: 1517253054:0;./reset.sh
+: 1517253054:0;./unlock -d tests/test_dir -p tests/public_keys/864.public -r tests/private_keys/880.private -vk tests/public_keys/864.public
+: 1517253054:0;./reset.sh
+: 1517253054:0;./lock -d tests/test_dir -p tests/public_keys/880.public -r tests/private_keys/864.private -vk tests/public_keys/880.public
+: 1517253054:0;./unlock -d tests/test_dir -p tests/public_keys/864.public -r tests/private_keys/880.private -vk tests/public_keys/864.public
+: 1517253054:0;cd tests
+: 1517253054:0;ls test_dir
+: 1517253054:0;diff -arq bak test_dir
+: 1517253054:0;..
+: 1517253054:0;..
+: 1517253054:0;cd File-Locker
+: 1517253054:0;git status
+: 1517253054:0;git add sources/FileLocker.java sources/FileLockerCommandLineArgParser.java sources/Locker.java sources/RSA.java sources/Unlocker.java lock unlock tests/gen_dir.sh reset.sh
+: 1517253054:0;git commit -m "ayy it works"
+: 1517253054:0;git status
+: 1517253054:0;rm ayy lol output 
+: 1517253054:0;cd sources
+: 1517253054:0;vim test_inputs.cpp
+: 1517253054:0;exit
+: 1517253054:0;exit
+: 1517253054:0;crypto3
+: 1517253054:0;cd File-Locker
+: 1517253054:0;cd sources
+: 1517253054:0;vim AES.java
+: 1517253054:0;vim CBCDec.java
+: 1517253054:0;vim CBC.java
+: 1517253054:0;..
+: 1517253054:0;make
+: 1517253054:0;./reset.sh
+: 1517253054:0;./lock -d tests/test_dir -p tests/public_keys/880.public -r tests/private_keys/864.private -vk tests/public_keys/880.public
+: 1517253054:0;./unlock -d tests/test_dir -p tests/public_keys/864.public -r tests/private_keys/880.private -vk tests/public_keys/864.public
+: 1517253054:0;ls
+: 1517253054:0;./reset.sh
+: 1517253054:0;./lock -d tests/test_dir -p tests/public_keys/880.public -r tests/private_keys/864.private -vk tests/public_keys/880.public
+: 1517253054:0;diff -arq bak test_dir
+: 1517253054:0;cd tests
+: 1517253054:0;diff -arq bak test_dir
+: 1517253054:0;..
+: 1517253054:0;./unlock -d tests/test_dir -p tests/public_keys/864.public -r tests/private_keys/880.private -vk tests/public_keys/864.public
+: 1517253054:0;diff -arq bak test_dir
+: 1517253054:0;cd tests
+: 1517253054:0;diff -arq bak test_dir
+: 1517253054:0;..
+: 1517253054:0;./resetsh
+: 1517253054:0;./reset.sh
+: 1517253054:0;./lock -d tests/test_dir -p tests/public_keys/880.public -r tests/private_keys/864.private -vk tests/public_keys/880.public
+: 1517253054:0;./unlock -d tests/test_dir -p tests/public_keys/864.public -r tests/private_keys/880.private -vk tests/public_keys/864.public
+: 1517253054:0;diff -arq tests/bak tests/test_dir
+: 1517253054:0;vim sources/CBC.java
+: 1517253054:0;vim sources/FileLocker.java
+: 1517253054:0;make
+: 1517253054:0;./reset.sh
+: 1517253054:0;./lock -d tests/test_dir -p tests/public_keys/880.public -r tests/private_keys/864.private -vk tests/public_keys/880.public
+: 1517253054:0;./unlock -d tests/test_dir -p tests/public_keys/864.public -r tests/private_keys/880.private -vk tests/public_keys/864.public
+: 1517253054:0;vim sources/CBC.java
+: 1517253054:0;make
+: 1517253054:0;./reset.sh
+: 1517253054:0;./lock -d tests/test_dir -p tests/public_keys/880.public -r tests/private_keys/864.private -vk tests/public_keys/880.public
+: 1517253054:0;./unlock -d tests/test_dir -p tests/public_keys/864.public -r tests/private_keys/880.private -vk tests/public_keys/864.public
+: 1517253054:0;vim sources/CBC.java
+: 1517253054:0;./reset.sh
+: 1517253054:0;ls tests/test_dir
+: 1517253054:0;./lock -d tests/test_dir -p tests/public_keys/880.public -r tests/private_keys/864.private -vk tests/public_keys/880.public
+: 1517253054:0;ls tests/test_dir
+: 1517253054:0;./unlock -d tests/test_dir -p tests/public_keys/864.public -r tests/private_keys/880.private -vk tests/public_keys/864.public
+: 1517253054:0;diff -arq tests/bak tests/test_dir
+: 1517253054:0;./lock -d tests/test_dir -p tests/public_keys/880.public -r tests/private_keys/864.private -vk tests/public_keys/880.public
+: 1517253054:0;./unlock -d tests/test_dir -p tests/public_keys/864.public -r tests/private_keys/880.private -vk tests/public_keys/864.public
+: 1517253054:0;./reset.sh
+: 1517253054:0;./lock -d tests/test_dir -p tests/public_keys/880.public -r tests/private_keys/864.private -vk tests/public_keys/880.public
+: 1517253054:0;./unlock -d tests/test_dir -p tests/public_keys/864.public -r tests/private_keys/880.private -vk tests/public_keys/864.public
+: 1517253054:0;cd tests
+: 1517253054:0;cd test_dir
+: 1517253054:0;cmp 1 ../bak/1
+: 1517253054:0;cmp 2 ../bak/2
+: 1517253054:0;cmp 3 ../bak/3
+: 1517253054:0;cmp 4 ../bak/4
+: 1517253054:0;..
+: 1517253054:0;..
+: 1517253054:0;./lock -d tests/test_dir -p tests/public_keys/880.public -r tests/private_keys/864.private -vk tests/public_keys/880.public
+: 1517253054:0;./unlock -d tests/test_dir -p tests/public_keys/864.public -r tests/private_keys/880.private -vk tests/public_keys/864.public
+: 1517253054:0;./lock -d tests/test_dir -p tests/public_keys/880.public -r tests/private_keys/864.private -vk tests/public_keys/880.public
+: 1517253054:0;./unlock -d tests/test_dir -p tests/public_keys/864.public -r tests/private_keys/880.private -vk tests/public_keys/864.public
+: 1517253054:0;vim sources/Padder.java
+: 1517253054:0;cat tests/bak/1
+: 1517253054:0;..
+: 1517253054:0;cd File-Locker
+: 1517253054:0;make
+: 1517253054:0;vim sources/Padder.java
+: 1517253054:0;make
+: 1517253054:0;reset.sh
+: 1517253054:0;./reset.sh
+: 1517253054:0;./lock -d tests/test_dir -p tests/public_keys/880.public -r tests/private_keys/864.private -vk tests/public_keys/880.public
+: 1517253054:0;./unlock -d tests/test_dir -p tests/public_keys/864.public -r tests/private_keys/880.private -vk tests/public_keys/864.public
+: 1517253054:0;reset.sh
+: 1517253054:0;./reset.sh
+: 1517253054:0;./lock -d tests/test_dir -p tests/public_keys/880.public -r tests/private_keys/864.private -vk tests/public_keys/880.public
+: 1517253054:0;./unlock -d tests/test_dir -p tests/public_keys/864.public -r tests/private_keys/880.private -vk tests/public_keys/864.public
+: 1517253054:0;./reset.sh
+: 1517253054:0;./lock -d tests/test_dir -p tests/public_keys/880.public -r tests/private_keys/864.private -vk tests/public_keys/880.public
+: 1517253054:0;./unlock -d tests/test_dir -p tests/public_keys/864.public -r tests/private_keys/880.private -vk tests/public_keys/864.public
+: 1517253054:0;./reset.sh
+: 1517253054:0;./lock -d tests/test_dir -p tests/public_keys/880.public -r tests/private_keys/864.private -vk tests/public_keys/880.public
+: 1517253054:0;./unlock -d tests/test_dir -p tests/public_keys/864.public -r tests/private_keys/880.private -vk tests/public_keys/864.public
+: 1517253054:0;vim sources/FileLocker.java
+: 1517253054:0;make
+: 1517253054:0;./reset.sh
+: 1517253054:0;./lock -d tests/test_dir -p tests/public_keys/880.public -r tests/private_keys/864.private -vk tests/public_keys/880.public
+: 1517253054:0;./unlock -d tests/test_dir -p tests/public_keys/864.public -r tests/private_keys/880.private -vk tests/public_keys/864.public
+: 1517253054:0;./reset.sh
+: 1517253054:0;./lock -d tests/test_dir -p tests/public_keys/880.public -r tests/private_keys/864.private -vk tests/public_keys/880.public
+: 1517253054:0;./unlock -d tests/test_dir -p tests/public_keys/864.public -r tests/private_keys/880.private -vk tests/public_keys/864.public
+: 1517253054:0;vim sources/FileLocker.java
+: 1517253054:0;make
+: 1517253054:0;./reset.sh
+: 1517253054:0;./lock -d tests/test_dir -p tests/public_keys/880.public -r tests/private_keys/864.private -vk tests/public_keys/880.public
+: 1517253054:0;./unlock -d tests/test_dir -p tests/public_keys/864.public -r tests/private_keys/880.private -vk tests/public_keys/864.public
+: 1517253054:0;vim sources/FileLocker.java
+: 1517253054:0;make
+: 1517253054:0;./reset.sh
+: 1517253054:0;./lock -d tests/test_dir -p tests/public_keys/880.public -r tests/private_keys/864.private -vk tests/public_keys/880.public
+: 1517253054:0;./unlock -d tests/test_dir -p tests/public_keys/864.public -r tests/private_keys/880.private -vk tests/public_keys/864.public
+: 1517253054:0;vim sources/FileLocker.java
+: 1517253054:0;make
+: 1517253054:0;vim sources/FileLocker.java
+: 1517253054:0;make
+: 1517253054:0;vim sources/FileLocker.java
+: 1517253054:0;make
+: 1517253054:0;vim sources/FileLocker.java
+: 1517253054:0;make
+: 1517253054:0;vim sources/FileLocker.java
+: 1517253054:0;make
+: 1517253054:0;vim sources/FileLocker.java
+: 1517253054:0;make
+: 1517253054:0;./reset.sh
+: 1517253054:0;./lock -d tests/test_dir -p tests/public_keys/880.public -r tests/private_keys/864.private -vk tests/public_keys/880.public
+: 1517253054:0;./unlock -d tests/test_dir -p tests/public_keys/864.public -r tests/private_keys/880.private -vk tests/public_keys/864.public
+: 1517253054:0;./reset.sh
+: 1517253054:0;./lock -d tests/test_dir -p tests/public_keys/880.public -r tests/private_keys/864.private -vk tests/public_keys/880.public
+: 1517253054:0;./unlock -d tests/test_dir -p tests/public_keys/864.public -r tests/private_keys/880.private -vk tests/public_keys/864.public
+: 1517253054:0;vim sources/FileLocker.java
+: 1517253054:0;make
+: 1517253054:0;./reset.sh
+: 1517253054:0;echo "/reset.sh" >> run
+: 1517253054:0;echo "./lock -d tests/test_dir -p tests/public_keys/880.public -r tests/private_keys/864.private -vk tests/public_keys/880.public" >> run
+: 1517253054:0;echo "./unlock -d tests/test_dir -p tests/public_keys/864.public -r tests/private_keys/880.private -vk tests/public_keys/864.public" >> run
+: 1517253054:0;vim run
+: 1517253054:0;vim run
+: 1517253054:0;chmod +x run
+: 1517253054:0;./run
+: 1517253054:0;./run
+: 1517253054:0;./run
+: 1517253054:0;./run
+: 1517253054:0;./run
+: 1517253054:0;./run
+: 1517253054:0;./run
+: 1517253054:0;./run
+: 1517253054:0;./run
+: 1517253054:0;vim run
+: 1517253054:0;echo "diff -arq tests/bak tests/test_dir" >> run
+: 1517253054:0;./run
+: 1517253054:0;./reset.sh
+: 1517253054:0;./lock -d tests/test_dir -p tests/public_keys/880.public -r tests/private_keys/864.private -vk tests/public_keys/880.public
+: 1517253054:0;diff -arq tests/bak tests/test_dir
+: 1517253054:0;git status
+: 1517253054:0;git add sources/CBC.java sources/FileLocker.java sources/Padder.java sources/RSA.java
+: 1517253054:0;git commit -m "Fuk Newlines"
+: 1517253054:0;git push origin master
+: 1517253054:0;git pull
+: 1517253054:0;vim sources/FileLockerCommandLineArgParser.java
+: 1517253054:0;git status
+: 1517253054:0;git commit
+: 1517253054:0;git commit sources/FileLockerCommandLineArgParser.java
+: 1517253054:0;git add sources/FileLockerCommandLineArgParser.java
+: 1517253054:0;git commit -m "Fixed merhe conflicts"
+: 1517253054:0;git push origin master
+: 1517253054:0;ls
+: 1517253054:0;cd sources
+: 1517253054:0;vim Padder.java
+: 1517253054:0;vim FileLocker.java
+: 1517253054:0;make
+: 1517253054:0;..
+: 1517253054:0;make
+: 1517253054:0;./run
+: 1517253054:0;vim sources/FileLocker.java
+: 1517253054:0;vim sources/FileLocker.java
+: 1517253054:0;make
+: 1517253054:0;./run
+: 1517253054:0;git status
+: 1517253054:0;git add sources/FileLocker.java sources/Padder.java
+: 1517253054:0;git commit -m "removed print statements"
+: 1517253054:0;git push origin master
+: 1517253054:0;vim run
+: 1517253054:0;cd tests
+: 1517253054:0;vim gen_dir.sh
+: 1517253054:0;sh gen_dir.sh 
+: 1517253054:0;cp test_dir/* bak
+: 1517253054:0;..
+: 1517253054:0;vim run
+: 1517253054:0;./run
+: 1517253054:0;vim run
+: 1517253054:0;./run
+: 1517253054:0;vim gen_dir.sh
+: 1517253054:0;vim run
+: 1517253054:0;exit
+: 1517253054:0;ls
+: 1517253054:0;crypto3
+: 1517253054:0;cd File-Locker
+: 1517253054:0;vim sources/RSA.java
+: 1517253054:0;exit
+: 1517253054:0;ls
+: 1517253054:0;cd cs340
+: 1517253054:0;cd TeamSegfaults
+: 1517253054:0;cd crypt
+: 1517253054:0;vim makefile
+: 1517253054:0;logout
+: 1517253054:0;ls
+: 1517253054:0;crypto3
+: 1517253054:0;cd File-Locker
+: 1517253054:0;vim Makefile
+: 1517253054:0;vim rsa-sign
+: 1517253054:0;exit
+: 1517253054:0;cd /home/plank
+: 1517253054:0;cd src
+: 1517253054:0;cd gzip
+: 1517253054:0;cat README
+: 1517253054:0;exit
+: 1517253054:0;ls
+: 1517253054:0;cd old
+: 1517253054:0;cd cs302
+: 1517253054:0;cd labs
+: 1517253054:0;	cd lab1
+: 1517253054:0;..
+: 1517253054:0;cd lab2
+: 1517253054:0;..
+: 1517253054:0;cd lab3
+: 1517253054:0;vim sort3a.cpp
+: 1517253054:0;vim sort3b.cpp
+: 1517253054:0;..
+: 1517253054:0;cd lab4
+: 1517253054:0;..
+: 1517253054:0;cd lab5
+: 1517253054:0;logout
+: 1517253054:0;ls
+: 1517253054:0;mv cs340 old
+: 1517253054:0;mv cs545 cs583 cs 594 old
+: 1517253054:0;mv cs594 old
+: 1517253054:0;ls
+: 1517253054:0;mkdir cs494 cs402 cs581 ece453
+: 1517253054:0;ll
+: 1517253054:0;cd old
+: 1517253054:0;..
+: 1517253054:0;cd projects
+: 1517253054:0;..
+: 1517253054:0;cd webhome
+: 1517253054:0;vim index.html
+: 1517253054:0;vim index.html
+: 1517253054:0;vim index.html
+: 1517253054:0;cd css
+: 1517253054:0;..
+: 1517253054:0;vim index.html
+: 1517253054:0;logout
+: 1517253054:0;cd webhome
+: 1517253054:0;cd css
+: 1517253054:0;exit
+: 1517253054:0;cd webhome
+: 1517253054:0;vim index.html
+: 1517253054:0;exit
+: 1517253054:0;cd webhome
+: 1517253054:0;cd css
+: 1517253054:0;vim skeleton.css
+: 1517253054:0;vim normalize.css
+: 1517253054:0;exit
+: 1517253054:0;ls
+: 1517253054:0;mkdir cs302ta
+: 1517253054:0;ll
+: 1517253054:0;cd cs302ta
+: 1517253054:0;mkdir lab0
+: 1517253054:0;cd lab0
+: 1517253054:0;/home/cs302/labs/lab_practice/copy
+: 1517253054:0;ls
+: 1517253054:0;ls
+: 1517253054:0;vim -R /home/cs302/labs/lab_practice/copy
+: 1517253054:0;ls
+: 1517253054:0;ll
+: 1517253054:0;cp /home/cs302/labs/lab_practice/* .
+: 1517253054:0;ls
+: 1517253054:0;ls
+: 1517253054:0;vim copy
+: 1517253054:0;ls /home/cs302/labs/lab_practice
+: 1517253054:0;touch Fruit_v1.cpp Fruit_v2.cpp Fruit_v3.cpp Fruit_v4.cpp Fruit_v5.cpp
+: 1517253054:0;ls
+: 1517253054:0;vim Fruit_v1.cpp
+: 1517253054:0;htop
+: 1517253054:0;fg
+: 1517253054:0;ls
+: 1517253054:0;vim makefile
+: 1517253054:0;make
+: 1517253054:0;vim makefile
+: 1517253054:0;python
+: 1517253054:0;python3
+: 1517253054:0;cd /usr
+: 1517253054:0;cd bin
+: 1517253054:0;ll | cgrep "python"
+: 1517253054:0;ll | grep "python"
+: 1517253054:0;..
+: 1517253054:0;..
+: 1517253054:0;~
+: 1517253054:0;ls
+: 1517253054:0;cd cs302
+: 1517253054:0;cd labs
+: 1517253054:0;cd lab_practice
+: 1517253054:0;vim fruit_v1.cpp
+: 1517253054:0;..
+: 1517253054:0;..
+: 1517253054:0;..
+: 1517253054:0;rm -r cs302
+: 1517253054:0;ls
+: 1517253054:0;cd cs302ta
+: 1517253054:0;cd lab0
+: 1517253054:0;ls
+: 1517253054:0;cd /home/cs302
+: 1517253054:0;~
+: 1517253054:0;ta_register cs302
+: 1517253054:0;cd cs302ta
+: 1517253054:0;cd lab0
+: 1517253054:0;vim Fruit_v2.cpp
+: 1517253054:0;rm copy
+: 1517253054:0;make clean
+: 1517253054:0;ls
+: 1517253054:0;mv Fruit_v1.cpp fruit_v1.cpp
+: 1517253054:0;rm Fruit_v*
+: 1517253054:0;make clean
+: 1517253054:0;ls
+: 1517253054:0;make
+: 1517253054:0;vim makefile
+: 1517253054:0;mv fruit_v1.cpp Fruit_v1.cpp
+: 1517253054:0;rm fruit_v*
+: 1517253054:0;ls
+: 1517253054:0;cp Fruit_v1.cpp Fruit_v2.cpp
+: 1517253054:0;vim Fruit_v
+: 1517253054:0;vim Fruit_v2.cpp
+: 1517253054:0;make
+: 1517253054:0;cp Fruit_v2.cpp Fruit_v3.cpp
+: 1517253054:0;ls
+: 1517253054:0;vim Fruit_v3.cpp
+: 1517253054:0;make
+: 1517253054:0;vim Fruit_v3.cpp
+: 1517253054:0;vim Fruit_v3.cpp
+: 1517253054:0;vim Fruit_v3.cpp
+: 1517253054:0;make
+: 1517253054:0;ls
+: 1517253054:0;cp Fruit_v3.cpp Fruit_v4.cpp
+: 1517253054:0;vim Fruit_v4.cpp
+: 1517253054:0;make
+: 1517253054:0;vim Fruit_v4.cpp
+: 1517253054:0;make
+: 1517253054:0;vim Fruit_v4.cpp
+: 1517253054:0;make
+: 1517253054:0;vim Fruit_v4.cpp
+: 1517253054:0;make
+: 1517253054:0;./Fruit_v4 fbc_small.txt
+: 1517253054:0;./Fruit_v4 fbw_small.txt
+: 1517253054:0;cp Fruit_v4.cpp Fruit_v5.cpp
+: 1517253054:0;vim Fruit_v5.cpp
+: 1517253054:0;ls
+: 1517253054:0;vim Fruit_v4.cpp
+: 1517253054:0;ls
+: 1517253054:0;rm lab_practice.html
+: 1517253054:0;vim Fruit_v5.cpp
+: 1517253054:0;~
+: 1517253054:0;mv cs581 cs594
+: 1517253054:0;cd .zsh
+: 1517253054:0;ls
+: 1517253054:0;ll
+: 1517253054:0;ll -a
+: 1517253054:0;zsha
+: 1517253054:0;..
+: 1517253054:0;mv terminalcolors.py scripts
+: 1517253054:0;ls
+: 1517253054:0;rmdir cs402
+: 1517253054:0;cd cs594
+: 1517253054:0;mkdir hw
+: 1517253054:0;zsha
+: 1517253054:0;cd hw
+: 1517253054:0;mkdir 1
+: 1517253054:0;cd 1
+: 1517253054:0;vim 1.txt
+: 1517253054:0;vim 2.txt
+: 1517253054:0;ftp ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/840/245/GCF_000840245.1_ViralProj14204/GCF_000840245.1_ViralProj14204_genomic.fna.gz
+: 1517253054:0;wget ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/840/245/GCF_000840245.1_ViralProj14204/GCF_000840245.1_ViralProj14204_genomic.fna.gz
+: 1517253054:0;ls
+: 1517253054:0;tar -xvf GCF_000840245.1_ViralProj14204_genomic.fna.gz
+: 1517253054:0;gzip -xvf GCF_000840245.1_ViralProj14204_genomic.fna.gz
+: 1517253054:0;gzip
+: 1517253054:0;gzip -h
+: 1517253054:0;gzip -d GCF_000840245.1_ViralProj14204_genomic.fna.gz
+: 1517253054:0;ls
+: 1517253054:0;mc GCF_000840245.1_ViralProj14204_genomic.fna lambda.fasta
+: 1517253054:0;mV GCF_000840245.1_ViralProj14204_genomic.fna lambda.fasta
+: 1517253054:0;mv GCF_000840245.1_ViralProj14204_genomic.fna lambda.fasta
+: 1517253054:0;ls
+: 1517253054:0;ls
+: 1517253054:0;cd bio1
+: 1517253054:0;bio1
+: 1517253054:0;vim 3.py
+: 1517253054:0;python 3.py
+: 1517253054:0;vim 3.py
+: 1517253054:0;python 3.py
+: 1517253054:0;vim 3.py
+: 1517253054:0;python 3.py
+: 1517253054:0;head lambda.fasta
+: 1517253054:0;awk '{ print length($0); }' lambda.fasta
+: 1517253054:0;vim 3.py
+: 1517253054:0;awk '{ print length($0); }' lambda.fasta
+: 1517253054:0;python 3.py
+: 1517253054:0;vim 3.py
+: 1517253054:0;python 3.py
+: 1517253054:0;vim 3.py
+: 1517253054:0;python 3.py
+: 1517253054:0;vim 3.py
+: 1517253054:0;python 3.py
+: 1517253054:0;vim 3.py
+: 1517253054:0;python 3.py
+: 1517253054:0;vim 3.py
+: 1517253054:0;python 3.py
+: 1517253054:0;vim 3.py
+: 1517253054:0;python 3.py
+: 1517253054:0;tail lambda.rev.fasta
+: 1517253054:0;head lambda.fasta
+: 1517253054:0;vim 3.py
+: 1517253054:0;ls
+: 1517253054:0;vim report.txt
+: 1517253054:0;python2
+: 1517253054:0;ls
+: 1517253054:0;vim 3.py
+: 1517253054:0;vim report.txt
+: 1517253054:0;cp 3.py 4.py
+: 1517253054:0;vim 4.py
+: 1517253054:0;python 4.py
+: 1517253054:0;vim 4.py
+: 1517253054:0;python 4.py
+: 1517253054:0;vim 4.py
+: 1517253054:0;python 4.py
+: 1517253054:0;vim 4.py
+: 1517253054:0;python 4.py
+: 1517253054:0;vim 4.py
+: 1517253054:0;python 4.py
+: 1517253054:0;vim 4.py
+: 1517253054:0;python 4.py
+: 1517253054:0;vim 4.py
+: 1517253054:0;python 4.py
+: 1517253054:0;bio1
+: 1517253054:0;vim 4.py
+: 1517253054:0;python 4.py
+: 1517253054:0;tail lambda.rev.fasta
+: 1517253054:0;head lambda.fasta
+: 1517253054:0;vim 4.py
+: 1517253054:0;python 4.py
+: 1517253054:0;vim 4.py
+: 1517253054:0;python 4.py
+: 1517253054:0;vim 4.py
+: 1517253054:0;python 4.py
+: 1517253054:0;vim 4.py
+: 1517253054:0;python 4.py
+: 1517253054:0;vim 4.py
+: 1517253054:0;python 4.py
+: 1517253054:0;vim 4.py
+: 1517253054:0;python 4.py
+: 1517253054:0;ls
+: 1517253054:0;vim report.txt
+: 1517253054:0;ls
+: 1517253054:0;python 3.py
+: 1517253054:0;python 4.py
+: 1517253054:0;head lambda.
+: 1517253054:0;head lambda.fasta
+: 1517253054:0;cp 4.py 6.py
+: 1517253054:0;vim 6.py
+: 1517253054:0;vim 6.py
+: 1517253054:0;python 6.py
+: 1517253054:0;head neander_sample.fasta
+: 1517253054:0;vim 6.py
+: 1517253054:0;head human_mito.fasta
+: 1517253054:0;vim 6.py
+: 1517253054:0;python 6.py
+: 1517253054:0;ls
+: 1517253054:0;vim lambda.fasta
+: 1517253054:0;vim 6.py
+: 1517253054:0;python 6.py
+: 1517253054:0;python 6.py | grep 'N'
+: 1517253054:0;vim lambda.fasta
+: 1517253054:0;python 6.py > a
+: 1517253054:0;vim a
+: 1517253054:0;vim 6.py 
+: 1517253054:0;python 6.py
+: 1517253054:0;vim 6.py
+: 1517253054:0;python 6.py
+: 1517253054:0;mv 6.py 6_multi.py
+: 1517253054:0;cp 6_multi.py 6_markov.py
+: 1517253054:0;vim 6_markov.py
+: 1517253054:0;fg
+: 1517253054:0;exit
+: 1517253054:0;bio1
+: 1517253054:0;vim 6_markov.py
+: 1517253054:0;vim 6_markov.py
+: 1517253054:0;python 6_markov.py
+: 1517253054:0;vim 6_markov.py
+: 1517253054:0;python 6_markov.py
+: 1517253054:0;vim 6_markov.py
+: 1517253054:0;python 6_markov.py
+: 1517253054:0;vim 6_markov.py
+: 1517253054:0;python 6_markov.py
+: 1517253054:0;vim 6_markov.py
+: 1517253054:0;python 6_markov.py
+: 1517253054:0;vim 6_markov.py
+: 1517253054:0;python 6_markov.py
+: 1517253054:0;vim 6_markov.py
+: 1517253054:0;python 6_markov.py
+: 1517253054:0;vim 6_markov.py
+: 1517253054:0;ls
+: 1517253054:0;bio1
+: 1517253054:0;vim 6_markov.py
+: 1517253054:0;vim 6_markov.py
+: 1517253054:0;rm .6_markov.py.swp
+: 1517253054:0;vim 6_markov.py
+: 1517253054:0;python 6_markov.py
+: 1517253054:0;vim 6_markov.py
+: 1517253054:0;python 6_markov.py
+: 1517253054:0;vim 6_markov.py
+: 1517253054:0;python 6_markov.py
+: 1517253054:0;vim 6_markov.py
+: 1517253054:0;python 6_markov.py
+: 1517253054:0;vim 6_markov.py
+: 1517253054:0;python 6_markov.py
+: 1517253054:0;vim 6_markov.py
+: 1517253054:0;python 6_markov.py
+: 1517253054:0;vim 6_markov.py
+: 1517253054:0;python 6_markov.py
+: 1517253054:0;vim 6_markov.py
+: 1517253054:0;python 6_markov.py
+: 1517253054:0;vim 6_markov.py
+: 1517253054:0;vim 6_multi.py
+: 1517253054:0;vim 1.py
+: 1517253054:0;ls
+: 1517253054:0;vim 1.txt
+: 1517253054:0;vim 3.py
+: 1517253054:0;vim 4.py
+: 1517253054:0;vim 5.py
+: 1517253054:0;ls
+: 1517253054:0;ls
+: 1517253054:0;vim a
+: 1517253054:0;rm a
+: 1517253054:0;vim 6_multi.py
+: 1517253054:0;vim report.txt
+: 1517253054:0;python 6_multi.py
+: 1517253054:0;python 6_markov.py
+: 1517253054:0;python 6_multi.py >> t
+: 1517253054:0;python 6_multi.py >> t
+: 1517253054:0;python 6_multi.py >> t
+: 1517253054:0;cat t
+: 1517253054:0;python 6_multi.py >> report.txt
+: 1517253054:0;python 6_markov.py >> report.txt
+: 1517253054:0;rm t
+: 1517253054:0;vim report.txt
+: 1517253054:0;cp 6_markov.py 7.py
+: 1517253054:0;vim 7.py
+: 1517253054:0;ls
+: 1517253054:0;..
+: 1517253054:0;..
+: 1517253054:0;..
+: 1517253054:0;cs302ta
+: 1517253054:0;lab0
+: 1517253054:0;..
+: 1517253054:0;mkdir lab1
+: 1517253054:0;cd lab1
+: 1517253054:0;/home/cs302/labs/lab1/copy
+: 1517253054:0;ls
+: 1517253054:0;ls
+: 1517253054:0;..
+: 1517253054:0;..
+: 1517253054:0;cd cs302
+: 1517253054:0;cd labs
+: 1517253054:0;cd lab1
+: 1517253054:0;vim Quicksort.cpp
+: 1517253054:0;..
+: 1517253054:0;..
+: 1517253054:0;..
+: 1517253054:0;chmod cs302 700
+: 1517253054:0;chmod 700 cs302
+: 1517253054:0;ls
+: 1517253054:0;ll
+: 1517253054:0;rm cs302
+: 1517253054:0;rm -r cs302
+: 1517253054:0;ls
+: 1517253054:0;man ln
+: 1517253054:0;ls
+: 1517253054:0;ln -s cs302 cs302ta
+: 1517253054:0;ls
+: 1517253054:0;ll
+: 1517253054:0;ln cs302 cs302ta
+: 1517253054:0;ls
+: 1517253054:0;ln cs302ta cs302
+: 1517253054:0;ls
+: 1517253054:0;ln -s cs302ta cs302
+: 1517253054:0;ls
+: 1517253054:0;cd cs302
+: 1517253054:0;cs302
+: 1517253054:0;cd cs302
+: 1517253054:0;ls
+: 1517253054:0;rm cs302
+: 1517253054:0;ls
+: 1517253054:0;cd lab1
+: 1517253054:0;/home/cs302/labs/lab1/copy
+: 1517253054:0;ls
+: 1517253054:0;ll
+: 1517253054:0;..
+: 1517253054:0;..
+: 1517253054:0;cd cs302
+: 1517253054:0;cd labs
+: 1517253054:0;cd lab1
+: 1517253054:0;..
+: 1517253054:0;..
+: 1517253054:0;mv lab0 labs
+: 1517253054:0;rm lab1
+: 1517253054:0;rm -r lab1
+: 1517253054:0;ls
+: 1517253054:0;cd labs
+: 1517253054:0;zsha
+: 1517253054:0;cd lab1
+: 1517253054:0;ta0
+: 1517253054:0;ta1
+: 1517253054:0;vim makefile
+: 1517253054:0;vim Quicksort.cpp
+: 1517253054:0;cp Quicksort.cpp quicksort_base.cpp
+: 1517253054:0;mv Quicksort.cpp quicksort.cpp
+: 1517253054:0;vm quicksort quicksort_jens
+: 1517253054:0;mv quicksort quicksort_jens
+: 1517253054:0;ls
+: 1517253054:0;vim makefile
+: 1517253054:0;vim quicksort.cpp
+: 1517253054:0;gist
+: 1517253054:0;gist
+: 1517253054:0;ls
+: 1517253054:0;ls
+: 1517253054:0;ls
+: 1517253054:0;..
+: 1517253054:0;..
+: 1517253054:0;..
+: 1517253054:0;ls
+: 1517253054:0;ll
+: 1517253054:0;ll
+: 1517253054:0;gist
+: 1517253054:0;git log --pretty=oneline --graph --color --decorate --all --abbrev-commit
+: 1517253054:0;git log --pretty=oneline --graph --color --decorate --all --abbrev-commit --name
+: 1517253054:0;git log --pretty=oneline --graph --color --decorate --all --abbrev-commit
+: 1517253054:0;man git log
+: 1517253054:0;ls
+: 1517253054:0;zsha
+: 1517253054:0;git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commitgit log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+: 1517253054:0;git log
+: 1517253054:0;ls
+: 1517253054:0;git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commitgit log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+: 1517253054:0;git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+: 1517253054:0;zsha
+: 1517253054:0;git log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+: 1517253054:0;zsha
+: 1517253054:0;zsh
+: 1517253054:0;ta_login cs302
+: 1517253054:0;cd .ssh
+: 1517253054:0;vim known_hosts
+: 1517253054:0;ta_login cs302
+: 1517253054:0;ls
+: 1517253054:0;ta1
+: 1517253054:0;..
+: 1517253054:0;..
+: 1517253054:0;..
+: 1517253054:0;cd old
+: 1517253054:0;cd cs302
+: 1517253054:0;labs
+: 1517253054:0;lab1
+: 1517253054:0;..
+: 1517253054:0;lab2
+: 1517253054:0;..
+: 1517253054:0;lab
+: 1517253054:0;lab3
+: 1517253054:0;vim sort3a.cpp
+: 1517253054:0;..
+: 1517253054:0;..
+: 1517253054:0;..
+: 1517253054:0;..
+: 1517253054:0;cd old
+: 1517253054:0;cd cs140ta
+: 1517253054:0;cd labs
+: 1517253054:0;cd lab0
+: 1517253054:0;vim gold.cpp
+: 1517253054:0;yak
+: 1517253054:0;yakker
+: 1517253054:0;yaCC
+: 1517253054:0;yacc
+: 1517253054:0;yak -g
+: 1517253054:0;yacc -g
+: 1517253054:0;yacc -g gold.cpp
+: 1517253054:0;ls
+: 1517253054:0;..
+: 1517253054:0;..
+: 1517253054:0;..
+: 1517253054:0;..
+: 1517253054:0;..
+: 1517253054:0;cd rriedel1
+: 1517253054:0;cd old
+: 1517253054:0;cd cs340
+: 1517253054:0;cd TeamSegfaults
+: 1517253054:0;vim makefile
+: 1517253054:0;cd crypt
+: 1517253054:0;vim makefile
+: 1517253054:0;..
+: 1517253054:0;cd file
+: 1517253054:0;vim file_bin.cpp
+: 1517253054:0;vim file_txt.cpp
+: 1517253054:0;ls
+: 1517253054:0;..
+: 1517253054:0;cd objs
+: 1517253054:0;..
+: 1517253054:0;..
+: 1517253054:0;cd TeamSegfaults
+: 1517253054:0;git history
+: 1517253054:0;git status
+: 1517253054:0;cd test
+: 1517253054:0;..
+: 1517253054:0;git log --pretty=oneline --abbrev-commit --color --graph
+: 1517253054:0;zsha
+: 1517253054:0;zsh
+: 1517253054:0;ls
+: 1517253054:0;cd src
+: 1517253054:0;..
+: 1517253054:0;ta1
+: 1517253054:0;bio1
+: 1517253054:0;vim 7.py
+: 1517253054:0;exit
+: 1517253054:0;ls
+: 1517253054:0;bio1
+: 1517253054:0;vim 7.py
+: 1517253054:0;ta1
+: 1517253054:0;vim quicksort.cpp
+: 1517253054:0;rm .quicksort.cpp.swp
+: 1517253054:0;vim quicksort.cpp
+: 1517253054:0;make
+: 1517253054:0;vim quicksort.cpp
+: 1517253054:0;make
+: 1517253054:0;ls
+: 1517253054:0;./quicksort < list1.txt
+: 1517253054:0;cat list
+: 1517253054:0;cat list1.txt
+: 1517253054:0;ls
+: 1517253054:0;cp quicksort.cpp quicksort1A.cpp
+: 1517253054:0;vim quicksort.cpp
+: 1517253054:0;ls
+: 1517253054:0;vim ~/old/cs302/labs/lab3/sort3a.cpp
+: 1517253054:0;vim quicksort.cpp
+: 1517253054:0;exit
+: 1517253054:0;ls
+: 1517253054:0;cd old/cs302
+: 1517253054:0;cd labs
+: 1517253054:0;cd lab3
+: 1517253054:0;vim sort3b.cpp
+: 1517253054:0;vim sort3a.cpp
+: 1517253054:0;ls
+: 1517253054:0;exit
+: 1517253054:0;ls
+: 1517253054:0;os-type
+: 1517253054:0;ostype
+: 1517253054:0;clang
+: 1517253054:0;which clang
+: 1517253054:0;c++
+: 1517253054:0;man clang
+: 1517253054:0;ls
+: 1517253054:0;cd cs302
+: 1517253054:0;cd labs
+: 1517253054:0;cd lab1
+: 1517253054:0;cd ~/old/cs302
+: 1517253054:0;cd labs
+: 1517253054:0;cd lab3
+: 1517253054:0;vim sort3a.cpp
+: 1517253054:0;ls
+: 1517253054:0;cd cs302ta
+: 1517253054:0;cd l
+: 1517253054:0;cd la
+: 1517253054:0;mkdir l
+: 1517253054:0;cd l
+: 1517253054:0;..
+: 1517253054:0;cd labs
+: 1517253054:0;cd lab1
+: 1517253054:0;mkdir mine
+: 1517253054:0;cp * mine
+: 1517253054:0;ls
+: 1517253054:0;mv * mine
+: 1517253054:0;mv -f * mine
+: 1517253054:0;ls
+: 1517253054:0;/home/cs302/labs/lab1/copy
+: 1517253054:0;ls
+: 1517253054:0;vim Quicksort.cpp
+: 1517253054:0;diff Quicksort.cpp list1.txt
+: 1517253054:0;echo $DESKTOP_SESSION
+: 1517253054:0;exit
+: 1517253054:0;ls
+: 1517253054:0;bio1
+: 1517253054:0;vim 7.py
+: 1517253054:0;python 7.py
+: 1517253054:0;vim 7.py
+: 1517253054:0;python 7.py
+: 1517253054:0;vim 7.py
+: 1517253054:0;python 7.py
+: 1517253054:0;vim 7.py
+: 1517253054:0;python 7.py
+: 1517253054:0;vim 7.py
+: 1517253054:0;python 7.py
+: 1517253054:0;vim 7.py
+: 1517253054:0;python 7.py
+: 1517253054:0;vim 7.py
+: 1517253054:0;python 7.py
+: 1517253054:0;vim 7.py
+: 1517253054:0;python 7.py
+: 1517253054:0;vim 7.py
+: 1517253054:0;python 7.py
+: 1517253054:0;vim 7.py
+: 1517253054:0;python 7.py
+: 1517253054:0;vim 7.py
+: 1517253054:0;python 7.py
+: 1517253054:0;vim 7.py
+: 1517253054:0;python 7.py
+: 1517253054:0;vim 7.py
+: 1517253054:0;python 7.py
+: 1517253054:0;vim 7.py
+: 1517253054:0;python 7.py
+: 1517253054:0;python 7.py
+: 1517253054:0;python 7.py
+: 1517253054:0;python 7.py
+: 1517253054:0;python 7.py | wc 
+: 1517253054:0;python 7.py | uniq -c
+: 1517253054:0;man uniq
+: 1517253054:0;python 7.py | sed 's/\(.\)/\1\n/g' | sort | uniq -c
+: 1517253054:0;python 7.py | sed 's/\(.\)/\1\n/g' | sort | uniq -c
+: 1517253054:0;python 7.py | sed 's/\(.\)/\1\n/g' | sort | uniq -c
+: 1517253054:0;python 7.py | sed 's/\(.\)/\1\n/g' | sort | uniq -c
+: 1517253054:0;python 7.py | sed 's/\(.\)/\1\n/g' | sort | uniq -c
+: 1517253054:0;vim 7.py
+: 1517253054:0;python 7.py | sed 's/\(.\)/\1\n/g' | sort | uniq -c
+: 1517253054:0;python 7.py | sed 's/\(.\)/\1\n/g' | sort | uniq -c
+: 1517253054:0;python 7.py | sed 's/\(.\)/\1\n/g' | sort | uniq -c
+: 1517253054:0;ls
+: 1517253054:0;vim report.txt
+: 1517253054:0;python 7.py >> report.txt
+: 1517253054:0;vim report.txt
+: 1517253054:0;ls
+: 1517253054:0;vim 7.py
+: 1517253054:0;python 7.py
+: 1517253054:0;zip
+: 1517253054:0;ls
+: 1517253054:0;tar -cfv RichardRiedelHomework1CS594.tar 1.txt 3.py 4.py 6_markov.py 6_multi.py 7.py human_mito.fasta lambda.fasta lambda.rev.fasta neander_sample.fasta report.txt
+: 1517253054:0;man tar
+: 1517253054:0;tar -cvf RichardRiedelHomework1CS594.tar 1.txt 3.py 4.py 6_markov.py 6_multi.py 7.py human_mito.fasta lambda.fasta lambda.rev.fasta neander_sample.fasta report.txt
+: 1517253054:0;ls
+: 1517253054:0;tar -t RichardRiedelHomework1CS594.tar
+: 1517253054:0;tar -tvf RichardRiedelHomework1CS594.tar
+: 1517253054:0;bio2
+: 1517253054:0;bio1
+: 1517253054:0;..
+: 1517253054:0;mkdir 2 3 4 5 6
+: 1517253054:0;bio2
+: 1517253054:0;ls
+: 1517253054:0;mv sequence.fasta fruitfly.fasta
+: 1517253054:0;mv sequence\ \(1\).fasta human.fasta
+: 1517253054:0;touch globalign.c
+: 1517253054:0;cp ~/linux/makefiles/makefile.new makefile
+: 1517253054:0;vim makefile
+: 1517253054:0;make
+: 1517253054:0;vim makefile
+: 1517253054:0;ls
+: 1517253054:0;ls
+: 1517253054:0;make
+: 1517253054:0;vim makefile
+: 1517253054:0;cp ~/linux/makefiles/makefile .
+: 1517253054:0;vim makefile
+: 1517253054:0;make
+: 1517253054:0;vim globalign.c
+: 1517253054:0;make
+: 1517253054:0;vim globalign.c
+: 1517253054:0;:wq
+: 1517253054:0;bio21
+: 1517253054:0;bio2
+: 1517253054:0;vim globalign.c
+: 1517253054:0;make
+: 1517253054:0;./globalign
+: 1517253054:0;cat globalign
+: 1517253054:0;clear
+: 1517253054:0;./globalign
+: 1517253054:0;cat human.fasta
+: 1517253054:0;vim globalign.c
+: 1517253054:0;make
+: 1517253054:0;./globalign
+: 1517253054:0;vim globalign.c
+: 1517253054:0;./globalign
+: 1517253054:0;vim globalign.c
+: 1517253054:0;make
+: 1517253054:0;./globalign
+: 1517253054:0;vim globalign.c
+: 1517253054:0;make
+: 1517253054:0;./globalign
+: 1517253054:0;vim globalign.c
+: 1517253054:0;./globalign
+: 1517253054:0;./globalign
+: 1517253054:0;make
+: 1517253054:0;./globalign
+: 1517253054:0;vim globalign.c
+: 1517253054:0;make
+: 1517253054:0;./globalign
+: 1517253054:0;vim globalign.c
+: 1517253054:0;make
+: 1517253054:0;vim globalign.c
+: 1517253054:0;make
+: 1517253054:0;./globalign
+: 1517253054:0;vim globalign.c
+: 1517253054:0;make
+: 1517253054:0;vim globalign.c
+: 1517253054:0;make
+: 1517253054:0;./globalign
+: 1517253054:0;gdb globalign
+: 1517253054:0;vim globalign.c
+: 1517253054:0;make
+: 1517253054:0;./globalign
+: 1517253054:0;vim globalign.c
+: 1517253054:0;make
+: 1517253054:0;./globalign
+: 1517253054:0;vim globalign.c
+: 1517253054:0;make
+: 1517253054:0;./globalign
+: 1517253054:0;gdb globalign
+: 1517253054:0;vim globalign.c
+: 1517253054:0;make
+: 1517253054:0;./globalign
+: 1517253054:0;vim globalign.c
+: 1517253054:0;make
+: 1517253054:0;./globalign
+: 1517253054:0;cat human.fasta
+: 1517253054:0;vim globalign.c
+: 1517253054:0;make
+: 1517253054:0;./globalign
+: 1517253054:0;vim globalign.c
+: 1517253054:0;ls
+: 1517253054:0;vim globalign.c
+: 1517253054:0;make
+: 1517253054:0;vim globalign.c
+: 1517253054:0;make
+: 1517253054:0;./globalign
+: 1517253054:0;ls
+: 1517253054:0;vim globalign.c
+: 1517253054:0;make
+: 1517253054:0;./globalign
+: 1517253054:0;vim globalign.c
+: 1517253054:0;make
+: 1517253054:0;./globalign
+: 1517253054:0;vim globalign.c
+: 1517253054:0;make
+: 1517253054:0;vim globalign.c
+: 1517253054:0;cd ~/old/cs360
+: 1517253054:0;cd labs
+: 1517253054:0;cd lab1
+: 1517253054:0;vim famtree.c
+: 1517253054:0;vim globalign.c
+: 1517253054:0;bio2
+: 1517253054:0;vim globalign.c
+: 1517253054:0;make
+: 1517253054:0;vim globalign.c
+: 1517253054:0;exit
+: 1517253054:0;bio2
+: 1517253054:0;ll
+: 1517253054:0;ll -a
+: 1517253054:0;vim string.c
+: 1517253054:0;rm .string.c.swp
+: 1517253054:0;vim globalign.c
+: 1517253054:0;rm .globalign.c.swp
+: 1517253054:0;vim globalign.c
+: 1517253054:0;exit
+: 1517253054:0;bio2
+: 1517253054:0;vim string.c
+: 1517253054:0;vim string.h
+: 1517253054:0;vim alignment.h
+: 1517253054:0;vim string.h
+: 1517253054:0;vim string.h
+: 1517253054:0;make
+: 1517253054:0;vim alignment.c
+: 1517253054:0;make
+: 1517253054:0;vim alignment.c
+: 1517253054:0;vim string.c
+: 1517253054:0;make
+: 1517253054:0;vim alignment.c
+: 1517253054:0;make
+: 1517253054:0;vim alignment.c
+: 1517253054:0;vim alignment.c
+: 1517253054:0;vim globalign.c
+: 1517253054:0;make
+: 1517253054:0;vim string.c
+: 1517253054:0;vim string.c
+: 1517253054:0;make
+: 1517253054:0;ls
+: 1517253054:0;vim makefile
+: 1517253054:0;make clean
+: 1517253054:0;ls
+: 1517253054:0;vim makefile
+: 1517253054:0;make
+: 1517253054:0;vim makefile
+: 1517253054:0;make
+: 1517253054:0;make clean
+: 1517253054:0;make
+: 1517253054:0;vim makefile
+: 1517253054:0;make
+: 1517253054:0;exit
+: 1517253054:0;ls
+: 1517253054:0;cd old/cs302/labs/lab3
+: 1517253054:0;vim sort3a.cpp
+: 1517253054:0;vim sort3a.cpp
+: 1517253054:0;ls
+: 1517253054:0;bio2
+: 1517253054:0;vim globalign.c
+: 1517253054:0;vim alignment.h
+: 1517253054:0;ls
+: 1517253054:0;bio2
+: 1517253054:0;vim file.h
+: 1517253054:0;vim file.c
+: 1517253054:0;vim alignemnt.h
+: 1517253054:0;:vim alignment.h
+: 1517253054:0;vim alignment.h
+: 1517253054:0;make
+: 1517253054:0;vim alignment.c
+: 1517253054:0;make
+: 1517253054:0;vim alignment.c
+: 1517253054:0;make
+: 1517253054:0;vim alignment.c
+: 1517253054:0;make
+: 1517253054:0;vim alignment.c
+: 1517253054:0;make
+: 1517253054:0;make clean
+: 1517253054:0;make
+: 1517253054:0;vim alignment.h
+: 1517253054:0;make
+: 1517253054:0;vim alignment.c
+: 1517253054:0;make
+: 1517253054:0;vim alignment.c
+: 1517253054:0;make
+: 1517253054:0;vim alignment.c
+: 1517253054:0;make
+: 1517253054:0;vim alignment.c
+: 1517253054:0;vim globalign.c
+: 1517253054:0;make
+: 1517253054:0;vim alignment.c
+: 1517253054:0;make
+: 1517253054:0;vim alignment.c
+: 1517253054:0;vim alignment.h
+: 1517253054:0;make
+: 1517253054:0;./globalign
+: 1517253054:0;vim globalign.c
+: 1517253054:0;vim alignment.c
+: 1517253054:0;vim makefile
+: 1517253054:0;gdb globalign
+: 1517253054:0;vim alignment.c
+: 1517253054:0;make
+: 1517253054:0;vim string.c
+: 1517253054:0;make
+: 1517253054:0;./globalign
+: 1517253054:0;gdb globalign
+: 1517253054:0;cat fruitfly.fasta
+: 1517253054:0;cat human.fasta
+: 1517253054:0;vim alignment.c
+: 1517253054:0;vim globalign.c
+: 1517253054:0;make
+: 1517253054:0;./globalign
+: 1517253054:0;vim string.c
+: 1517253054:0;vim string.c
+: 1517253054:0;make
+: 1517253054:0;vim string.c
+: 1517253054:0;make
+: 1517253054:0;vim string.c
+: 1517253054:0;make
+: 1517253054:0;vim string.c
+: 1517253054:0;make
+: 1517253054:0;./globalign
+: 1517253054:0;cat fruitfly.fasta | wc
+: 1517253054:0;cat fruitfly.fasta | wc -l
+: 1517253054:0;man wc
+: 1517253054:0;cat fruitfly.fasta | wc -m
+: 1517253054:0;awk '{ print length($0); }' fruitfly.fasta
+: 1517253054:0;vim string.c
+: 1517253054:0;make
+: 1517253054:0;./globalign
+: 1517253054:0;vim string.c
+: 1517253054:0;make
+: 1517253054:0;./globalign
+: 1517253054:0;vim string.c
+: 1517253054:0;make
+: 1517253054:0;./globalign
+: 1517253054:0;vim string.c
+: 1517253054:0;make
+: 1517253054:0;./globalign
+: 1517253054:0;vim globalign.c
+: 1517253054:0;make
+: 1517253054:0;./globalign
+: 1517253054:0;vim globalign.c
+: 1517253054:0;exit
+: 1517253054:0;bio2
+: 1517253054:0;vim globalign.c
+: 1517253054:0;vim alginment.c
+: 1517253054:0;vim alignment.
+: 1517253054:0;vim alignment.c
+: 1517253054:0;fg
+: 1517253054:0;exit
+: 1517253054:0;ls
+: 1517253054:0;bio2
+: 1517253054:0;vim alignment.c
+: 1517253054:0;exit
+: 1517253054:0;bio2
+: 1517253054:0;ls
+: 1517253054:0;vim alignment.c
+: 1517253054:0;vim globalign.c
+: 1517253054:0;make
+: 1517253054:0;vim alignment,c
+: 1517253054:0;vim alignment.c
+: 1517253054:0;make
+: 1517253054:0;vim alignment.c
+: 1517253054:0;make
+: 1517253054:0;vim alignment.c
+: 1517253054:0;vim alignment.h
+: 1517253054:0;vim globalign.c
+: 1517253054:0;make
+: 1517253054:0;./globalign
+: 1517253054:0;ls
+: 1517253054:0;vim alignment,c
+: 1517253054:0;vim globalign.c
+: 1517253054:0;vim alignment,c
+: 1517253054:0;vim alignment.c
+: 1517253054:0;make
+: 1517253054:0;vim alignment.c
+: 1517253054:0;make
+: 1517253054:0;./globalign
+: 1517253054:0;vim alignment.c
+: 1517253054:0;make
+: 1517253054:0;./globalign
+: 1517253054:0;vim alignment.c
+: 1517253054:0;make
+: 1517253054:0;./globalign
+: 1517253054:0;vim alignment.c
+: 1517253054:0;make
+: 1517253054:0;./globalign
+: 1517253054:0;vim alignment.c
+: 1517253054:0;make
+: 1517253054:0;./globalign
+: 1517253054:0;vim alignment.c
+: 1517253054:0;make
+: 1517253054:0;./globalign
+: 1517253054:0;vim alignment.c
+: 1517253054:0;make
+: 1517253054:0;vim alignment.c
+: 1517253054:0;make
+: 1517253054:0;./globalign
+: 1517253054:0;vim alignment.c
+: 1517253054:0;make
+: 1517253054:0;./globalign
+: 1517253054:0;./globalign > a
+: 1517253054:0;vim a
+: 1517253054:0;vim alignment.h
+: 1517253054:0;vim alignment.c
+: 1517253054:0;make
+: 1517253054:0;./globalign > a
+: 1517253054:0;vim a
+: 1517253054:0;ls
+: 1517253054:0;cp fruitfly.fasta temp.f
+: 1517253054:0;vim temp.f
+: 1517253054:0;vim human.fasta h.h
+: 1517253054:0;cp human.fasta h.f
+: 1517253054:0;vim h.f
+: 1517253054:0;vim globalign.c
+: 1517253054:0;make
+: 1517253054:0;./globalign
+: 1517253054:0;ls
+: 1517253054:0;vim globalign.c
+: 1517253054:0;vim globalign.c
+: 1517253054:0;make
+: 1517253054:0;./globalign
+: 1517253054:0;vim globalign.c
+: 1517253054:0;vim alignment.c
+: 1517253054:0;make
+: 1517253054:0;./globalign
+: 1517253054:0;head alignment.h
+: 1517253054:0;vim alignment.h
+: 1517253054:0;vim alignment.c
+: 1517253054:0;make
+: 1517253054:0;vim alignment.c
+: 1517253054:0;make
+: 1517253054:0;./globalign
+: 1517253054:0;vim alignment.c
+: 1517253054:0;make
+: 1517253054:0;./globalign
+: 1517253054:0;vim alignment.c
+: 1517253054:0;make
+: 1517253054:0;./globalign
+: 1517253054:0;vim alignment.c
+: 1517253054:0;make
+: 1517253054:0;./globalign
+: 1517253054:0;vim alignment.c
+: 1517253054:0;make
+: 1517253054:0;./globalign
+: 1517253054:0;vim alignment.c
+: 1517253054:0;make
+: 1517253054:0;./globalign
+: 1517253054:0;vim alignment.c
+: 1517253054:0;make
+: 1517253054:0;./globalign
+: 1517253054:0;vim alignment.c
+: 1517253054:0;vim alignment.c
+: 1517253054:0;make
+: 1517253054:0;vim alignment.c
+: 1517253054:0;make
+: 1517253054:0;./globalign
+: 1517253054:0;vim alignment.c
+: 1517253054:0;make
+: 1517253054:0;./globalign
+: 1517253054:0;vim alignment.c
+: 1517253054:0;make
+: 1517253054:0;./globalign
+: 1517253054:0;vim alignment.c
+: 1517253054:0;make
+: 1517253054:0;./globalign
+: 1517253054:0;ls
+: 1517253054:0;vim h.f
+: 1517253054:0;vim temp.f
+: 1517253054:0;make
+: 1517253054:0;./globalign
+: 1517253054:0;vim alignment.c
+: 1517253054:0;make
+: 1517253054:0;./globalign
+: 1517253054:0;vim alignment.c
+: 1517253054:0;make
+: 1517253054:0;./globalign
+: 1517253054:0;vim alignment.c
+: 1517253054:0;make
+: 1517253054:0;./globalign
+: 1517253054:0;exit
+: 1517253054:0;ls
+: 1517253054:0;bio2
+: 1517253054:0;exit
+: 1517253054:0;bio2
+: 1517253054:0;vim alignment.c
+: 1517253054:0;./globalign
+: 1517253054:0;vim alignment.c
+: 1517253054:0;make
+: 1517253054:0;./globalign
+: 1517253054:0;vim alignment.c
+: 1517253054:0;make
+: 1517253054:0;./globalign
+: 1517253054:0;vim alignment.c
+: 1517253054:0;vim globalign.c
+: 1517253054:0;vim alignment.c
+: 1517253054:0;make
+: 1517253054:0;./globalign
+: 1517253054:0;vim alignment.c
+: 1517253054:0;vim globalign.c
+: 1517253054:0;make
+: 1517253054:0;./globalign
+: 1517253054:0;vim globalign.c
+: 1517253054:0;make
+: 1517253054:0;./globalign
+: 1517253054:0;vim globalign.c
+: 1517253054:0;make
+: 1517253054:0;./globalign
+: 1517253054:0;vim globalign.c
+: 1517253054:0;make
+: 1517253054:0;./globalign
+: 1517253054:0;vim globalign.c
+: 1517253054:0;make
+: 1517253054:0;./globalign
+: 1517253054:0;vim globalign.c
+: 1517253054:0;make
+: 1517253054:0;./globalign
+: 1517253054:0;vim globalign.c
+: 1517253054:0;make
+: 1517253054:0;./globalign
+: 1517253054:0;exit
+: 1517253054:0;bio2
+: 1517253054:0;ls
+: 1517253054:0;cp localign.c
+: 1517253054:0;cp globalign.c localign.c
+: 1517253054:0;vim localign.c
+: 1517253054:0;vim alignment.c
+: 1517253054:0;vim alignment.h
+: 1517253054:0;vim globalign.c
+: 1517253054:0;make
+: 1517253054:0;vim makefile
+: 1517253054:0;vim makefile
+: 1517253054:0;make all
+: 1517253054:0;vim makefile
+: 1517253054:0;make
+: 1517253054:0;vim makefile
+: 1517253054:0;make
+: 1517253054:0;vim makefile
+: 1517253054:0;make
+: 1517253054:0;vim makefile
+: 1517253054:0;make
+: 1517253054:0;vim makefile
+: 1517253054:0;make
+: 1517253054:0;make clean
+: 1517253054:0;make
+: 1517253054:0;vim makefile
+: 1517253054:0;make
+: 1517253054:0;vim makefile
+: 1517253054:0;make
+: 1517253054:0;vim alignment.c
+: 1517253054:0;make
+: 1517253054:0;vim alignment.c
+: 1517253054:0;vim makefile
+: 1517253054:0;make
+: 1517253054:0;vim localign.c
+: 1517253054:0;vim alignment.c
+: 1517253054:0;vim localign.c
+: 1517253054:0;ls
+: 1517253054:0;make
+: 1517253054:0;./localign
+: 1517253054:0;vim localign.c
+: 1517253054:0;make
+: 1517253054:0;vim localign.c
+: 1517253054:0;make
+: 1517253054:0;vim makefile
+: 1517253054:0;make
+: 1517253054:0;vim alignment.c
+: 1517253054:0;make
+: 1517253054:0;make
+: 1517253054:0;vim makefile
+: 1517253054:0;make
+: 1517253054:0;make clean
+: 1517253054:0;make
+: 1517253054:0;vim makefile
+: 1517253054:0;make
+: 1517253054:0;make clean
+: 1517253054:0;make
+: 1517253054:0;vim makefile
+: 1517253054:0;make
+: 1517253054:0;vim makefile
+: 1517253054:0;make
+: 1517253054:0;make clean
+: 1517253054:0;make
+: 1517253054:0;vim makefile
+: 1517253054:0;make
+: 1517253054:0;vim makefile
+: 1517253054:0;vim makefile
+: 1517253054:0;vim makefile
+: 1517253054:0;make
+: 1517253054:0;vim makefile
+: 1517253054:0;make
+: 1517253054:0;vim makefile
+: 1517253054:0;make
+: 1517253054:0;vim makefile
+: 1517253054:0;make -v
+: 1517253054:0;make --help
+: 1517253054:0;make -d 
+: 1517253054:0;vim makefile
+: 1517253054:0;make
+: 1517253054:0;make -d
+: 1517253054:0;make clean
+: 1517253054:0;make
+: 1517253054:0;make clean
+: 1517253054:0;make -d
+: 1517253054:0;vim makefile
+: 1517253054:0;vim makefile
+: 1517253054:0;make
+: 1517253054:0;./localign
+: 1517253054:0;vim alignment.c
+: 1517253054:0;make
+: 1517253054:0;./localign
+: 1517253054:0;exit
+: 1517253054:0;bio2
+: 1517253054:0;vim alignment.c
+: 1517253054:0;make
+: 1517253054:0;vim alignment.c
+: 1517253054:0;make
+: 1517253054:0;./localign
+: 1517253054:0;vim localign.c
+: 1517253054:0;make
+: 1517253054:0;./localign
+: 1517253054:0;vim string.h
+: 1517253054:0;vim alignment.c
+: 1517253054:0;make
+: 1517253054:0;vim alignment.c
+: 1517253054:0;make
+: 1517253054:0;vim alignment.c
+: 1517253054:0;make
+: 1517253054:0;vim alignment.c
+: 1517253054:0;make
+: 1517253054:0;make
+: 1517253054:0;./localign
+: 1517253054:0;vim alignment,c
+: 1517253054:0;vim alignment.c
+: 1517253054:0;make
+: 1517253054:0;./localign
+: 1517253054:0;vim alignment.c
+: 1517253054:0;make
+: 1517253054:0;./localign
+: 1517253054:0;vim alignment.c
+: 1517253054:0;make
+: 1517253054:0;./localign
+: 1517253054:0;vim alignment.c
+: 1517253054:0;make
+: 1517253054:0;./localign
+: 1517253054:0;vim alignment.c
+: 1517253054:0;make
+: 1517253054:0;./localign
+: 1517253054:0;vim alignment.c
+: 1517253054:0;make
+: 1517253054:0;./localign
+: 1517253054:0;vim alignment.c
+: 1517253054:0;make
+: 1517253054:0;./localign
+: 1517253054:0;vim alignment.c
+: 1517253054:0;ls
+: 1517253054:0;ls
+: 1517253054:0;make 
+: 1517253054:0;make
+: 1517253054:0;vim makefile
+: 1517253054:0;make
+: 1517253054:0;make
+: 1517253054:0;make
+: 1517253054:0;vim makefile
+: 1517253054:0;make
+: 1517253054:0;make
+: 1517253054:0;ls
+: 1517253054:0;cp globalign.c egfalign.c
+: 1517253054:0;vim mka
+: 1517253054:0;vim makefile
+: 1517253054:0;make
+: 1517253054:0;vim make
+: 1517253054:0;vim makefile
+: 1517253054:0;make
+: 1517253054:0;make
+: 1517253054:0;        exit
+: 1517253054:0;bio2
+: 1517253054:0;cd old/cs302/labs/lab3
+: 1517253054:0;vim sort3a.cpp
+: 1517253054:0;exit
+: 1517253054:0;ls
+: 1517253054:0;ll
+: 1517253054:0;cd linux
+: 1517253054:0;git init
+: 1517253054:0;ls
+: 1517253054:0;git remote --help
+: 1517253054:0;git remote add origin https://github.com/Reprezent/linux-stuff.git
+: 1517253054:0;git remote -v
+: 1517253054:0;ls
+: 1517253054:0;git add linux_stuff.tar
+: 1517253054:0;LS
+: 1517253054:0;ls
+: 1517253054:0;cd makefiles
+: 1517253054:0;git commit -m "stuff"
+: 1517253054:0;git push origin master
+: 1517253054:0;git push origin master
+: 1517253054:0;ls
+: 1517253054:0;..
+: 1517253054:0;..
+: 1517253054:0;ll
+: 1517253054:0;ls
+: 1517253054:0;ls -a
+: 1517253054:0;vim .zshrc
+: 1517253054:0;cp .zshrc linux
+: 1517253054:0;cp .zsh.history linux
+: 1517253054:0;cp .zlogout linux
+: 1517253054:0;cp .zcompdump linux
+: 1517253054:0;cp -r .zsh linux
+: 1517253054:0;cp .vimrc linxu
+: 1517253054:0;cp .tmux.conf linux
+: 1517253054:0;cp -r .vim linux
+: 1517253054:0;cd linux
+: 1517253054:0;ll
+: 1517253054:0;ls -a
+: 1517253054:0;rm linux_stuff.tar
+: 1517253054:0;git rm linux_stuff.tar
+: 1517253054:0;git add *
+: 1517253054:0;ls
+: 1517253054:0;cd makefiles
+: 1517253054:0;git add *
+: 1517253054:0;..
+: 1517253054:0;git status
+: 1517253054:0;git add .*
+: 1517253054:0;ls
+: 1517253054:0;git status
+: 1517253054:0;git commit -m "try 2"
+: 1517253054:0;ls
+: 1517253054:0;git commit origin master
+: 1517253054:0;git push origin master
+: 1517253054:0;..
+: 1517253054:0;cd .ssh
+: 1517253054:0;vim environment
+: 1517253054:0;quit
+: 1517253054:0;logout
+: 1517253054:0;ls
+: 1517253054:0;ta_login cs302
+: 1517253054:0;ls
+: 1517253054:0;vim linxu
+: 1517253054:0;ll
+: 1517253054:0;cd linux
+: 1517253054:0;ll -a
+: 1517253054:0;cp ../.vimrc .
+: 1517253054:0;ls
+: 1517253054:0;ll -a
+: 1517253054:0;la
+: 1517253054:0;git add .vimrc
+: 1517253054:0;git commit -m "Added vim rc"
+: 1517253054:0;git commit
+: 1517253054:0;git push origin master
+: 1517253054:0;ls
+: 1517253054:0;..
+: 1517253054:0;vim .gitconfig
+: 1517253054:0;cp .gitconfig linux
+: 1517253054:0;cd linux
+: 1517253054:0;git add .gitconfig
+: 1517253054:0;git commit -m "Added git config"
+: 1517253054:0;git push origin master
+: 1517253054:0;ls
+: 1517253054:0;man gitk
+: 1517253054:0;gitk
+: 1517253054:0;exit
+: 1517253054:0;ls
+: 1517253054:0;top
+: 1517253054:0;ls
+: 1517253054:0;ta1
+: 1517253054:0;..
+: 1517253054:0;mkdir grading
+: 1517253054:0;..
+: 1517253054:0;chmod 700 labs
+: 1517253054:0;cd 1
+: 1517253054:0;ls
+: 1517253054:0;cd l
+: 1517253054:0;..
+: 1517253054:0;rm l
+: 1517253054:0;rmdir l
+: 1517253054:0;ls
+: 1517253054:0;cd labs
+: 1517253054:0;chmod 700 lab1
+: 1517253054:0;ls
+: 1517253054:0;cd grading
+: 1517253054:0;ls
+: 1517253054:0;..
+: 1517253054:0;..
+: 1517253054:0;..
+: 1517253054:0;cd old
+: 1517253054:0;cd cs340
+: 1517253054:0;ls
+: 1517253054:0;cd TeamSegfaults
+: 1517253054:0;cd test
+: 1517253054:0;cp * ~/cs302/labs/grading/.
+: 1517253054:0;ls
+: 1517253054:0;cd inputs
+: 1517253054:0;rm -f *
+: 1517253054:0;..
+: 1517253054:0;cd keys
+: 1517253054:0;rm *
+: 1517253054:0;..
+: 1517253054:0;cd outputs
+: 1517253054:0;..
+: 1517253054:0;cd tmep
+: 1517253054:0;cd temp
+: 1517253054:0;..
+: 1517253054:0;vim tmp
+: 1517253054:0;rm tmp
+: 1517253054:0;clean
+: 1517253054:0;make clan
+: 1517253054:0;make clean
+: 1517253054:0;ls
+: 1517253054:0;vim a
+: 1517253054:0;..
+: 1517253054:0;..
+: 1517253054:0;ta1`\
+`
+: 1517253054:0;ta1
+: 1517253054:0;..
+: 1517253054:0;cd grading
+: 1517253054:0;rm a
+: 1517253054:0;rm tmp
+: 1517253054:0;vim test_inputs.cpp
+: 1517253054:0;exit
+: 1517253054:0;ls
+: 1517253054:0;ta1
+: 1517253054:0;..
+: 1517253054:0;cd grading
+: 1517253054:0;./random_hex
+: 1517253054:0;vim radnom_hex.cpp
+: 1517253054:0;vim random_hex.cpp
+: 1517253054:0;vim test_inputs.cpp
+: 1517253054:0;man tar_open
+: 1517253054:0;man libtar
+: 1517253054:0;vim test_inputs.cpp
+: 1517253054:0;rm *.o
+: 1517253054:0;ls
+: 1517253054:0;vim test.cpp
+: 1517253054:0;rm test.cpp
+: 1517253054:0;ls
+: 1517253054:0;mkdir extra
+: 1517253054:0;vm gen_inputs.sh gen_keys.sh extra
+: 1517253054:0;mv gen_inputs.sh gen_keys.sh extra
+: 1517253054:0;ls
+: 1517253054:0;zsh --version
+: 1517253054:0;exit
+: 1517253054:0;ls
+: 1517253054:0;vim .zshrc
+: 1517253054:0;ls
+: 1517253054:0;git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
+: 1517253054:0;vim .zshrc
+: 1517253054:0;exit
+: 1517253054:0;ls
+: 1517253054:0;sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
+: 1517253054:0;exit
+: 1517250854:0;ls
+: 1517251017:0;cd .oh-my-zsh
+: 1517251019:0;cd themes
+: 1517251032:0;..
+: 1517251040:0;cd plugins
+: 1517251047:0;..
+: 1517251085:0;cd custom
+: 1517251087:0;cd themes
+: 1517251094:0;cd powerlevel9k
+: 1517251099:0;..
+: 1517251111:0;ls
+: 1517251120:0;l
+: 1517251121:0;ll
+: 1517251133:0;vim .zshrc
+: 1517251249:0;ls
+: 1517251261:0;getColorCode background
+: 1517251268:0;getColorCode foreground
+: 1517251420:0;ls
+: 1517251493:0;get_icon_names
+: 1517251718:0;ls
+: 1517251837:0;cd .oh-my-zsh
+: 1517251840:0;cd themes
+: 1517251841:0;..
+: 1517251843:0;cd custom
+: 1517251845:0;cd themes
+: 1517251847:0;cd powerlevel9k
+: 1517251880:0;vim powerlevel9k.zsh-theme
+: 1517251895:0;vim .zshrc
+: 1517251897:0;ls
+: 1517251898:0;~
+: 1517251901:0;vim .zshrc
+: 1517252587:0;ls
+: 1517252590:0;cd ece453
+: 1517252591:0;ls
+: 1517252593:0;vim hi
+: 1517252634:0;tar -cvf abc.tar hi
+: 1517252637:0;vim hi
+: 1517252647:0;vim abc.tar
+: 1517252655:0;tar -cvf abc.tar hi
+: 1517252658:0;vim abc.tar
+: 1517252761:0;vim hi
+: 1517252775:0;rm *
+: 1517252840:0;~
+: 1517252842:0;vim .zshrc
+: 1517252920:0;zsh
+: 1517252926:0;vim .zshrc
+: 1517252943:0;zsh
+: 1517252945:0;vim .zshrc
+: 1517252971:0;zsh
+: 1517252983:0;vim .zshrc
+: 1517253008:0;zsh
+: 1517253010:0;vim .zshrc
+: 1517253034:0;zsh
+: 1517253037:0;vim .zshrc
+: 1517253050:0;zsh
+: 1517253054:0;exit
+: 1517253062:0;top
+: 1517253067:0;exit
+: 1517253072:0;.zshrc
+: 1517253076:0;vim .zshrc
+: 1517253167:0;zsh
+: 1517253168:0;vim .zshrc
+: 1517253176:0;zsh
+: 1517253178:0;vim .zshrc
+: 1517253186:0;zsh
+: 1517253189:0;vim .zshrc
+: 1517253794:0;ls
+: 1517253795:0;cd .zsh
+: 1517253796:0;ls
+: 1517253798:0;ll
+: 1517253800:0;la
+: 1517253811:0;vim .zsh-oh-my-zsh.stuff
+: 1517253923:0;ls
+: 1517253924:0;la
+: 1517253935:0;mv .powerline9k.style .powerline9k
+: 1517254045:0;vim ../.zshrc
+: 1517254156:0;zsh
+: 1517254157:0;ls
+: 1517254158:0;ll
+: 1517254159:0;la
+: 1517254161:0;..
+: 1517254162:0;exit
+: 1517254182:0;cd .zsh
+: 1517254193:0;reload
+: 1517254201:0;ls
+: 1517254203:0;la
+: 1517254207:0;vim .powerline9k
+: 1517254289:0;ls
+: 1517254293:0;ssh hydra0
+: 1517254301:0;l
+: 1517254303:0;top
+: 1517254316:0;htop
+: 1517254471:0;exit
+: 1517254473:0;ls
+: 1517254566:0;..
+: 1517254576:0;cd linux
+: 1517254577:0;ls
+: 1517254578:0;ll
+: 1517254580:0;a
+: 1517254581:0;la
+: 1517254583:0;..
+: 1517254588:0;cd scripts
+: 1517254596:0;python terminalcolors.py
+: 1517254997:0;exit
+: 1517255997:0;ls
+: 1517256011:0;cd .zsh
+: 1517256012:0;ls
+: 1517256020:0;vim .powerline9k
+: 1517257725:0;..
+: 1517257728:0;cd .oh-my-zsh
+: 1517257730:0;cd custom
+: 1517257733:0;cd themes
+: 1517257734:0;ls
+: 1517257735:0;cd powerlevel9k
+: 1517257753:0;vim powerlevel9k.zsh-theme
+: 1517257770:0;cd shunit2
+: 1517257772:0;..
+: 1517257781:0;cd test
+: 1517257783:0;..
+: 1517257795:0;vim README.md
+: 1517257952:0;ls
+: 1517257953:0;..
+: 1517257954:0;~
+: 1517257956:0;cd .zsh
+: 1517257958:0;vim .powerline9k
+: 1517258906:0;ls
+: 1517258910:0;cd .zsh
+: 1517258913:0;vim .powerline9k
+: 1517258925:0;rm .powerline9k.swp
+: 1517258928:0;vim .powerline9k
+: 1517259220:0;zsh
+: 1517259222:0;vim .powerline9k
+: 1517259225:0;exit
+: 1517259228:0;source .powerline9k
+: 1517259229:0;ls
+: 1517259232:0;vim .powerline9k
+: 1517259589:0;cd .zsh
+: 1517259591:0;vim .powerline9k
+: 1517259901:0;..
+: 1517259906:0;source .zshrc
+: 1517259918:0;vim .zshrc
+: 1517260070:0;source .zshrc
+: 1517260099:0;vim .zshrc
+: 1517260105:0;cd .zsh
+: 1517260107:0;vim .powerline9k
+: 1517261005:0;source .powerline9k
+: 1517261011:0;vim .powerline9k
+: 1517261417:0;lspci
+: 1517261450:0;lspci -v
+: 1517261493:0;ls
+: 1517261513:0;exit
+: 1517261977:0;ls
+: 1517261977:0;s
+: 1517261980:0;cd .zsh
+: 1517261983:0;vim .powerline9k
+: 1517262965:0;getColorCode 'blue'
+: 1517262971:0;getColorCode '002'
+: 1517262980:0;getColorCode 'green'
+: 1517263000:0;getColorCode 'context'
+: 1517263005:0;getColorCode context
+: 1517263547:0;ls
+: 1517263556:0;sls
+: 1517263558:0;man ss
+: 1517263565:0;ls
+: 1517263592:0;ss
+: 1517263638:0;ls
+: 1517263649:0;exit
+: 1517263679:0;vim .powerline9k
+: 1517263791:0;source .powerline9k
+: 1517263916:0;ls
+: 1517264129:0;exit
+: 1517425214:0;ls
+: 1517425217:0;cd .vim
+: 1517425218:0;..
+: 1517425221:0;cd .zsh
+: 1517425223:0;la
+: 1517425225:0;vim .powerline9k
+: 1517425259:0;source .powerline9k
+: 1517425263:0;zsh
+: 1517425267:0;exit
+: 1517425269:0;vim .powerline9k
+: 1517425306:0;source .powerline9k
+: 1517425307:0;zsh
+: 1517425314:0;exit
+: 1517425317:0;vim .powerline9k
+: 1517425377:0;echo $POWERLEVEL9K_LEFT_PROMPT_ELEMENTS
+: 1517425421:0;vim .powerline9k
+: 1517425540:0;vim .zshrc
+: 1517425543:0;ls
+: 1517425544:0;..
+: 1517425546:0;vim .zshrc
+: 1517425553:0;cd .zsh
+: 1517425558:0;la
+: 1517425562:0;vim .zsh-oh-my-zsh.stuff
+: 1517425625:0;ls
+: 1517425631:0;vim .powerline9k
+: 1517425636:0;zsh
+: 1517425646:0;getColorCode white
+: 1517425656:0;vim .zsh.aliases
+: 1517425660:0;colors
+: 1517425667:0;vim .zsh.aliases
+: 1517425690:0;ls
+: 1517425697:0;cd scripts
+: 1517425716:0;source .zsh.aliases
+: 1517425724:0;colors
+: 1517425738:0;vim .powerline9k
+: 1517425741:0;zsh
+: 1517425754:0;exit
+: 1517425759:0;zsh
+: 1517425773:0;zsha
+: 1517425780:0;zsh
+: 1517425785:0;termcolors
+: 1517425788:0;ls
+: 1517425789:0;zsh
+: 1517425792:0;vim .powerline9k
+: 1517425805:0;zsh
+: 1517425806:0;vim .powerline9k
+: 1517425846:0;ls
+: 1517425888:0;zsh
+: 1517425996:0;echo $POWERLEVEL9K_CONTEXT_TEMPLATE
+: 1517426027:0;vim .powerline9k
+: 1517426046:0;zsh
+: 1517426057:0;vim .powerline9k
+: 1517426095:0;zsh
+: 1517426098:0;vim .powerline9k
+: 1517426111:0;zsh
+: 1517426149:0;echo $POWERLEVEL_RIGHT_PROMPT_ELEMENTS
+: 1517426187:0;echo $POWERLEVEL9K_HISTORY
+: 1517426192:0;echo $POWERLEVEL9K_HISTORY_BACKGROUND
+: 1517426198:0;echo $POWERLEVEL9K_HISTORY_FOREGROUND
+: 1517426213:0;echo $POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS
+: 1517426526:0;echo $POWERLEVEL9K_HISTORY_BACKGROUNDls
+: 1517426529:0;llsdxit
+: 1517426530:0;exit
+: 1517426542:0;ls
+: 1517426545:0;.zsh
+: 1517426547:0;vim .powerline9k
+: 1517426563:0;zsh
+: 1517426569:0;vim .powerline9k
+: 1517426676:0;zsh
+: 1517426681:0;vim .powerline9k
+: 1517426829:0;zsh
+: 1517426831:0;vim .powerline9k
+: 1517426845:0;zsh
+: 1517426847:0;vim .powerline9k
+: 1517426868:0;zsh
+: 1517426873:0;vim .powerline9k
+: 1517426888:0;zsh
+: 1517426890:0;exit
+: 1517426895:0;vim .powerline9k
+: 1517427184:0;zsh
+: 1517427199:0;..
+: 1517427212:0;vim .powerline9k
+: 1517427216:0;cd .zsh
+: 1517427218:0;vim .powerline9k
+: 1517427245:0;zsh
+: 1517427248:0;..
+: 1517427253:0;cd test
+: 1517427254:0;..
+: 1517427263:0;cd src
+: 1517427267:0;cd rLog
+: 1517427290:0;..
+: 1517427293:0;cd .zsh
+: 1517427295:0;vim .powerline9k
+: 1517427416:0;zsh
+: 1517427417:0;ls
+: 1517427419:0;..
+: 1517427420:0;cd webhome
+: 1517427422:0;..
+: 1517427427:0;cd linux
+: 1517427439:0;..
+: 1517427444:0;cd .vim
+: 1517427446:0;..
+: 1517427452:0;cd .zsh
+: 1517427456:0;vim .powerline9k
+: 1517427476:0;zsh
+: 1517427477:0;..
+: 1517427478:0;cd linux
+: 1517427483:0;exit
+: 1517427486:0;vim .powerline9k
+: 1517427542:0;zsh
+: 1517427543:0;..
+: 1517427544:0;cd linux
+: 1517427550:0;exit
+: 1517427551:0;zsh
+: 1517427553:0;exit
+: 1517427556:0;vim .powerline9k
+: 1517427565:0;zsh
+: 1517427568:0;cd ../linux
+: 1517427585:0;exit
+: 1517427588:0;vim .powerline9k
+: 1517427615:0;zsh
+: 1517427618:0;cd ../linux
+: 1517427624:0;touch hello
+: 1517427641:0;vim ~/.zsh/.powerline9k
+: 1517427654:0;git add hello
+: 1517427662:0;git remove hello
+: 1517427666:0;git rm hello
+: 1517427674:0;git rm -f hello
+: 1517428098:0;vim ~/.zsh/.powerline9k
+: 1517428118:0;zsh
+: 1517428127:0;exit
+: 1517428131:0;vim ~/.zsh/.powerline9k
+: 1517428195:0;zsh
+: 1517428340:0;vim ~/.zsh/.powerline9k
+: 1517428353:0;zsh
+: 1517428360:0;vim ~/.zsh/.powerline9k
+: 1517428369:0;zsh
+: 1517428372:0;vim ~/.zsh/.powerline9k
+: 1517428407:0;zsh
+: 1517428415:0;vim ~/.zsh/.powerline9k
+: 1517428423:0;zsh
+: 1517428450:0;vim ~/.zsh/.powerline9k
+: 1517428459:0;zsh
+: 1517428465:0;vim ~/.zsh/.powerline9k
+: 1517428473:0;termcolors
+: 1517428532:0;..
+: 1517428536:0;%
+: 1517428558:0;vim .zsh/.powerline9k
+: 1517428584:0;zsh
+: 1517428586:0;ls
+: 1517428595:0;vim .zsh/.powerline9k
+: 1517429387:0;termcolors
+: 1517429405:0;zsh
+: 1517429406:0;ls
+: 1517429410:0;vim .zsh/.powerline9k
+: 1517429418:0;zsh
+: 1517429423:0;vim .zsh/.powerline9k
+: 1517429430:0;zsh
+: 1517429432:0;ls
+: 1517429436:0;vim .zsh/.powerline9k
+: 1517429446:0;zsh
+: 1517429450:0;vim .zsh/.powerline9k
+: 1517429460:0;zsh
+: 1517429463:0;ls
+: 1517429466:0;cd linux
+: 1517429480:0;..
+: 1517429494:0;vim .zsh/.powerline9k
+: 1517429513:0;zsh
+: 1517429517:0;cd test
+: 1517429519:0;..
+: 1517429545:0;vim .zsh/.powerline9k
+: 1517429572:0;zsh
+: 1517429919:0;vim .zsh/.powerline9k
+: 1517429930:0;zsh
+: 1517429933:0;ls
+: 1517429935:0;cd linux
+: 1517429941:0;..
+: 1517429949:0;vim .zsh/.powerline9k
+: 1517429957:0;zsh
+: 1517429961:0;vim .zsh/.powerline9k
+: 1517429975:0;zsh
+: 1517429979:0;ls
+: 1517429987:0;vim .zsh/.powerline9k
+: 1517429998:0;zsh
+: 1517430001:0;vim .zsh/.powerline9k
+: 1517430018:0;zsh
+: 1517430021:0;ls
+: 1517430023:0;vim .zsh/.powerline9k
+: 1517430042:0;zsh
+: 1517430046:0;vim .zsh/.powerline9k
+: 1517430067:0;zsh
+: 1517430069:0;vim .zsh/.powerline9k
+: 1517430080:0;zsh
+: 1517430083:0;ls
+: 1517430092:0;cd linux
+: 1517430102:0;..
+: 1517430104:0;vim .zsh/.powerline9k
+: 1517430113:0;zsh
+: 1517430115:0;ls
+: 1517430118:0;cd zsh
+: 1517430125:0;cd linux
+: 1517430158:0;termcolors
+: 1517430167:0;vim .zsh/.powerline9k
+: 1517430170:0;..
+: 1517430172:0;vim .zsh/.powerline9k
+: 1517430179:0;zsh
+: 1517430228:0;vim .zsh/.powerline9k
+: 1517430234:0;zsh
+: 1517430381:0;vim .zsh/.powerline9k
+: 1517430389:0;zsh
+: 1517430392:0;ls
+: 1517430394:0;vim .zsh/.powerline9k
+: 1517430468:0;exit
+: 1517430481:0;!
+: 1517430487:0;exit
+: 1517430498:0;e
+: 1517430500:0;exit
+: 1517430531:0;ls
+: 1517430535:0;cd linux
+: 1517430559:0;..
+: 1517430561:0;vim .zsh/.powerline9k
+: 1517430576:0;zsh
+: 1517430579:0;ls
+: 1517430582:0;cd linux
+: 1517430594:0;termcolors
+: 1517430601:0;..
+: 1517430603:0;vim .zsh/.powerline9k
+: 1517430616:0;zsh
+: 1517430618:0;ls
+: 1517430623:0;cd linux
+: 1517430642:0;echo $POWERLEVEL9K_LEFT_PROMPT_ELEMENTS
+: 1517430814:0;..
+: 1517430818:0;cd scripts
+: 1517430821:0;mkdir todo
+: 1517431531:0;ls
+: 1517431533:0;cd todo
+: 1517432113:0;wget https://github.com/todotxt/todo.txt-cli/releases/download/v2.10.0/todo.txt_cli-2.10.tar.gz
+: 1517432115:0;ls
+: 1517432131:0;tar -xvf todo.txt_cli-2.10.tar.gz
+: 1517432132:0;ls
+: 1517432135:0;cd todo.txt_cli-2.10
+: 1517432139:0;vim todo.cfg
+: 1517432225:0;ls
+: 1517432238:0;./todo.sh
+: 1517432239:0;ls
+: 1517432242:0;sh todo.sh
+: 1517432246:0;sh todo.sh -h
+: 1517432270:0;ls
+: 1517432273:0;vim todo.cfg
+: 1517432342:0;ls
+: 1517432344:0;cp * ..
+: 1517432345:0;ls
+: 1517432348:0;..
+: 1517432356:0;rm -r todo.txt*
+: 1517432356:0;ls
+: 1517432360:0;zsha
+: 1517432396:0;..
+: 1517432398:0;zsh
+: 1517432400:0;todo
+: 1517432401:0;todo ls
+: 1517432405:0;todo add Hello
+: 1517432407:0;todo ls
+: 1517432412:0;todo d 1
+: 1517432416:0;todo -h
+: 1517432427:0;todo do 1
+: 1517432451:0;vim scripts/todo/todo.sh
+: 1517432476:0;cd scripts
+: 1517432477:0;cd todo
+: 1517432480:0;vim done.txt
+: 1517432489:0;vim todo.cfg
+: 1517432541:0;vim todo.sh
+: 1517432558:0;todo do Hello
+: 1517432561:0;todo do 1
+: 1517432567:0;todo do 2
+: 1517432572:0;todo ad what
+: 1517432576:0;todo a what
+: 1517432579:0;todo do 2
+: 1517432925:0;vim todo.sh
+: 1517432948:0;..
+: 1517432951:0;mkdir .todo
+: 1517432953:0;cd .todo
+: 1517433061:0;ls
+: 1517433061:0;s
+: 1517433061:0;ls
+: 1517433064:0;..
+: 1517433067:0;la
+: 1517433072:0;cd scripts
+: 1517433073:0;cd todo
+: 1517433088:0;cp todo.cfg ~/.todo
+: 1517433090:0;..
+: 1517433094:0;cd rridel1
+: 1517433096:0;cd rriedel1
+: 1517433099:0;cd .todo
+: 1517433103:0;mv todo.cfg config
+: 1517433103:0;..
+: 1517433109:0;todo add what
+: 1517433112:0;todo do 3
+: 1517433118:0;ls
+: 1517433174:0;cd .todo
+: 1517433177:0;rm config
+: 1517433178:0;..
+: 1517433181:0;rmdir .todo
+: 1517433182:0;cd scripts
+: 1517433184:0;cd todo
+: 1517433187:0;sh todo.sh
+: 1517433193:0;chmod +x todo.sh
+: 1517433195:0;./todo.sh
+: 1517433211:0;ls
+: 1517433212:0;zsha
+: 1517433236:0;todo add what
+: 1517433240:0;todo do 4
+: 1517433247:0;vim todo.sh
+: 1517433253:0;ls
+: 1517433261:0;todo -h
+: 1517433271:0;todo rm 4
+: 1517433274:0;todo rm 3
+: 1517433902:0;ta_login cs302
+: 1517435457:0;ls
+: 1517435590:0;..
+: 1517435593:0;cd .vim
+: 1517435594:0;..
+: 1517435596:0;vim .vimrc
+: 1517435611:0;vim .viminfo
+: 1517435614:0;vim .vimrc
+: 1517435644:0;vim -R /etc/vim/vimrc
+: 1517435650:0;ls /etc/vim
+: 1517435847:0;exit
+: 1517436495:0;ac
+: 1517436498:0;man ac
+: 1517436511:0;exit
+: 1517436779:0;bio2
+: 1517436781:0;ls
+: 1517436786:0;./egfalign
+: 1517438593:0;exit
+: 1517461120:0;ls
+: 1517461127:0;cd cs302
+: 1517461128:0;ls
+: 1517461129:0;cd labs
+: 1517461131:0;cd grading
+: 1517461137:0;mkdir lab1
+: 1517461140:0;mv * lab1
+: 1517461140:0;ls
+: 1517461142:0;cd lab1
+: 1517461182:0;vim test_inputs.cpp
+: 1517463261:0;touch a b c d 
+: 1517463271:0;tar -cvf abc.tar a b c d
+: 1517463276:0;vim test_inputs.cpp
+: 1517463395:0;make
+: 1517463413:0;vim makefile
+: 1517463441:0;vim test_inputs.cpp
+: 1517463509:0;make
+: 1517463523:0;man popen
+: 1517463552:0;vim test_inputs.cpp
+: 1517463569:0;make
+: 1517463583:0;vim test_inputs.cpp
+: 1517463650:0;make
+: 1517463662:0;vim test_inputs.cpp
+: 1517463670:0;make
+: 1517463675:0;vim test_inputs.cpp
+: 1517463683:0;make
+: 1517463686:0;./test_inputs
+: 1517463702:0;gdb test_inputs
+: 1517463733:0;ls
+: 1517463740:0;tar -tvf abc.tar
+: 1517463749:0;tar -tf abc.tar
+: 1517463757:0;vim test_inputs.cpp
+: 1517464015:0;make
+: 1517464019:0;./test_inputs
+: 1517464029:0;vim test_inputs.cpp
+: 1517464050:0;make
+: 1517464052:0;./test_inputs
+: 1517464058:0;vim test_inputs.cpp
+: 1517464396:0;make
+: 1517464399:0;vim test_inputs.cpp
+: 1517464414:0;fg
+: 1517464420:0;make
+: 1517464424:0;vim test_inputs.cpp
+: 1517464434:0;make
+: 1517464440:0;./test_inputs
+: 1517464477:0;vim test_inputs
+: 1517464480:0;vim test_inputs.cpp
+: 1517464489:0;make
+: 1517464491:0;./test_inputs
+: 1517464499:0;vim test_inputs.cpp
+: 1517464519:0;make
+: 1517464521:0;./test_inputs
+: 1517464525:0;vim test_inputs.cpp
+: 1517464587:0;make
+: 1517464589:0;./test_inputs
+: 1517464597:0;tar -tf abc.tar
+: 1517464606:0;vim test_inputs.cpp
+: 1517464630:0;make
+: 1517464633:0;./test_inputs
+: 1517464641:0;vim test_inputs.cpp
+: 1517464679:0;make
+: 1517464681:0;./test_inputs
+: 1517464685:0;vim test_inputs.cpp
+: 1517464821:0;make
+: 1517464824:0;vim test_inputs.cpp
+: 1517464829:0;make
+: 1517464832:0;./test_inputs
+: 1517465112:0;ls
+: 1517465226:0;vim test_inputs
+: 1517465229:0;vim test_inputs.cpp
+: 1517465521:0;man file
+: 1517465530:0;ls
+: 1517465532:0;vim py.py
+: 1517465536:0;file py.py
+: 1517465540:0;vim py.py
+: 1517465555:0;file py.py
+: 1517465577:0;file random_hex.cpp
+: 1517465582:0;file random_hex
+: 1517465735:0;man file
+: 1517465752:0;man magic
+: 1517465759:0;man man
+: 1517465802:0;man file
+: 1517466241:0;exit
+: 1517508829:0;ls
+: 1517508832:0;bio1
+: 1517508844:0;tar -tf RichardRiedelHomework1CS594.tar
+: 1517508850:0;vim 1.txt
+: 1517508919:0;ls
+: 1517508927:0;logout
+: 1517517374:0;/home/cs302/labs/lab2/copy
+: 1517517381:0;ta2
+: 1517517385:0;vim Sort_slist.cpp
+: 1517517642:0;exit
+: 1517517665:0;ls
+: 1517517672:0;exit
+: 1517517734:0;ls
+: 1517517736:0;ta2
+: 1517517738:0;..
+: 1517517741:0;cd grading
+: 1517517743:0;cd lab1
+: 1517517746:0;vim test_inputs.cpp
+: 1517517799:0;exit
+: 1517517884:0;ls
+: 1517517894:0;ta1
+: 1517517903:0;../grading
+: 1517517906:0;cdlab1
+: 1517517907:0;lab1
+: 1517517911:0;vim test_inputs.cpp
+: 1517519830:0;make
+: 1517519904:0;vim test_inputs.cpp
+: 1517519954:0;make
+: 1517519960:0;./test_inputs
+: 1517520025:0;vim test_inputs.cpp
+: 1517520062:0;vimrc
+: 1517520064:0;~
+: 1517520069:0;vim .vimrc
+: 1517521249:0;ls
+: 1517521251:0;la
+: 1517521255:0;vim .zsh-update
+: 1517521270:0;cd .zsh
+: 1517521271:0;la
+: 1517521275:0;..
+: 1517521277:0;la
+: 1517521280:0;vim .zsh.history
+: 1517521295:0;vim .zsh_history
+: 1517521301:0;rm .zsh_history
+: 1517521305:0;rm .zsh.history
+: 1517521309:0;vim .zlogout
+: 1517521323:0;chmod 600 .zlogout
+: 1517521323:0;ls
+: 1517521324:0;la
+: 1517521362:0;ls
+: 1517521365:0;ta1
+: 1517521366:0;..
+: 1517521367:0;cd grading
+: 1517521369:0;cd lab1
+: 1517521373:0;vim test_inputs.cpp
+: 1517521382:0;vim test_inputs
+: 1517521384:0;vim test_inputs.cpp
+: 1517521514:0;man dd
+: 1517521584:0;ls
+: 1517521588:0;vim test_inputs.cpp
+: 1517522626:0;ls
+: 1517522628:0;git init
+: 1517522629:0;ls
+: 1517522648:0;git add random_hex.cpp test_inputs.cpp makefile
+: 1517522651:0;cd extra
+: 1517522654:0;..
+: 1517522662:0;git commit -m "First commit of stuff"
+: 1517523015:0;vim test.cpp
+: 1517523075:0;g++ -o t test.cpp
+: 1517523116:0;vim test.cpp
+: 1517523172:0;g++ -o t test.cpp
+: 1517523386:0;vim test.cpp
+: 1517523393:0;g++ -o t test.cpp
+: 1517523405:0;g++ -std=c++11 -o t test.cpp
+: 1517523407:0;vim test.cpp
+: 1517523489:0;g++ -std=c++11 -o t test.cpp
+: 1517523492:0;./t
+: 1517523539:0;vim test.cpp
+: 1517523878:0;g++ -std=c++11 -o t test.cpp
+: 1517523885:0;./t
+: 1517523888:0;vim test.cpp
+: 1517524024:0;g++ -std=c++11 -o t test.cpp
+: 1517524026:0;./t
+: 1517524032:0;vim test.cpp
+: 1517524046:0;g++ -std=c++11 -o t test.cpp
+: 1517524048:0;./t
+: 1517524050:0;vim test.cpp
+: 1517524058:0;g++ -std=c++11 -o t test.cpp
+: 1517524060:0;./t
+: 1517524347:0;vim test_inputs.cpp
+: 1517525064:0;ls
+: 1517525066:0;git status
+: 1517525074:0;git add test_inputs.cpp
+: 1517525080:0;git commit -m "Comments"
+: 1517525084:0;vim test_inputs.cpp
+: 1517525230:0;git add test_inputs.cpp
+: 1517525241:0;git commit -m "More comments"
+: 1517525246:0;vim test_inputs.cpp
+: 1517525392:0;man inotifywait
+: 1517525395:0;inotifywait
+: 1517525429:0;inotify
+: 1517525649:0;vim test_inputs.cpp
+: 1517526283:0;make
+: 1517526290:0;vim test_inputs.cpp
+: 1517526338:0;cppman 
+: 1517526372:0;vim test_inputs.cpp
+: 1517526395:0;make
+: 1517526735:0;make 2> err
+: 1517526737:0;vim err
+: 1517526807:0;vim test_inputs.cpp
+: 1517526862:0;make
+: 1517526865:0;vim test_inputs.cpp
+: 1517526908:0;make
+: 1517526911:0;vim test_inputs.cpp
+: 1517526926:0;make
+: 1517527010:0;./test_inputs
+: 1517527025:0;rm random_hex
+: 1517527026:0;./test_inputs
+: 1517527531:0;gist
+: 1517527546:0;git status
+: 1517527552:0;git add test_inputs.cpp
+: 1517527572:0;git diff test_inputs.cpp
+: 1517527608:0;git diff HEAD test_inputs.cpp
+: 1517527635:0;git commit -m "Fixed compiler errors, added a run make command"
+: 1517527637:0;ls
+: 1517527666:0;vim test_inputs.cpp
+: 1517527670:0;la
+: 1517527692:0;vim .gitignore
+: 1517527701:0;ls
+: 1517527707:0;git status
+: 1517527716:0;git add .gitignore
+: 1517527717:0;ls
+: 1517527727:0;git commit -m "Added c plus plus gitignore"
+: 1517527748:0;vim test_inputs.cpp
+: 1517529211:0;make
+: 1517529335:0;vim test_inputs.cpp
+: 1517529367:0;make
+: 1517529382:0;make 2> err
+: 1517529383:0;vim err
+: 1517529405:0;man stat
+: 1517529414:0;man stat 3
+: 1517529424:0;man 3 stat
+: 1517529433:0;vim test_inputs.cpp
+: 1517529444:0;make
+: 1517529459:0;tmux
+: 1517529498:0;tmux -a
+: 1517529503:0;tmux a
+: 1517529513:0;ls
+: 1517529535:0;make
+: 1517529557:0;tmux
+: 1517529561:0;ls
+: 1517529567:0;make
+: 1517529576:0;vim test_inputs.cpp
+: 1517529656:0;make
+: 1517529682:0;make | less
+: 1517529694:0;make 2| less
+: 1517529740:0;make 2>&1 > /dev/null | less
+: 1517529846:0;make
+: 1517530059:0;vim test_inputs.cpp
+: 1517530075:0;make
+: 1517530104:0;vim test_inputs.cpp
+: 1517530106:0;make
+: 1517530528:0;ls
+: 1517530542:0;git add test_inputs.cpp
+: 1517530606:0;git commit -m "Added templated map difference. Gets the difference between two passed maps of the same type and returns them. The difference can be either in thier keys or val for the keys"
+: 1517530608:0;ls
+: 1517534839:0;exit
+: 1517534861:0;test_inputs.cpp:273:22: error: â€ƒ¸Tkeyâ€ƒ¹ was not declared in this scope
+: 1517534861:0;test_inputs.cpp:273:35: error: invalid use of qualified-name â€ƒ¸::value_typeâ€ƒ¹
+: 1517534861:0;test_inputs.cpp:273:45: error: expected â€ƒ¸;â€ƒ¹ before â€ƒ¸&â€ƒ¹ token
+: 1517534862:0;test_inputs.cpp:273:47: error: expected primary-expression before â€ƒ¸:â€ƒ¹ token
+: 1517534862:0;test_inputs.cpp:273:47: error: expected â€ƒ¸;â€ƒ¹ before â€ƒ¸:â€ƒ¹ token
+: 1517534862:0;test_inputs.cpp:273:47: error: expected primary-expression before â€ƒ¸:â€ƒ¹ token
+: 1517534862:0;test_inputs.cpp:273:47: error: expected â€ƒ¸)â€ƒ¹ before â€ƒ¸:â€ƒ¹ token
+: 1517534862:0;test_inputs.cpp:273:47: error: expected primary-expression before â€ƒ¸:â€ƒ¹ token
+: 1517534862:0;test_inputs.cpp:273:47: error: expected â€ƒ¸;â€ƒ¹ before â€ƒ¸:â€ƒ¹ token
+: 1517534865:0;test_inputs.cpp:273:22: error: â€ƒ¸Tkeyâ€ƒ¹ was not declared in this scope
+: 1517534865:0;test_inputs.cpp:273:35: error: invalid use of qualified-name â€ƒ¸::value_typeâ€ƒ¹
+: 1517534865:0;test_inputs.cpp:273:45: error: expected â€ƒ¸;â€ƒ¹ before â€ƒ¸&â€ƒ¹ token
+: 1517534865:0;test_inputs.cpp:273:47: error: expected primary-expression before â€ƒ¸:â€ƒ¹ token
+: 1517534865:0;test_inputs.cpp:273:47: error: expected â€ƒ¸;â€ƒ¹ before â€ƒ¸:â€ƒ¹ token
+: 1517534865:0;test_inputs.cpp:273:47: error: expected primary-expression before â€ƒ¸:â€ƒ¹ token
+: 1517534865:0;test_inputs.cpp:273:47: error: expected â€ƒ¸)â€ƒ¹ before â€ƒ¸:â€ƒ¹ token
+: 1517534865:0;test_inputs.cpp:273:47: error: expected primary-expression before â€ƒ¸:â€ƒ¹ token
+: 1517534865:0;test_inputs.cpp:273:47: error: expected â€ƒ¸;â€ƒ¹ before â€ƒ¸:â€ƒ¹ token
+: 1517534871:0;tmux a
+: 1517535617:0;vim test_inputs.cpp
+: 1517535840:0;make
+: 1517536034:0;vim test_inputs.cpp
+: 1517536036:0;make
+: 1517536222:0;vim test_inputs.cpp
+: 1517536507:0;make
+: 1517536521:0;man make
+: 1517536578:0;make
+: 1517536590:0;ta1../
+: 1517536593:0;ta1
+: 1517536596:0;../grading
+: 1517536597:0;lab1
+: 1517536598:0;make
+: 1517536609:0;make | less
+: 1517536625:0;make 2>&1 | less
+: 1517536650:0;tmux a
+: 1517536665:0;make
+: 1517536729:0;vim test_inputs.cpp
+: 1517536731:0;make
+: 1517537671:0;vim test_inputs.cpp
+: 1517537672:0;make
+: 1517537908:0;vim test_inputs.cpp
+: 1517537938:0;make
+: 1517537950:0;vim test_inputs.cpp
+: 1517537963:0;make
+: 1517538805:0;vim test_inputs.cpp
+: 1517538832:0;make
+: 1517538840:0;vim test_inputs.cpp
+: 1517538882:0;make
+: 1517538904:0;make 2>&1 | less
+: 1517539116:0;vim test_inputs.cpp
+: 1517539117:0;make
+: 1517539121:0;make 2>&1 | less
+: 1517539166:0;wmake
+: 1517539167:0;make
+: 1517539354:0;make 2>&1 | less
+: 1517539577:0;make
+: 1517539969:0;vim test_inputs.cpp
+: 1517539983:0;make
+: 1517540155:0;git add test_inputs.cpp
+: 1517540170:0;git commit -m "Overcomplicated templates, amde them simpler"
+: 1517540465:0;make
+: 1517540470:0;./test_inputs
+: 1517540477:0;ls
+: 1517540480:0;rm random_hex
+: 1517540502:0;make
+: 1517540507:0;rm random_hex
+: 1517540510:0;./test_inputs
+: 1517540583:0;vim test_inputs.cpp
+: 1517540585:0;make
+: 1517540592:0;rm random_hex
+: 1517540597:0;vim makefile
+: 1517540612:0;make
+: 1517540616:0;./test_inputs
+: 1517540700:0;vim test_inputs.cpp
+: 1517540702:0;make
+: 1517540704:0;./test_inputs
+: 1517540729:0;make
+: 1517540731:0;./test_inputs
+: 1517540757:0;make
+: 1517540759:0;./test_inputs
+: 1517540767:0;rm random_hex
+: 1517540771:0;./test_inputs
+: 1517541410:0;make
+: 1517541427:0;./test_inputs
+: 1517541431:0;rm random_hex
+: 1517541434:0;make
+: 1517541436:0;./test_inputs
+: 1517541916:0;vim test_inputs.cpp
+: 1517541918:0;make
+: 1517541962:0;ls
+: 1517541970:0;git diff HEAD test_inputs.cpp
+: 1517541987:0;git add test_inputs.cpp
+: 1517542010:0;git commit -m "Fixed map_difference, and added a function to check fi the student has a makefile present"
+: 1517542011:0;ls
+: 1517542296:0;man tar
+: 1517542476:0;tar -xvf abc.tar --exclude="a" --exclude="b"
+: 1517542619:0;exit
+: 1517544953:0;ls
+: 1517544993:0;tmux
+: 1517545000:0;ls
+: 1517545003:0;ta1
+: 1517545003:0;..
+: 1517545007:0;cd grading
+: 1517545008:0;cd lab1
+: 1517545011:0;vim test_inputs.cpp
+: 1517545016:0;ta1
+: 1517545017:0;..
+: 1517545019:0;cd grading
+: 1517545020:0;cd lab1
+: 1517548048:0;vim a
+: 1517548065:0;cp a b
+: 1517548069:0;vim b
+: 1517548088:0;cp a c
+: 1517548093:0;vim test_inputs.cpp
+: 1517548133:0;cp a d
+: 1517548136:0;vim d
+: 1517548147:0;make
+: 1517548161:0;vim test_inputs.cpp
+: 1517548183:0;make
+: 1517548205:0;vim test_inputs.cpp
+: 1517548214:0;make 2>&1 | less
+: 1517548268:0;make
+: 1517548291:0;./test_inputs
+: 1517548312:0;cat a
+: 1517548335:0;vim a
+: 1517548350:0;cp a b
+: 1517548353:0;vim b
+: 1517548386:0;vim a
+: 1517548392:0;cp a c
+: 1517548394:0;vim c
+: 1517548411:0;./test_inputs
+: 1517548419:0;cat a
+: 1517548426:0;make
+: 1517548430:0;vim a
+: 1517548448:0;cp a b
+: 1517548451:0;vim b
+: 1517548479:0;cp a c
+: 1517548482:0;vim c
+: 1517548526:0;cp a d
+: 1517548531:0;./test_inputs
+: 1517548612:0;make
+: 1517548615:0;./test_inputs
+: 1517548639:0;vim a
+: 1517548643:0;vim b
+: 1517548777:0;vim test_inputs.cpp
+: 1517548814:0;make
+: 1517548820:0;./test_inputs
+: 1517549054:0;make
+: 1517549057:0;./test_inputs
+: 1517549072:0;make
+: 1517549075:0;./test_inputs
+: 1517549092:0;make
+: 1517549095:0;./test_inputs
+: 1517550252:0;make
+: 1517550281:0;vim test_inputs.cpp
+: 1517550295:0;make
+: 1517550355:0;man mkstemp
+: 1517550675:0;man readlink
+: 1517550683:0;man 3 readlink
+: 1517550736:0;man fcntl
+: 1517551006:0;man
+: 1517551007:0;make
+: 1517551010:0;make clean
+: 1517551011:0;make
+: 1517551023:0;man mkstemp
+: 1517551238:0;vim test_inputs.cpp
+: 1517551314:0;make
+: 1517551881:0;ls . 1>4
+: 1517551882:0;ls
+: 1517551886:0;vim 4
+: 1517551889:0;rm 4
+: 1517551895:0;ls . 1>&4
+: 1517551909:0;vim test_inputs.cpp
+: 1517552309:0;make
+: 1517552336:0;vim test_inputs.cpp
+: 1517552337:0;make
+: 1517552548:0;ls
+: 1517552556:0;mkdir test
+: 1517552562:0;cp test_inputs test
+: 1517552581:0;rm py.py
+: 1517552593:0;cd test
+: 1517552595:0;ls
+: 1517552634:0;cp ~/old/cs302/labs/lab3/sort3a.cpp Quicksort.cpp
+: 1517552639:0;cp ~/old/cs302/labs/lab3/makefile .
+: 1517552641:0;vim makefile
+: 1517552656:0;vim Quicksort.cpp
+: 1517552689:0;tar -cvf Lab1.tar Quicksort.cpp makefile
+: 1517552698:0;rm makefile
+: 1517552700:0;rm Quicksort.cpp
+: 1517552702:0;ls
+: 1517552738:0;vim allowed_files
+: 1517552749:0;./test_inputs
+: 1517552756:0;..
+: 1517552757:0;make
+: 1517552762:0;rm test_inputs
+: 1517552779:0;make
+: 1517552787:0;mv test_inputs test
+: 1517552789:0;cd test
+: 1517552793:0;./test_inputs
+: 1517552832:0;vim test_inputs.cpp
+: 1517552834:0;..
+: 1517552835:0;make
+: 1517552842:0;mv test_inputs test
+: 1517552844:0;rm t
+: 1517552847:0;cd test
+: 1517552849:0;./test_inputs
+: 1517552890:0;..
+: 1517552973:0;make
+: 1517552979:0;mv test_inputs test
+: 1517552991:0;vim test_inputs.cpp
+: 1517552996:0;cd test
+: 1517553001:0;rm Quicksort
+: 1517553004:0;rm Quicksort.cpp
+: 1517553006:0;rm makefile
+: 1517553009:0;./test_inputs
+: 1517553037:0;vim Quicksort.cpp
+: 1517553102:0;tar -cvf Lab1.tar Quicksort.cpp makefile
+: 1517553106:0;make clean
+: 1517553108:0;ls
+: 1517553114:0;rm makefile
+: 1517553116:0;rm Quicksort.cpp
+: 1517553119:0;./test_inputs
+: 1517553139:0;ls
+: 1517553148:0;~
+: 1517553150:0;ls
+: 1517553158:0;ta1
+: 1517553164:0;..
+: 1517553167:0;cd grading
+: 1517553169:0;cd lab1
+: 1517553170:0;cd test
+: 1517553191:0;./Quicksort < /home/cs302/labs/lab1/list1.txt
+: 1517553209:0;./test_inputs
+: 1517553231:0;./test_inputs > STUDENT_OUTPUT_27137127
+: 1517553243:0;rm STUDENT_OUTPUT_27137127
+: 1517553259:0;./Quicksort < /home/cs302/labs/lab1/list1.txt > STUDENT_OUTPUT21312321
+: 1517553286:0;..
+: 1517553302:0;vim test_inputs.cpp
+: 1517553303:0;make
+: 1517553309:0;cp test_inputs test
+: 1517553313:0;cd test
+: 1517553316:0;./test_inputs
+: 1517553366:0;make
+: 1517553368:0;make clean
+: 1517553372:0;ls
+: 1517553377:0;rm Quicksort.cpp
+: 1517553379:0;rm makefile
+: 1517553383:0;rm STUDENT_OUTPUT21312321
+: 1517553386:0;./test_inputs
+: 1517553434:0;./Quicksort < /home/cs302/labs/lab1/list3.txt
+: 1517553443:0;gdb Quicksort
+: 1517553541:0;..
+: 1517553542:0;make 
+: 1517553549:0;mv test_inputs test
+: 1517553550:0;cd test
+: 1517553556:0;rm Quicksort
+: 1517553559:0;rm Quicksort.cpp
+: 1517553561:0;rm makefile
+: 1517553567:0;./test_inputs
+: 1517553739:0;..
+: 1517553740:0;make
+: 1517553746:0;cp test_inputs test
+: 1517553749:0;cd test
+: 1517553752:0;./test_inputs
+: 1517553765:0;./test_output
+: 1517553768:0;ls
+: 1517553772:0;./test_inputs
+: 1517553793:0;diff STUDENT_OUTPUT_4181648980 SOLUTION_OUTPUT_4181648980
+: 1517553805:0;ls
+: 1517553807:0;./test_inputs
+: 1517553878:0;..
+: 1517553881:0;vim test_inputs.cpp
+: 1517554253:0;cat test.cpp > abc;rm err
+: 1517554255:0;ls
+: 1517554258:0;vim err
+: 1517554280:0;cat test.cpp > \a\b\c\;\r\m
+: 1517554281:0;ls
+: 1517554288:0;vim abc\;rm
+: 1517554298:0;rm abc\;rm
+: 1517554299:0;ls
+: 1517554351:0;vim test_inputs.cpp
+: 1517554682:0;make
+: 1517554696:0;vim test_inputs.cpp
+: 1517554704:0;make
+: 1517554760:0;cp test_inputs test
+: 1517554764:0;cd test
+: 1517554766:0;./test_inputs
+: 1517554786:0;gdb test_inputs
+: 1517554877:0;..
+: 1517554887:0;make ; cp test_inputs test
+: 1517554892:0;cd test
+: 1517554895:0;./test_inputs
+: 1517554973:0;make ; cp -f test_inputs test; cd test
+: 1517554980:0;..
+: 1517554981:0;make ; cp -f test_inputs test; cd test
+: 1517554995:0;./test
+: 1517554999:0;gdb test
+: 1517555063:0;rm test
+: 1517555065:0;..
+: 1517555069:0;make ; cp -f test_inputs test; cd test
+: 1517555075:0;./test_inputs
+: 1517555095:0;./test_inputs | less
+: 1517555119:0;./test_inputs > out
+: 1517555124:0;vim out
+: 1517555191:0;./\Q\u\i\c\k\s\o\r\t < \/\h\o\m\e\/\c\s\3\0\2\/\l\a\b\s\/\l\a\b\1\/\l\i\s\t\1\.\t\x\t
+: 1517555222:0;..
+: 1517555465:0;make ; cp -f test_inputs test; cd test
+: 1517555474:0;./test_inputs > out
+: 1517555527:0;ls
+: 1517555531:0;rm STUDENT_OUTPUT_*
+: 1517555534:0;rm SOLUTION_OUTPUT_*
+: 1517555535:0;ls
+: 1517555541:0;vim out
+: 1517555633:0;exit
+: 1517596453:0;ls
+: 1517596457:0;bio2
+: 1517596463:0;./egfalign
+: 1517596470:0;ls
+: 1517596477:0;vim alignment.c
+: 1517597046:0;vim egfalign
+: 1517597049:0;vim egfalign.c
+: 1517597124:0;make
+: 1517597131:0;./egfalign
+: 1517597304:0;zsh
+: 1517597304:0;..
+: 1517597309:0;cd .zsh
+: 1517597313:0;vim .powerline9k
+: 1517597358:0;zsh
+: 1517597393:0;ls
+: 1517597399:0;vim \\
+: 1517597416:0;q
+: 1517597403:0;vim \\
+: 1517597406:0;la
+: 1517597407:0;rm \\
+: 1517597408:0;ls
+: 1517597409:0;..
+: 1517597416:0;exit
+: 1517597418:0;ls
+: 1517597459:0;vim alignment.c
+: 1517597762:0;vim globalign.c
+: 1517598036:0;make
+: 1517598042:0;vim file.c
+: 1517598073:0;make
+: 1517598080:0;./globalign
+: 1517598085:0;./egfalign
+: 1517598091:0;./localign
+: 1517598111:0;vim alignment.c
+: 1517598128:0;make
+: 1517598131:0;./localign
+: 1517598158:0;./localign | less
+: 1517598179:0;ls
+: 1517598183:0;vim local_align.c
+: 1517598187:0;vim localign.c
+: 1517598193:0;vim globalign.c
+: 1517598223:0;vim alignment.c
+: 1517598228:0;make
+: 1517598239:0;vim localign.c
+: 1517598243:0;make
+: 1517598246:0;./localign.c
+: 1517598249:0;./localign
+: 1517598308:0;ls
+: 1517598316:0;cd /etc
+: 1517598318:0;..
+: 1517598323:0;~
+: 1517598328:0;cd .zsh
+: 1517598331:0;vim .powerline9k
+: 1517598368:0;ls
+: 1517598369:0;..
+: 1517598371:0;bio2
+: 1517598376:0;make clean
+: 1517598377:0;ls
+: 1517598383:0;vim report.txt
+: 1517598527:0;vim makefile
+: 1517598533:0;make
+: 1517598538:0;vim makefile
+: 1517598567:0;make
+: 1517598596:0;vim string.c
+: 1517598635:0;make
+: 1517598735:0;logout
+: 1517600664:0;ls
+: 1517600666:0;cd scripts
+: 1517600682:0;vim canvas.sh
+: 1517600718:0;man curl
+: 1517600799:0;vim canvas.sh
+: 1517601307:0;man curl
+: 1517601354:0;vim canvas.sh
+: 1517601556:0;vim token
+: 1517601559:0;la
+: 1517601562:0;vim token
+: 1517601603:0;ls
+: 1517601607:0;vim canvas.sh
+: 1517601759:0;man curl
+: 1517601774:0;vim canvas.sh
+: 1517602035:0;sh canvas.sh
+: 1517602039:0;cat
+: 1517602047:0;vim canvas.sh
+: 1517602087:0;curl
+: 1517602091:0;vim canvas.sh
+: 1517602097:0;sh canvas.sh
+: 1517602107:0;chmod +x canvas.sh
+: 1517602109:0;./canvas.sh
+: 1517602161:0;mv canvas.sh canvas.zsh
+: 1517602163:0;vim canvas.zsh
+: 1517602255:0;./canvas.zsh
+: 1517602258:0;curl
+: 1517602264:0;echo $PATH
+: 1517602280:0;vim canvas.zsh
+: 1517602290:0;echo $PATH
+: 1517602292:0;./canvas.zsh
+: 1517602299:0;vim canvas.zsh
+: 1517602309:0;mv canvas.zsh canvas.sh
+: 1517602311:0;vim canvas.sh
+: 1517602326:0;./canvas.sh
+: 1517602375:0;vim canvas.sh
+: 1517602395:0;./canvas.sh
+: 1517602411:0;vim canvas.sh
+: 1517602592:0;:q
+: 1517602594:0;jq
+: 1517602630:0;jsawk
+: 1517602643:0;js
+: 1517602651:0;man jps
+: 1517602656:0;jps
+: 1517602691:0;./canvas.sh > test
+: 1517602693:0;ls
+: 1517602694:0;vim test
+: 1517602701:0;vim classLinks.py
+: 1517602710:0;vim grading.py
+: 1517602730:0;vim log.py
+: 1517602738:0;vim makeclass.py
+: 1517602754:0;vim jcompile.py
+: 1517602765:0;rm .jcompile.py.swp
+: 1517602766:0;la
+: 1517602771:0;vim server.py
+: 1517602774:0;vim test
+: 1517602778:0;vim test.htlp
+: 1517602781:0;vim test.html
+: 1517602802:0;rm test.html
+: 1517602803:0;ls
+: 1517603246:0;vim canvas.sh
+: 1517603398:0;./canvas.sh
+: 1517603402:0;vim canvas.sh
+: 1517603465:0;./canvas.sh
+: 1517603486:0;vim canvas.sh
+: 1517603524:0;vim test
+: 1517603538:0;vim canvas.sh
+: 1517603631:0;vim json+parse.py
+: 1517603636:0;vim json_parse.py
+: 1517603881:0;python json_parse.py < test
+: 1517603887:0;vim json_parse.py
+: 1517603939:0;python json_parse.py < test
+: 1517603941:0;vim json_parse.py
+: 1517604093:0;python json_parse.py < test
+: 1517604099:0;vim json_parse.py
+: 1517604121:0;python json_parse.py < test
+: 1517604154:0;vim test
+: 1517604183:0;tmux
+: 1517604187:0;vim test
+: 1517604196:0;vim json_decoder.py
+: 1517604199:0;vim json_parse.py
+: 1517604545:0;python json_parse.py COSC302 < test
+: 1517604617:0;ls
+: 1517604727:0;mv json_parse.py extract_course_id.py
+: 1517604730:0;vim extract_course_id.py
+: 1517604746:0;python json_parse.py COSC302 < test
+: 1517604753:0;python extract_course_id.py COSC302 < test
+: 1517604800:0;vim canvas.sh
+: 1517604831:0;ls
+: 1517605047:0;./canvas.sh
+: 1517605053:0;vim canvas.sh
+: 1517605089:0;./canvas.sh
+: 1517605121:0;curl -h
+: 1517605128:0;man curl
+: 1517605140:0;ls
+: 1517605143:0;vim canvas.sh
+: 1517605201:0;./canvas.sh
+: 1517605205:0;vim canvas.sh
+: 1517605210:0;./canvas.sh
+: 1517605234:0;./canvas.sh > ass
+: 1517605236:0;vim ass
+: 1517605269:0;rm ass
+: 1517605273:0;vim canvas.sh
+: 1517605300:0;./canvas.sh
+: 1517605355:0;vim canvas.sh
+: 1517605443:0;./canvas.sh
+: 1517605462:0;vim canvas.sh
+: 1517605505:0;./canvas.sh > ass
+: 1517605515:0;vim canvas.sh
+: 1517605521:0;./canvas.sh > ass
+: 1517605523:0;vim ass
+: 1517605528:0;rm ass
+: 1517605530:0;vim ass
+: 1517605533:0;vim canvas.sh
+: 1517605555:0;./canvas.sh
+: 1517605559:0;./canvas.sh > ass
+: 1517605561:0;vim ass
+: 1517605575:0;ls
+: 1517605597:0;cp extract_course_id.py extract_assignment_id.py
+: 1517605603:0;vim canvas.sh
+: 1517605615:0;./canvas.sh
+: 1517605630:0;vim canvas.sh
+: 1517605692:0;vim ass
+: 1517606197:0;ls
+: 1517606198:0;cd ta
+: 1517606200:0;..
+: 1517606204:0;cd cs302
+: 1517606206:0;cd labs
+: 1517606208:0;cd grading
+: 1517606210:0;mkdir 1
+: 1517606211:0;cd 1
+: 1517606261:0;ls
+: 1517606264:0;unzip
+: 1517606271:0;unzip submissions\ \(1\).zip
+: 1517606272:0;ls
+: 1517606337:0;vim groups
+: 1517606461:0;ta1
+: 1517606462:0;..
+: 1517606463:0;cd grading
+: 1517606464:0;cd 1
+: 1517606472:0;vim groups
+: 1517606483:0;mkdir submissions
+: 1517606488:0;mv * submissions
+: 1517606491:0;cd submissions
+: 1517606495:0;mv groups ..
+: 1517606497:0;cd ..
+: 1517606501:0;vim groups
+: 1517606512:0;cd submissions
+: 1517606521:0;rm {a-o}*
+: 1517606526:0;rm {a...o}*
+: 1517606542:0;xargs
+: 1517606559:0;ls | grep 'a-o' | xargs rm
+: 1517606574:0;ls | grep 'a-o'
+: 1517606641:0;ls | grep "a-o.*"
+: 1517606660:0;ls | grep "[a-o].*"
+: 1517606791:0;rm andersonjonathanstuart_late_78738_1696821_Quicksort.cpp
+: 1517606806:0;rm b* c* d* e* f* g* h* i* j* k*
+: 1517606823:0;rm l* m* n* o*
+: 1517606838:0;rm t* u* v* w* x* y* z*
+: 1517606839:0;ls
+: 1517606847:0;rm cartertristanl_39506_1670631_lab1a.tar chanceandrewmckenzie_60480_1679001_lab1a.tar chanceben_19791_1679085_Quicksort.tar chauhanrushigopal_31642_1680186_Quicksort.cpp clevengerivdavidernest_43334_1680249_lab1a.tar coffeyhayden_40775_1679504_lab1a_HC-2.tar colezac_31487_1673364_lab1a.tar cooleycarterjacob_74832_1679592_lab1a.tar 
+: 1517606888:0;rm batescaseygray_45118_1664408_lab1.tar bhidyaabdulrehman_60252_1678780_lab1.tar bianchimatthews_62093_1669215_lab1a.tar branchnoahfondren_31681_1679699_Quicksort.cpp brownnolanmichael_late_57250_1685280_Lab1a-1.tar bueckmanjonathanpatrick_27290_1649517_Lab1a.tar buteramatthewwayne_late_59744_1685626_lab1a.tar dasilvadavidanthony_106938_1679129_Lab1-1.tar dasilvadavidanthony_106938_1679132_lab1apdf.pdf desaimanansanjiv_54557_1651115_Lab1a.tar devoldantegaelanreed_late_47868_1681079_lab1a-1.tar dieterzacharyrabun_50700_1680238_Quicksort.tar dongjeffreyjing_61769_1679653_lab1.tar dunkleyjoshuamartin_61498_1680047_lab1-1.tar eaveschristianaaron_37615_1672849_lab1a.tar fordmatthewryan_63987_1680077_lab1a.tar frytannerlee_57377_1679186_lab1A.tar giffordmichaelpaul_late_63260_1681656_lab1a.tar.gz grissomethandel_late_62317_1682072_lab1a.tar hammerjamesbranson_102446_1676112_QuicksortA.tar hamptonericmarcell_24600_1677597_lab1a.tar hawkinsbenjaminandrew_54773_1679486_Lab1A.tar hawkszackaryanthony_74013_1679077_Lab1a.tar haynieheatherelizabeth_57437_1666275_Lab1a.tar hensleelaneaustin_late_67941_1681790_lab1a.tar howardcainand_58697_1672024_lab1a.tar johnsonaaronjames_58779_1676742_lab1a.tar johnsondustinalexander_late_31982_1683362_Lab1a.tar johnsonrojaeantonio_40323_1679064_lab1a.tar johnstonnathanm_58185_1678605_Quicksort.cpp keyesthomasedward_57899_1680116_lab1a.tar keyesthomasedward_57899_1680117_Quicksort.cpp kleinben_60573_1678650_lab1a.tar kleinchristopherjames_late_75006_1681922_Quicksort.tar krobatschthomasjohnson_73218_1679815_lab1a-2.tar lamberthnathanryan_29976_1679684_Lab1.tar lawsoncodya_59520_1678290_Quicksort-2.cpp legatematthew_59273_1676554_Quicksort-3.cpp liuand_67769_1679604_Quicksort1a-1.tar lloydcaitlineleanor_late_64706_1680289_lab1.tar lumsdeniandouglas_late_58574_1680385_Lab1a-2.tar lundellbrianscott_late_61264_1698197_lab1a-1.tar manikondasaimadhuri_74019_1677295_lab1a.tar mayucheng_53644_1680159_Lab1-1.tar mobleychristopherjames_late_31176_1700537_Quicksort-1.cpp mondayzenthanh_60005_1679573_lab1a.tar moranchristopherjohn_59415_1677780_Quicksort1.tar mullinsjamesc_64858_1680189_Lab1a.tar nguyentonyd_48027_1670316_lab1a.tar nowakmarekandrew_late_32130_1680361_lab1a.tar
+: 1517606903:0;rm tiptonalexarae_109742_1668704_Quicksort.tar turnerrhettmaloch_late_59176_1684075_lab1a-1.tar wasilkodavidcollins_49353_1679752_lab1a.tar webercharlesedward_36902_1680036_Quicksort.cpp weedenemilytyler_52794_1650403_lab1a-1.tar wellestim_63467_1679595_lab1a.tar westnicholasdrake_106446_1679813_lab1a-1.tar wheatontuckerdean_42673_1676790_lab1a.tar whitakerchancealexander_57943_1648602_Lab1A.tar whitebradleym_late_30435_1680441_lab1a-1.tar whitmermichaellee_130755_1670998_Lab1a.tar wilderchandlerm_40952_1679577_Quicksort.tar willejacobdavid_late_62006_1682013_lab1a.tar winterstreyemerson_59439_1669724_lab1.tar zenkovviktorsamuel_61409_1671794_QuicksortA.tar
+: 1517606904:0;ls
+: 1517606907:0;rm submissions\ \(1\).zip
+: 1517606921:0;rm parkaustintimothy_62604_1657341_Lab1a.tar
+: 1517606934:0;ls
+: 1517606949:0;rm suarezdevonaronluis_69199_1679620_lab1a.tar sumnerjustinwilliam_74648_167962* sunyiming_70754_1679816_Lab1a.tar
+: 1517606950:0;ls
+: 1517607002:0;vim grade.sh
+: 1517607339:0;cp /home/cs302/labs/lab1/list1.txt /home/cs302/labs/lab1/list2.txt /home/cs302/labs/lab1/list3.txt .
+: 1517607341:0;vim grade.sh
+: 1517607536:0;vim make
+: 1517607539:0;man make
+: 1517607555:0;make -p
+: 1517607562:0;vim grade.sh
+: 1517607639:0;ls
+: 1517607642:0;cd temp
+: 1517607647:0;rm list1.txt
+: 1517607650:0;rm list2.txt
+: 1517607653:0;rm list3.txt
+: 1517607678:0;vim grade.sh
+: 1517607765:0;mv grade.sh temp
+: 1517607766:0;cd temp
+: 1517607768:0;ls
+: 1517607775:0;mkdir a
+: 1517607782:0;mv temp a/grade.sh
+: 1517607783:0;cd temp
+: 1517607785:0;cd a
+: 1517607791:0;chmod +x grade.sh
+: 1517607793:0;vim grade.sh
+: 1517607813:0;./grade.sh
+: 1517607820:0;ls
+: 1517607825:0;rm makefile
+: 1517607831:0;vim grade.sh
+: 1517607864:0;./grade.sh
+: 1517607870:0;vim grade.sh
+: 1517607882:0;..
+: 1517607888:0;cp partelowethanscott_59126_1676344_Quicksort.cpp a
+: 1517607890:0;cd a
+: 1517607893:0;vim partelowethanscott_59126_1676344_Quicksort.cpp
+: 1517607904:0;./grade.sh
+: 1517607908:0;ls
+: 1517607921:0;mv partelowethanscott_59126_1676344_Quicksort.cpp Quicksort.cpp
+: 1517607926:0;./grade.sh
+: 1517607928:0;ls
+: 1517607937:0;vi grade.sh
+: 1517608014:0;./grade.sh
+: 1517608025:0;cp ../partelowethanscott_59126_1676344_Quicksort.cpp Quicksort.cpp
+: 1517608026:0;./grade.sh
+: 1517608028:0;ls
+: 1517608040:0;vim grade.sh
+: 1517608053:0;mv grade.sh grade.zsh
+: 1517608055:0;vim grade.zsh
+: 1517608092:0;mv grade.zsh grade.sh
+: 1517608094:0;vim grade.sh
+: 1517608103:0;ls
+: 1517608105:0;vim grade.sh
+: 1517608112:0;cp ../partelowethanscott_59126_1676344_Quicksort.cpp Quicksort.cpp
+: 1517608118:0;./grade.sh
+: 1517608120:0;ls
+: 1517608133:0;rm student_out.\{1..10\}
+: 1517608133:0;ls
+: 1517608141:0;vim student_out.1
+: 1517608187:0;vim grade.sh
+: 1517608744:0;ls
+: 1517608747:0;rm student_out.*
+: 1517608748:0;ls
+: 1517608751:0;./grade.sh
+: 1517608763:0;rm student_out.*
+: 1517608766:0;vim grade.sh
+: 1517608889:0;./grade.sh
+: 1517608906:0;ls
+: 1517608908:0;..
+: 1517608920:0;exit
+: 1517609863:0;ls
+: 1517609865:0;cd cs302
+: 1517609867:0;cd labs
+: 1517609869:0;cd grading/1/
+: 1517609871:0;cd submissions
+: 1517609872:0;cd a
+: 1517609879:0;cp grade.sh ..
+: 1517610088:0;..
+: 1517610093:0;tar -tf pateshivamthakor_65653_1676134_lab1a.tar
+: 1517610131:0;tar -tf pateshivamthakor_65653_1676134_lab1a.tar -X a
+: 1517610137:0;tar -tf pateshivamthakor_65653_1676134_lab1a.tar -C a
+: 1517610139:0;cd a
+: 1517610143:0;ls
+: 1517610144:0;..
+: 1517610152:0;man tar
+: 1517610168:0;ls
+: 1517610182:0;tar -xf pateshivamthakor_65653_1676134_lab1a.tar -C a
+: 1517610183:0;cd a
+: 1517610188:0;vim makefile
+: 1517610193:0;vim Quicksort.cpp
+: 1517610288:0;tmux
+: 1517610291:0;..
+: 1517610292:0;vim grades
+: 1517610298:0;ls
+: 1517610305:0;vim grade.sh
+: 1517610320:0;./grade.sh
+: 1517610341:0;ls
+: 1517610342:0;..
+: 1517610346:0;rm partelowethanscott_59126_1676344_Quicksort.cpp
+: 1517610355:0;rm pateshivamthakor_65653_1676134_lab1a.tar
+: 1517610386:0;tar -C a -xf paulyryan_46421_1674253_lab1a.tar
+: 1517610387:0;cd a
+: 1517610390:0;vim Quicksort.cpp
+: 1517610446:0;./grade.sh
+: 1517610455:0;vim Quicksort.cpp
+: 1517610465:0;..
+: 1517610469:0;tar -C a -xf paulyryan_46421_1674253_lab1a.tar
+: 1517610472:0;a
+: 1517610477:0;rm student_out.2.1
+: 1517610481:0;rm student_out.3.1
+: 1517610484:0;vim Quicksort.cpp
+: 1517610490:0;./grade.sh
+: 1517610498:0;vim grade.sh
+: 1517610549:0;ls
+: 1517610552:0;..
+: 1517610553:0;tar -C a -xf paulyryan_46421_1674253_lab1a.tar
+: 1517610555:0;cd a
+: 1517610557:0;vim Quicksort.cpp
+: 1517610579:0;rm Quicksort.cpp
+: 1517610580:0;..
+: 1517610583:0;rm paulyryan_46421_1674253_lab1a.tar
+: 1517610596:0;tar -C a -xf pearsonanderschristopher_63373_1679663_lab1a.tar
+: 1517610613:0;cd a
+: 1517610618:0;vim Quicksort.cpp
+: 1517610655:0;./grade.sh
+: 1517610671:0;ls
+: 1517610672:0;..
+: 1517610676:0;rm pearsonanderschristopher_63373_1679663_lab1a.tar
+: 1517610696:0;tar -C a -xf perrymandavid_61909_1680072_Lab1a.tar
+: 1517610791:0;cd a
+: 1517610794:0;vim Quicksort.cpp
+: 1517610851:0;./grade.sh
+: 1517610856:0;ls
+: 1517610897:0;..
+: 1517610900:0;rm perrymandavid_61909_1680072_Lab1a.tar
+: 1517610911:0;tar -C a -xf petersonblakeandrew_49041_1678718_Quicksort.tar
+: 1517610913:0;cd a
+: 1517610917:0;vim Quicksort.cpp
+: 1517610935:0;..
+: 1517611062:0;rm petersonblakeandrew_49041_1678718_Quicksort.tar
+: 1517611069:0;tar -C a -xf pooleandrewstaten_48219_1679566_lab1a.tar
+: 1517611070:0;cd a
+: 1517611074:0;vim Quicksort.cpp
+: 1517611291:0;./grade.sh
+: 1517611312:0;..
+: 1517611314:0;rm pooleandrewstaten_48219_1679566_lab1a.tar
+: 1517611320:0;tar -C a -xf prosiseabigailjane_58224_1666308_Lab1.tar
+: 1517611321:0;cd a
+: 1517611324:0;vim Quicksort.cpp
+: 1517611417:0;./grade.sh
+: 1517611438:0;..
+: 1517611468:0;ls
+: 1517611472:0;mkdir temp
+: 1517611480:0;man unzip
+: 1517611498:0;ls
+: 1517611512:0;mv submissions\ \(1\).zip temp./s.zip
+: 1517611517:0;mv submissions\ \(1\).zip temp/s.zip
+: 1517611519:0;cd temp
+: 1517611522:0;unzip s.zip
+: 1517611532:0;vim petersonblakeandrew_49041_1678718_Quicksort.tar
+: 1517611546:0;..
+: 1517611548:0;cd submissions
+: 1517611550:0;cd a
+: 1517611551:0;..
+: 1517611554:0;cd temp
+: 1517611558:0;mv petersonblakeandrew_49041_1678718_Quicksort.tar ../submissions
+: 1517611560:0;cd ../submissions
+: 1517611571:0;tar -C a -xf petersonblakeandrew_49041_1678718_Quicksort.tar
+: 1517611572:0;cd a
+: 1517611575:0;./grade.sh
+: 1517611592:0;ls
+: 1517611604:0;vim grade.sh
+: 1517611616:0;./grade.sh
+: 1517611618:0;ls
+: 1517611620:0;..
+: 1517611624:0;tar -C a -xf petersonblakeandrew_49041_1678718_Quicksort.tar
+: 1517611626:0;cd a
+: 1517611628:0;./grade.sh
+: 1517611636:0;ls
+: 1517611654:0;vim grade.sh
+: 1517611666:0;..
+: 1517611668:0;tar -C a -xf petersonblakeandrew_49041_1678718_Quicksort.tar
+: 1517611671:0;cd a
+: 1517611677:0;./grade.sh
+: 1517611682:0;ls
+: 1517611685:0;rm student_out.*
+: 1517611686:0;..
+: 1517611689:0;rm petersonblakeandrew_49041_1678718_Quicksort.tar
+: 1517611697:0;rm prosiseabigailjane_58224_1666308_Lab1.tar
+: 1517611709:0;tar -C a -xf quachhenry_49938_1672474_lab1a.tar
+: 1517611711:0;cd a
+: 1517611726:0;vim Quicksort.cpp
+: 1517611800:0;./grade.sh
+: 1517611883:0;..
+: 1517611899:0;cp /home/cs302/labs/lab1/list* .
+: 1517612018:0;ls
+: 1517612022:0;cp list* a
+: 1517612023:0;cd a
+: 1517612025:0;..
+: 1517612030:0;tar -C a -xf quachhenry_49938_1672474_lab1a.tar
+: 1517612031:0;cd a
+: 1517612031:0;make
+: 1517612034:0;ls
+: 1517612036:0;..
+: 1517612044:0;cp /home/cs302/labs/lab1/makefile .
+: 1517612047:0;cp makefile a
+: 1517612049:0;cd a
+: 1517612050:0;make
+: 1517612060:0;./Quicksort < list1.txt
+: 1517612074:0;cp /home/cs302/labs/lab1/quicksort ..
+: 1517612079:0;cp ../quicksort .
+: 1517612086:0;./Quicksort < list1.txt > s
+: 1517612094:0;./quicksort < list1.txt > sol
+: 1517612097:0;diff s sol
+: 1517612131:0;diff =(./Quicksort < list2.txt) =(./quicksort < list2.txt)
+: 1517612148:0;diff =(./Quicksort < list3.txt) =(./quicksort < list3.txt)
+: 1517612190:0;ls
+: 1517612195:0;rm list* makefile
+: 1517612195:0;ls
+: 1517612200:0;rm s sol st*
+: 1517612201:0;ls
+: 1517612206:0;rm quicksort Quicksort*
+: 1517612206:0;ls
+: 1517612207:0;..
+: 1517612213:0;rm quachhenry_49938_1672474_lab1a.tar
+: 1517612232:0;tar -C a -xf romocristian_45966_1677987_Quicksort.tar
+: 1517612233:0;cd a
+: 1517612237:0;vim makefile
+: 1517612241:0;vim Quicksort.cpp
+: 1517612273:0;./grade.sh
+: 1517612285:0;ls
+: 1517612286:0;..
+: 1517612288:0;rm romocristian_45966_1677987_Quicksort.tar
+: 1517612295:0;tar -C a -xf scottcarajanice_59692_1666610_lab1_A.tar
+: 1517612297:0;cd a
+: 1517612300:0;vim Quicksort.cpp
+: 1517612321:0;./grade.sh
+: 1517612337:0;..
+: 1517612339:0;rm scottcarajanice_59692_1666610_lab1_A.tar
+: 1517612353:0;tar -C a -xf sergentbenjaminfranklin_40687_1660664_Lab1a.tar
+: 1517612354:0;cd a
+: 1517612357:0;vim Quicksort.cpp
+: 1517612373:0;./grade.sh
+: 1517612392:0;..
+: 1517612394:0;rm sergentbenjaminfranklin_40687_1660664_Lab1a.tar
+: 1517612401:0;mv shelbysydneyalexis_63090_1679010_Quicksort.cpp a/Quicksort.cpp
+: 1517612442:0;ls
+: 1517612442:0;cd a
+: 1517612445:0;vim Quicksort.cpp
+: 1517612463:0;./grade.sh
+: 1517612478:0;ls
+: 1517612479:0;ll
+: 1517612481:0;..
+: 1517612483:0;la
+: 1517612484:0;ls
+: 1517612487:0;cd a
+: 1517612489:0;ls
+: 1517612524:0;..
+: 1517612530:0;tar -C a -xf sidesjacobrobert_45987_1678603_lab1a.tar
+: 1517612543:0;cd a
+: 1517612560:0;rm Quicksort
+: 1517612563:0;vim Quicksort.cpp
+: 1517612656:0;vim makefile
+: 1517612660:0;./grade.sh
+: 1517612669:0;ls
+: 1517612677:0;cp ../list* .
+: 1517612683:0;cp ../makefile .
+: 1517612698:0;cp ../quicksort .
+: 1517612699:0;ls
+: 1517612711:0;diff =(./Quicksort < list3.txt) =(./quicksort < list3.txt)
+: 1517612712:0;make
+: 1517612715:0;ls
+: 1517612719:0;..
+: 1517612753:0;tar -C a -xf sidesjacobrobert_45987_1678603_lab1a.tar Quicksort.cpp
+: 1517612755:0;cd a
+: 1517612757:0;make
+: 1517612762:0;diff =(./Quicksort < list3.txt) =(./quicksort < list3.txt)
+: 1517612770:0;diff =(./Quicksort < list1.txt) =(./quicksort < list1.txt)
+: 1517612777:0;diff -b =(./Quicksort < list1.txt) =(./quicksort < list1.txt)
+: 1517612785:0;diff -b =(./Quicksort < list2.txt) =(./quicksort < list2.txt)
+: 1517612856:0;ls
+: 1517612898:0;rm -- !(grade.sh)
+: 1517612900:0;ls
+: 1517612907:0;rm list* q* s* makefile
+: 1517612908:0;ls
+: 1517612911:0;rm Quicksort*
+: 1517612913:0;..
+: 1517612915:0;rm sidesjacobrobert_45987_1678603_lab1a.tar
+: 1517612939:0;tar -C a -xf siravanthabenjaminjay_30535_1678472_lab1part1.tar
+: 1517612939:0;cd a
+: 1517612941:0;vim Quicksort.cpp
+: 1517612974:0;ls
+: 1517612976:0;./grade.sh
+: 1517613013:0;ls
+: 1517613039:0;cp ../list* .
+: 1517613056:0;diff =(./Quicksort < list2.txt) sol_list2.txt
+: 1517613069:0;diff =(./Quicksort < list3.txt) sol_list3.txt
+: 1517613098:0;vim Quicksort.cpp
+: 1517613153:0;ls
+: 1517613159:0;cp grade.sh ..
+: 1517613165:0;man rm
+: 1517613182:0;ls
+: 1517613190:0;rm list* Q* s* q*
+: 1517613191:0;ls
+: 1517613196:0;rm list* Q* s*
+: 1517613196:0;ls
+: 1517613198:0;rm makefile
+: 1517613200:0;..
+: 1517613210:0;rm siravanthabenjaminjay_30535_1678472_lab1part1.tar
+: 1517613217:0;tar -C a -xf souleymanediallooumar_58242_1679647_osouleym_lab1a-1.tar
+: 1517613218:0;cd a
+: 1517613221:0;vim Quicksort.cpp
+: 1517613343:0;ls
+: 1517613346:0;./grade.sh
+: 1517613359:0;..
+: 1517613361:0;tar -C a -xf souleymanediallooumar_58242_1679647_osouleym_lab1a-1.tar
+: 1517613362:0;cd a
+: 1517613363:0;vim Quicksort.cpp
+: 1517613373:0;rm Quicksort.cpp
+: 1517613374:0;..
+: 1517613377:0;rm souleymanediallooumar_58242_1679647_osouleym_lab1a-1.tar
+: 1517613386:0;tar -C a -xf steinbergsamuelpaul_58245_1671281_lab1aagain.tar
+: 1517613387:0;cd a
+: 1517613404:0;vim Quicksort.cpp
+: 1517613420:0;./grade.sh
+: 1517613429:0;ls
+: 1517613459:0;diff =(./quicksort < ../list3.txt ) student_out.3.1
+: 1517613463:0;vim student_out.3.1
+: 1517613469:0;..
+: 1517613472:0;tar -C a -xf steinbergsamuelpaul_58245_1671281_lab1aagain.tar
+: 1517613473:0;cd a
+: 1517613477:0;vim Quicksort.cpp
+: 1517613507:0;make
+: 1517613511:0;cp ../makefile .
+: 1517613512:0;make
+: 1517613566:0;diff =(../quicksort < list3.txt) =(./Quicksort < list3.txt) > /dev/null
+: 1517613577:0;diff =(../quicksort < ../list3.txt) =(./Quicksort < ../list3.txt) > /dev/null
+: 1517613586:0;diff =(../quicksort < ../list3.txt) =(./Quicksort < ../list3.txt)
+: 1517613594:0;diff =(../quicksort < ../list2.txt) =(./Quicksort < ../list2.txt)
+: 1517613640:0;..
+: 1517613655:0;cd a
+: 1517613660:0;rm student_out.3.1
+: 1517613662:0;rm makefile
+: 1517613665:0;rm Quicksort
+: 1517613668:0;rm Quicksort.cpp
+: 1517613669:0;ls
+: 1517613670:0;..
+: 1517613677:0;tar -C a -xf steinbergsamuelpaul_58245_1671281_lab1aagain.tar
+: 1517613678:0;cd a
+: 1517613681:0;vim Quicksort.cpp
+: 1517613693:0;rm Quicksort.cpp
+: 1517613693:0;..
+: 1517613695:0;rm steinbergsamuelpaul_58245_1671281_lab1aagain.tar
+: 1517613700:0;tar -C a -xf stevensonchristopherrye_37416_1678563_lab1a.tar
+: 1517613701:0;cd a
+: 1517613704:0;vim Quicksort.cpp
+: 1517613726:0;./grade.sh
+: 1517613737:0;s
+: 1517613739:0;..
+: 1517613742:0;rm stevensonchristopherrye_37416_1678563_lab1a.tar
+: 1517613751:0;tar -C a -xf storiejoshualawrence_29203_1673586_Lab1a.tar
+: 1517613767:0;cd a
+: 1517613769:0;vim Quicksort.cpp
+: 1517613791:0;./grade.sh
+: 1517613798:0;ls
+: 1517614279:0;..
+: 1517614283:0;tar -C a -xf storiejoshualawrence_29203_1673586_Lab1a.tar
+: 1517614283:0;cd a
+: 1517614291:0;cp ../makefile .
+: 1517614294:0;cp ../list* .
+: 1517614296:0;..
+: 1517614298:0;cd a
+: 1517614301:0;make
+: 1517614330:0;./Quicksort < list1.txt
+: 1517614343:0;../quicksort < list1.txt
+: 1517614386:0;diff =(./Quicksort < list1.txt) =(../quicksort < list1.txt)
+: 1517614401:0;diff =(./Quicksort < list2.txt) =(../quicksort < list2.txt)
+: 1517614421:0;diff =(./Quicksort < list3.txt) =(../quicksort < list3.txt)
+: 1517614456:0;..
+: 1517614461:0;rm storiejoshualawrence_29203_1673586_Lab1a.tar
+: 1517614461:0;ls
+: 1517614525:0;vim grades
+: 1517615203:0;exit
+: 1517620650:0;ls
+: 1517620657:0;cd cs302
+: 1517620659:0;cd labs
+: 1517620660:0;cd grading
+: 1517620662:0;cd 1
+: 1517620665:0;cd submissions
+: 1517620666:0;..
+: 1517620668:0;cd temp
+: 1517620681:0;cp steinbergsamuelpaul_58245_1671281_lab1aagain.tar ..
+: 1517620683:0;cd ..
+: 1517620690:0;cp steinbergsamuelpaul_58245_1671281_lab1aagain.tar submissions
+: 1517620692:0;cd submissions
+: 1517620696:0;cda
+: 1517620697:0;cd a
+: 1517620701:0;..
+: 1517620709:0;tar -C a -xf steinbergsamuelpaul_58245_1671281_lab1aagain.tar
+: 1517620711:0;cd a
+: 1517620714:0;rm Quicksort
+: 1517620715:0;make
+: 1517620785:0;ls
+: 1517620788:0;cp grade.sh
+: 1517620791:0;cp grade.sh test.sh
+: 1517620793:0;vim test.sh
+: 1517620947:0;./test.sh
+: 1517621074:0;ls
+: 1517621080:0;diff =(./Quicksort < list3.txt) =(../quicksort < list3.txt)
+: 1517621105:0;diff =(./Quicksort < list2.txt) =(../quicksort < list2.txt)
+: 1517621126:0;diff =(./Quicksort < list3.txt) =(../quicksort < list3.txt)
+: 1517623879:0;ls
+: 1517623881:0;ll
+: 1517623887:0;cd ..
+: 1517623899:0;exit
+: 1517623927:0;ls
+: 1517623930:0;cd cs302
+: 1517623931:0;ls
+: 1517623933:0;..
+: 1517627073:0;ls
+: 1517627075:0;exit
+: 1517688111:0;cd home
+: 1517688112:0;ls
+: 1517688115:0;cd cs302
+: 1517688116:0;cd labs
+: 1517688118:0;cd grading
+: 1517688120:0;cd 1
+: 1517688122:0;vim groups
+: 1517688388:0;..
+: 1517688393:0;cd~
+: 1517688395:0;cd ~
+: 1517688395:0;ls
+: 1517688398:0;cd .vim
+: 1517688401:0;..
+: 1517688406:0;cd .zsh
+: 1517688408:0;vim .powerline9k
+: 1517688419:0;exit
+: 1517688520:0;ls
+: 1517688524:0;cd linux
+: 1517688532:0;..
+: 1517688533:0;cd scripts
+: 1517688545:0;..
+: 1517688547:0;termcolors
+: 1517688631:0;exit
+: 1517688644:0;ls
+: 1517688653:0;cd .zsh
+: 1517688655:0;vim .powerline9k
+: 1517688664:0;tmux
+: 1517688692:0;tmux a
+: 1517688699:0;tmux 
+: 1517688719:0;ls
+: 1517688733:0;termcolors
+: 1517688740:0;vim .powerline9k
+: 1517688766:0;zsh
+: 1517688771:0;..
+: 1517688776:0;cd .zsh
+: 1517688780:0;vim .powerline9k
+: 1517688800:0;..
+: 1517688801:0;zsh
+: 1517688813:0;exit
+: 1517688818:0;ls
+: 1517688819:0;exit
+: 1517688869:0;ls
+: 1517688879:0;cd cs302
+: 1517688881:0;cd labs
+: 1517688883:0;cd grading
+: 1517688884:0;cd 1
+: 1517688996:0;ls
+: 1517688999:0;rm steinbergsamuelpaul_58245_1671281_lab1aagain.tar
+: 1517689000:0;..
+: 1517689003:0;cd lab2
+: 1517689004:0;..
+: 1517689011:0;chmod 0600 lab2
+: 1517689012:0;cd lab2
+: 1517689014:0;ls
+: 1517689015:0;la
+: 1517689022:0;chmod 0700 lab2
+: 1517689023:0;cd lab2
+: 1517689024:0;ls
+: 1517689028:0;vim Sort_slist.cpp
+: 1517691239:0;exit
+: 1517720959:0;ls
+: 1517720960:0;ll
+: 1517720962:0;bio2
+: 1517720976:0;vim alignment.c
+: 1517720983:0;vim alignment.h
+: 1517721206:0;make
+: 1517721208:0;vim alignment.h
+: 1517721295:0;exit
+: 1517728172:0;bio2
+: 1517728192:0;vim globalign.c
+: 1517728690:0;make
+: 1517728694:0;./globalign
+: 1517728708:0;vim globalign.c
+: 1517728821:0;ls
+: 1517728827:0;vim localign.c
+: 1517728888:0;make
+: 1517728893:0;./localalign
+: 1517728897:0;./localign
+: 1517728907:0;./egfalign
+: 1517728949:0;cat human.fasta| grep N
+: 1517728958:0;cat fruitfly.fasta| grep N
+: 1517728968:0;ls
+: 1517729010:0;vim egfalign.c
+: 1517729022:0;vim alignment.c
+: 1517729110:0;fg
+: 1517729797:0;..
+: 1517729799:0;vimrc
+: 1517729801:0;~
+: 1517729804:0;vim .vimrc
+: 1517729817:0;bio2
+: 1517729822:0;vim alignment.c
+: 1517730081:0;vim egfalign.c
+: 1517730224:0;make
+: 1517730234:0;vim alignment.c
+: 1517730254:0;vim string.h
+: 1517730285:0;make
+: 1517730288:0;make clean
+: 1517730290:0;make
+: 1517730299:0;./egfalign
+: 1517730311:0;vim alignment.c
+: 1517730354:0;make
+: 1517730355:0;./egfalign
+: 1517730400:0;vim egfalign.c
+: 1517730419:0;make
+: 1517730421:0;./egfalign
+: 1517730461:0;./egfalign > what
+: 1517730465:0;vim what
+: 1517730542:0;cat what | awk '{print $NF}'
+: 1517730709:0;cat what | tail -n 1
+: 1517730711:0;cat what | tail -n 2
+: 1517730714:0;cat what | tail -n 3
+: 1517730758:0;exit
+: 1517794449:0;ls
+: 1517794452:0;ta2
+: 1517794457:0;vim Sort_slist.cpp
+: 1517794783:0;./sort_slist
+: 1517794787:0;./sort_slist < hi
+: 1517794795:0;./sort_slist a a 
+: 1517794798:0;fg
+: 1517794916:0;ta1
+: 1517794917:0;..
+: 1517794919:0;cd grading
+: 1517794920:0;cd lab1
+: 1517794924:0;vim test_inputs.cpp
+: 1517795251:0;make
+: 1517795258:0;vim makefile
+: 1517795266:0;make
+: 1517795283:0;fg
+: 1517795322:0;make
+: 1517795367:0;fg
+: 1517795462:0;make
+: 1517795474:0;fg
+: 1517795496:0;make
+: 1517795525:0;fg
+: 1517795576:0;make
+: 1517795585:0;fg
+: 1517795602:0;make
+: 1517795611:0;fg
+: 1517795626:0;make
+: 1517795632:0;fg
+: 1517795641:0;make
+: 1517795665:0;fg
+: 1517795676:0;make
+: 1517795679:0;fg
+: 1517795726:0;make
+: 1517795730:0;fg
+: 1517795786:0;make
+: 1517795789:0;fg
+: 1517795936:0;make
+: 1517796050:0;fg
+: 1517797159:0;make
+: 1517797172:0;vim Sort_slist
+: 1517797175:0;vim Sort_slist.cpp
+: 1517797211:0;make
+: 1517797222:0;vim Sort_slist.cpp
+: 1517797237:0;make
+: 1517797369:0;vim Sort_slist.cpp
+: 1517797386:0;make
+: 1517797396:0;vim Sort_slist.cpp
+: 1517797409:0;make
+: 1517797441:0;cd old/cs302
+: 1517797443:0;cd labs
+: 1517797445:0;cd lab2
+: 1517797448:0;..
+: 1517797449:0;cd lab1
+: 1517797450:0;..
+: 1517797452:0;cd lab3
+: 1517797455:0;..
+: 1517797456:0;cd lab4
+: 1517797457:0;..
+: 1517797459:0;cd lab5
+: 1517797461:0;..
+: 1517797463:0;cd lab3
+: 1517797466:0;vim sort3b.cpp
+: 1517797536:0;ta_login
+: 1517797547:0;vim ta_login
+: 1517797555:0;cat /usr/bin/ta_login
+: 1517797606:0;cd ~
+: 1517797609:0;cd .ssh
+: 1517797626:0;cat /usr/home/ta_login
+: 1517797631:0;cat /usr/bin/ta_login
+: 1517797652:0;ta_login cs302
+: 1517797701:0;ls
+: 1517798251:0;ta_login cs302
+: 1517798334:0;ls
+: 1517798335:0;..
+: 1517798338:0;mkdir trash
+: 1517798340:0;cd trash
+: 1517798351:0;cp /home/cs302/labs/lab1/* .
+: 1517798352:0;ls
+: 1517798360:0;rm copy lab1.html
+: 1517798383:0;ls
+: 1517798387:0;gdb quicksort
+: 1517798506:0;ls
+: 1517798508:0;rm *
+: 1517798511:0;ls
+: 1517798512:0;..
+: 1517798515:0;which rm
+: 1517798524:0;ls
+: 1517798655:0;vim Sort_slist.cpp
+: 1517798809:0;make
+: 1517798811:0;vim Sort_slist.cpp
+: 1517799134:0;exit
+: 1517799358:0;make
+: 1517799368:0;vim Sort_slist.cpp
+: 1517799388:0;make
+: 1517799399:0;vim Sort_slist.cpp
+: 1517799562:0;make
+: 1517799576:0;./Sort_slist < ../lab1/list1.txt
+: 1517799586:0;vim Sort_slist.cpp
+: 1517799601:0;make
+: 1517799603:0;./Sort_slist < ../lab1/list1.txt
+: 1517799606:0;vim Sort_slist.cpp
+: 1517799670:0;make
+: 1517799672:0;./Sort_slist < ../lab1/list1.txt
+: 1517799678:0;vim Sort_slist.cpp
+: 1517799697:0;make
+: 1517799700:0;./Sort_slist < ../lab1/list1.txt
+: 1517799712:0;gdb Sort_slist
+: 1517799804:0;wc -l ../lab1/list1.txt
+: 1517799818:0;fg
+: 1517799830:0;vim Sort_slist.cpp
+: 1517799851:0;make
+: 1517799855:0;./Sort_slist < ../lab1/list1.txt
+: 1517799863:0;vim Sort_slist.cpp
+: 1517799986:0;make
+: 1517800006:0;vim Sort_slist.cpp
+: 1517800131:0;make
+: 1517800134:0;./Sort_slist < ../lab1/list1.txt
+: 1517800142:0;vim Sort_slist.cpp
+: 1517800156:0;make
+: 1517800160:0;vim Sort_slist.cpp
+: 1517800215:0;make
+: 1517800218:0;./Sort_slist < ../lab1/list1.txt
+: 1517800230:0;vim Sort_slist.cpp
+: 1517800241:0;make
+: 1517800281:0;exit
+: 1517804022:0;ls
+: 1517804030:0;ta1
+: 1517804030:0;ls
+: 1517804031:0;..
+: 1517804033:0;cd grading
+: 1517804034:0;cd 1
+: 1517804037:0;cd temp
+: 1517804038:0;..
+: 1517804039:0;cd ..
+: 1517804040:0;cd lab1
+: 1517804042:0;cd test
+: 1517804045:0;..
+: 1517804059:0;cd lab1
+: 1517804062:0;vim test_inputs.cpp
+: 1517804619:0;cd ~
+: 1517804620:0;ls
+: 1517804621:0;cd scripts
+: 1517804629:0;mkdir cheat
+: 1517804634:0;cp cheat.perl cheat
+: 1517804640:0;mkdir misc
+: 1517804647:0;rm cheat.perl
+: 1517804653:0;mkdir grading
+: 1517804677:0;mv grading.py extract_assignment_id.py extract_course_id.py ass base grading
+: 1517804681:0;mv token grading
+: 1517804684:0;ls
+: 1517804685:0;vim test
+: 1517804689:0;mv test grading
+: 1517804690:0;ls
+: 1517804696:0;mv canvas.sh grading
+: 1517804698:0;cd grading
+: 1517804702:0;./canvas.sh
+: 1517804718:0;ls
+: 1517804726:0;test_inputs.py
+: 1517804731:0;vim test_inputs.py
+: 1517804795:0;ls
+: 1517804837:0;cp ~/cs302/labs/grading/1/submissions/grades .
+: 1517804841:0;cp ~/cs302/labs/grading/1/submissions/grade.sh .
+: 1517804874:0;cp ~/cs302/labs/grading/1/groups .
+: 1517804875:0;ls
+: 1517804877:0;vim ass
+: 1517804883:0;vim grades
+: 1517804909:0;vim grade.sh
+: 1517804918:0;ls
+: 1517804930:0;cd ~
+: 1517804931:0;ta1
+: 1517804933:0;..
+: 1517804935:0;cd grading
+: 1517804937:0;cd lab1
+: 1517804940:0;vim test_inputs.cpp
+: 1517804953:0;./test_inputs
+: 1517804970:0;ls
+: 1517805020:0;./test_inputs
+: 1517805028:0;vim test_inputs.cpp
+: 1517805229:0;ls
+: 1517805245:0;vim test_inputs.cpp
+: 1517805263:0;tmux
+: 1517805266:0;ls
+: 1517805277:0;..
+: 1517805285:0;ls
+: 1517805287:0;~
+: 1517805289:0;cd scripts
+: 1517805289:0;ls
+: 1517805291:0;cd grading
+: 1517805291:0;ls
+: 1517805295:0;vim canvas.sh
+: 1517805324:0;vim extract_assignment_id.py
+: 1517805338:0;vim canvas.sh
+: 1517805373:0;vim extract_assignment_id.py
+: 1517805390:0;vim extract_course_id.py
+: 1517805403:0;vim extract_assignment_id.py
+: 1517805576:0;python extract_assignment_id.py "Lab Practice" < ass
+: 1517805583:0;vim extract_assignment_id.py
+: 1517805597:0;python extract_assignment_id.py "Lab Practice" < ass
+: 1517805616:0;vim extract_assignment_id.py
+: 1517805634:0;python extract_assignment_id.py "Lab Practice" < ass
+: 1517805638:0;vim extract_assignment_id.py
+: 1517805657:0;python extract_assignment_id.py "Lab Practice" < ass
+: 1517805658:0;vim extract_assignment_id.py
+: 1517805670:0;python extract_assignment_id.py "Lab Practice" < ass
+: 1517805678:0;vim extract_course_id.py
+: 1517805686:0;vim canvas.sh
+: 1517805790:0;./canvas.sh "Lab Practice"
+: 1517805798:0;vim canvas.sh
+: 1517805866:0;./canvas.sh "Lab Practice"
+: 1517805872:0;vim canvas.sh
+: 1517805877:0;./canvas.sh "Lab Practice"
+: 1517805885:0;vim canvas.sh
+: 1517805902:0;vim canvas.sh > l
+: 1517805915:0;./canvas.sh "Lab Practice" > l
+: 1517805918:0;vim l
+: 1517805931:0;vim canvas.sh
+: 1517805967:0;./canvas.sh "Lab Practice" > l
+: 1517805970:0;./canvas.sh "Lab Practice"
+: 1517805974:0;vim canvas.sh
+: 1517806081:0;ls
+: 1517806087:0;sh ./canvas.sh
+: 1517806094:0;ls
+: 1517806110:0;./canvas.sh "Lab Practice"
+: 1517806117:0;vim canvas.sh
+: 1517806145:0;ls
+: 1517806146:0;ll
+: 1517806148:0;vim canvas.sh
+: 1517806162:0;./canvas.sh "Lab Practice"
+: 1517806217:0;vim canvas.sh
+: 1517806321:0;./canvas.sh "Lab Practice"
+: 1517806324:0;ls
+: 1517806337:0;mkdir a
+: 1517806340:0;mv submissions.zip a
+: 1517806341:0;cd a
+: 1517806345:0;unzip submissions.zip
+: 1517806354:0;vim submissions.zip
+: 1517806369:0;rm submissions.zip
+: 1517806369:0;..
+: 1517806376:0;ls
+: 1517806385:0;man wget
+: 1517806417:0;man curl
+: 1517806457:0;vim canvas.sh
+: 1517806475:0;man curl
+: 1517806499:0;vim canvas.sh
+: 1517806525:0;./canvas.sh "Lab Practice"
+: 1517806527:0;ls
+: 1517806529:0;vim submissions.zip
+: 1517806564:0;rm submissions.zip
+: 1517806567:0;vim canvas.sh
+: 1517806574:0;./canvas.sh "Lab Practice"
+: 1517806578:0;vim submissions.zip
+: 1517806667:0;vim canvas.sh
+: 1517806794:0;./canvas.sh "Lab Practice"
+: 1517806809:0;vim canvas.sh
+: 1517806825:0;./canvas.sh "Lab Practice"
+: 1517806837:0;vim canvas.sh
+: 1517806859:0;./canvas.sh "Lab Practice"
+: 1517806871:0;vim canvas.sh
+: 1517806917:0;./canvas.sh "Lab Practice"
+: 1517806921:0;vim canvas.sh
+: 1517806937:0;./canvas.sh "Lab Practice"
+: 1517806943:0;vim canvas.sh
+: 1517806958:0;./canvas.sh "Lab Practice"
+: 1517806973:0;vim canvas.sh
+: 1517807002:0;./canvas.sh "Lab Practice"
+: 1517807243:0;ls
+: 1517807244:0;vim canvas.sh
+: 1517807336:0;./canvas.sh "Lab Practice"
+: 1517807347:0;./canvas.sh "Lab 1a"
+: 1517807385:0;vim canvas.sh
+: 1517807402:0;./canvas.sh "Lab 1a"
+: 1517807414:0;./canvas.sh "Lab 1a" > l
+: 1517807419:0;vim l
+: 1517807475:0;vim canvas.sh
+: 1517807514:0;cp extract_assignment_id.py extract_get_url.py
+: 1517807517:0;vim extract_get_url.py
+: 1517807545:0;vim canvas.sh
+: 1517807556:0;./canvas.sh "Lab 1a" > l
+: 1517807565:0;vim canvas.sh
+: 1517807576:0;mv extract_get_url.py extract_download_url.py
+: 1517807578:0;vim canvas.sh
+: 1517807581:0;./canvas.sh "Lab 1a" > l
+: 1517807588:0;./canvas.sh "Lab 1a"
+: 1517807597:0;vim canvas.sh
+: 1517807637:0;./canvas.sh "Lab 1a"
+: 1517807654:0;vim extract_download_url.py
+: 1517807663:0;vim canvas.sh
+: 1517807667:0;./canvas.sh "Lab 1a"
+: 1517807670:0;vim canvas.sh
+: 1517807694:0;./canvas.sh "Lab 1a"
+: 1517807699:0;vim canvas.sh
+: 1517807707:0;./canvas.sh "Lab 1a"
+: 1517807813:0;ls
+: 1517808010:0;cp extract_assignment_id.py download_submissions.py
+: 1517808018:0;cp get_user_id.py
+: 1517808025:0;cp download_submissions.py get_user_id.py
+: 1517808037:0;vim get_user_id.py
+: 1517808226:0;ls
+: 1517808228:0;vim canvas.sh
+: 1517808322:0;exit
+: 1517848215:0;ls
+: 1517848217:0;hw1
+: 1517848220:0;bio2
+: 1517848220:0;..
+: 1517848222:0;ta2
+: 1517848223:0;..
+: 1517848237:0;scripts
+: 1517848243:0;cd grading
+: 1517848245:0;ls
+: 1517848258:0;vim download_submissions.py
+: 1517848264:0;vim canvas.sh
+: 1517848278:0;vim ass
+: 1517848287:0;vim canvas.sh
+: 1517848401:0;./canvas.sh
+: 1517848412:0;vim canvas.sh
+: 1517848434:0;vim extract_assignment_id.py
+: 1517848457:0;vim canvas.sh
+: 1517848493:0;./canvas.sh
+: 1517848510:0;vim canvas.sh
+: 1517848525:0;./canvas.sh
+: 1517848534:0;vim canvas.sh
+: 1517848543:0;./canvas.sh
+: 1517848546:0;vim canvas.sh
+: 1517848557:0;./canvas.sh > a
+: 1517848561:0;./canvas.sh > temp
+: 1517848565:0;vim temp
+: 1517848569:0;vim canvas.sh
+: 1517848640:0;./canvas.sh > temp
+: 1517848642:0;vim canvas.sh
+: 1517848661:0;./canvas.sh "Lab 1a"
+: 1517848664:0;vim canvas.sh
+: 1517848674:0;./canvas.sh "Lab 1a"
+: 1517848684:0;vim canvas.sh
+: 1517848704:0;./canvas.sh "Lab 1a"
+: 1517848707:0;vim canvas.sh
+: 1517848713:0;vim sub
+: 1517849078:0;ls
+: 1517849087:0;vim download_submissions.py
+: 1517849176:0;ls
+: 1517849181:0;rm ass
+: 1517849183:0;rm base
+: 1517849184:0;cd a
+: 1517849185:0;..
+: 1517849186:0;rm a
+: 1517849189:0;rm l
+: 1517849196:0;vim extract_assignment_id.py
+: 1517849211:0;vim extract_course_id.py
+: 1517850354:0;ls
+: 1517850358:0;exit
+: 1517850370:0;scripts
+: 1517850373:0;cd grading
+: 1517850382:0;vim download_submissions.py
+: 1517851155:0;ls
+: 1517851159:0;vim download_submissions.py
+: 1517852765:0;ls
+: 1517852774:0;ta_login cs302
+: 1517852911:0;exit
+: 1517854608:0;~
+: 1517854614:0;cd old
+: 1517854616:0;cd cs340
+: 1517854618:0;cd TeamSegfaults
+: 1517854620:0;ls
+: 1517854623:0;gist
+: 1517854632:0;zshrc
+: 1517854636:0;zsha
+: 1517854642:0;gist
+: 1517854647:0;zsha
+: 1517854670:0;zsh
+: 1517854673:0;~
+: 1517854678:0;exit
+: 1517854717:0;"git log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+: 1517854720:0;git log
+: 1517854732:0;git log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+: 1517855280:0;ls
+: 1517855285:0;cd crypt
+: 1517855286:0;vim makefile
+: 1517855339:0;..
+: 1517855340:0;cd test
+: 1517855344:0;vim test_inputs.cpp
+: 1517855918:0;..
+: 1517855921:0;cd inclass
+: 1517855922:0;ls
+: 1517855930:0;..
+: 1517855932:0;cd TeamSegfaults
+: 1517855937:0;vim TeamSegfaults.group
+: 1517855996:0;ls
+: 1517855997:0;..
+: 1517856006:0;cp -r TeamSegfaults temp
+: 1517856015:0;cd temp
+: 1517856072:0;man git revert
+: 1517856082:0;gist
+: 1517856088:0;echo $gist
+: 1517856098:0;git log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+: 1517856148:0;git revert 386b754
+: 1517856160:0;git revert 69f9ef5
+: 1517856169:0;ls
+: 1517856172:0;cd file
+: 1517856176:0;vim file_bin.cpp
+: 1517856192:0;vim file_txt.cpp
+: 1517856204:0;ls
+: 1517856206:0;..
+: 1517856209:0;vim makefile
+: 1517856214:0;cd file
+: 1517856215:0;vim makefile
+: 1517856261:0;git rebase -i 386b754
+: 1517856268:0;git commit -m "zulul"
+: 1517856272:0;ls
+: 1517856276:0;git rebase -i 386b754
+: 1517856292:0;git checkout -- test/makefile
+: 1517856296:0;..
+: 1517856297:0;git checkout -- test/makefile
+: 1517856300:0;git rebase -i 386b754
+: 1517856307:0;ls
+: 1517856309:0;cd file
+: 1517856312:0;vim makefile
+: 1517856380:0;git reset --hard 386b754
+: 1517856383:0;ls
+: 1517856387:0;vim file_bin.cpp
+: 1517856635:0;ls
+: 1517856641:0;vim file_mem.cpp
+: 1517856654:0;vim file_txt.cpp
+: 1517856673:0;git log file_txt.cpp
+: 1517856696:0;git blame file_txt.cpp
+: 1517856880:0;make
+: 1517856899:0;..
+: 1517856900:0;make
+: 1517856903:0;cd crypt
+: 1517856904:0;make
+: 1517856931:0;..
+: 1517856935:0;cd util
+: 1517856936:0;make
+: 1517856988:0;git blame util_cryptfile.cpp
+: 1517857002:0;ls
+: 1517857003:0;make
+: 1517857042:0;..
+: 1517857045:0;cd file
+: 1517857071:0;ls
+: 1517857091:0;git blame file_mem.cpp
+: 1517857217:0;..
+: 1517857219:0;ta1
+: 1517857222:0;..
+: 1517857224:0;cd grading
+: 1517857225:0;cd lab1
+: 1517857237:0;vim test_inputs.cpp
+: 1517857955:0;..
+: 1517857956:0;cd 1
+: 1517857959:0;cd submissions
+: 1517857960:0;cd a
+: 1517857964:0;vim grade.sh
+: 1517858259:0;which make
+: 1517858266:0;cd /usr/bin
+: 1517858288:0;ll | cgrep "make"
+: 1517858292:0;zsha
+: 1517858398:0;ll | grep --color=always "make"
+: 1517858447:0;cmake --version
+: 1517858459:0;make --version
+: 1517858477:0;~
+: 1517858482:0;cd cs302
+: 1517858535:0;..
+: 1517858535:0;ls
+: 1517858536:0;..
+: 1517858541:0;cd ehaworth
+: 1517858553:0;..
+: 1517858556:0;cd jfagan2
+: 1517858566:0;cd Classes
+: 1517858569:0;..
+: 1517858575:0;cd abhanda2
+: 1517858612:0;cd webhome
+: 1517858614:0;..
+: 1517858618:0;cd jfagan2
+: 1517858621:0;cd webhome
+: 1517858778:0;cd Stylesheets
+: 1517858781:0;vim primary_stylesheet.css
+: 1517858813:0;..
+: 1517858822:0;cd yrghebi
+: 1517859302:0;exit
+: 1517859451:0;ta1
+: 1517859452:0;..
+: 1517859454:0;cd grading
+: 1517859458:0;cd lab1q
+: 1517859459:0;scripts
+: 1517859462:0;cd grading
+: 1517859474:0;vim extract_download_url.py
+: 1517859487:0;vim download_submissions.py
+: 1517859760:0;vim canvas.sh
+: 1517859880:0;./canvas.sh
+: 1517859885:0;./canvas.sh "Lab 1a"
+: 1517859895:0;ls
+: 1517859906:0;vim download_submissions.py
+: 1517859912:0;vim canvas.sh
+: 1517859961:0;python download_submissions.py
+: 1517859969:0;vim canvas.sh
+: 1517859980:0;cp download_submissions.py d.py
+: 1517859990:0;vim canvas.sh
+: 1517859997:0;make
+: 1517860004:0;./canvas.sh "Lab 1a"
+: 1517860012:0;rm d.py
+: 1517860016:0;vim canvas.sh
+: 1517860052:0;./canvas.sh "Lab 1a"
+: 1517860099:0;vim download_submissions.py
+: 1517860112:0;./canvas.sh "Lab 1a"
+: 1517860118:0;vim download_submissions.py
+: 1517860124:0;./canvas.sh "Lab 1a"
+: 1517860150:0;vim download_submissions.py
+: 1517860160:0;./canvas.sh "Lab 1a"
+: 1517860171:0;vim download_submissions.py
+: 1517860179:0;./canvas.sh "Lab 1a"
+: 1517860190:0;vim download_submissions.py
+: 1517860214:0;./canvas.sh "Lab 1a"
+: 1517860225:0;vim download_submissions.py
+: 1517860311:0;./canvas.sh "Lab 1a"
+: 1517860410:0;vim download_submissions.py
+: 1517860438:0;:q
+: 1517860441:0;vim download_submissions.py
+: 1517860509:0;./canvas.sh "Lab 1a"
+: 1517860535:0;vim download_submissions.py
+: 1517860580:0;./canvas.sh "Lab 1a"
+: 1517860757:0;vim download_submissions.py
+: 1517860764:0;vim canvas.sh
+: 1517860986:0;man curl
+: 1517861371:0;ls
+: 1517861376:0;vim canvas.sh
+: 1517861484:0;man curl
+: 1517861519:0;vim canvas.sh
+: 1517861883:0;vim download_submissions.py
+: 1517862042:0;vim canvas.sh
+: 1517862936:0;./canvas.sh
+: 1517862940:0;./canvas.sh "Lab 1a"
+: 1517862953:0;vim canvas.sh
+: 1517862966:0;vim extract_download_url.py
+: 1517862979:0;vim download_submissions.py
+: 1517862996:0;./canvas.sh "Lab 1a"
+: 1517863049:0;vim download_submissions.py
+: 1517863057:0;./canvas.sh "Lab 1a"
+: 1517863063:0;vim download_submissions.py
+: 1517863069:0;./canvas.sh "Lab 1a"
+: 1517863080:0;vim download_submissions.py
+: 1517863139:0;./canvas.sh "Lab 1a"
+: 1517863147:0;vim download_submissions.py
+: 1517863153:0;./canvas.sh "Lab 1a"
+: 1517863181:0;vim download_submissions.py
+: 1517863223:0;./canvas.sh "Lab 1a"
+: 1517863270:0;vim download_submissions.py
+: 1517863338:0;./canvas.sh "Lab 1a"
+: 1517863345:0;vim download_submissions.py
+: 1517863348:0;./canvas.sh "Lab 1a"
+: 1517863535:0;vim download_submissions.py
+: 1517863780:0;./canvas.sh "Lab 1a"
+: 1517863784:0;vim download_submissions.py
+: 1517863978:0;ls
+: 1517863981:0;./canvas.sh "Lab 1a"
+: 1517863990:0;vim download_submissions.py
+: 1517864033:0;./canvas.sh "Lab 1a"
+: 1517864070:0;ls
+: 1517864082:0;./canvas.sh "Lab 1a"
+: 1517864091:0;vim download_submissions.py
+: 1517864165:0;./canvas.sh "Lab 1a"
+: 1517864198:0;vim download_submissions.py
+: 1517864249:0;./canvas.sh "Lab 1a"
+: 1517864257:0;vim download_submissions.py
+: 1517864296:0;./canvas.sh "Lab 1a"
+: 1517864303:0;vim download_submissions.py
+: 1517864334:0;./canvas.sh "Lab 1a"
+: 1517864387:0;vim download_submissions.py
+: 1517864485:0;./canvas.sh "Lab 1a"
+: 1517864541:0;vim download_submissions.py
+: 1517864695:0;./canvas.sh "Lab 1a"
+: 1517864745:0;vim download_submissions.py
+: 1517864765:0;./canvas.sh "Lab 1a"
+: 1517864771:0;vim download_submissions.py
+: 1517864783:0;./canvas.sh "Lab 1a"
+: 1517864819:0;ls
+: 1517864826:0;vim Poole-Andrew-Statenlab1a.tar
+: 1517864873:0;vim download_submissions.py   #handle errors
+: 1517864890:0;rm *.tar
+: 1517864894:0;vim download_submissions.py
+: 1517864994:0;./canvas.sh "Lab 1a"
+: 1517865009:0;ls
+: 1517865032:0;vim Gifford-Michael-Paullab1a.tar.gz
+: 1517865265:0;./canvas.sh "Lab 1a"
+: 1517865274:0;ls
+: 1517865290:0;vim download_submissions.py
+: 1517865315:0;./canvas.sh "Lab 1a"
+: 1517865324:0;vim download_submissions.py
+: 1517865329:0;./canvas.sh "Lab 1a"
+: 1517865340:0;vim download_submissions.py
+: 1517865368:0;./canvas.sh "Lab 1a"
+: 1517865375:0;vim download_submissions.py
+: 1517865453:0;./canvas.sh "Lab 1a"
+: 1517865466:0;vim download_submissions.py
+: 1517865508:0;./canvas.sh "Lab 1a"
+: 1517865577:0;vim download_submissions.py
+: 1517865605:0;./canvas.sh
+: 1517865609:0;./canvas.sh "Lab 1a"
+: 1517865648:0;vim download_submissions.py
+: 1517865660:0;./canvas.sh "Lab 1a"
+: 1517865679:0;vim download_submissions.py
+: 1517865687:0;./canvas.sh "Lab 1a"
+: 1517866855:0;vim download_submissions.py
+: 1517866949:0;./canvas.sh "Lab 1a"
+: 1517866957:0;vim download_submissions.py
+: 1517867028:0;./canvas.sh "Lab 1a"
+: 1517867057:0;vim download_submissions.py
+: 1517867264:0;./canvas.sh "Lab 1a"
+: 1517867271:0;vim download_submissions.py
+: 1517867278:0;./canvas.sh "Lab 1a"
+: 1517867293:0;vim download_submissions.py
+: 1517867312:0;./canvas.sh "Lab 1a"
+: 1517867314:0;vim download_submissions.py
+: 1517867320:0;./canvas.sh "Lab 1a"
+: 1517867325:0;vim download_submissions.py
+: 1517867332:0;./canvas.sh "Lab 1a"
+: 1517867340:0;vim download_submissions.py
+: 1517867352:0;./canvas.sh "Lab 1a"
+: 1517867377:0;ls
+: 1517867397:0;vim download_submissions.py
+: 1517867442:0;./canvas.sh "Lab 1a"
+: 1517867459:0;ls
+: 1517867460:0;vim download_submissions.py
+: 1517867495:0;./canvas.sh "Lab 1a"
+: 1517867563:0;ls
+: 1517867573:0;rm *.tar
+: 1517867573:0;ls
+: 1517867589:0;rm *.cpp
+: 1517867590:0;ls
+: 1517867596:0;rm *.gz
+: 1517867597:0;ls
+: 1517867602:0;vim download_submissions.py
+: 1517867640:0;./canvas.sh "Lab 1a"
+: 1517867649:0;vim download_submissions.py
+: 1517867665:0;./canvas.sh "Lab 1a"
+: 1517868574:0;mailx
+: 1517868594:0;_elm
+: 1517868603:0;gnus
+: 1517868608:0;mailx
+: 1517868637:0;man mailx
+: 1517868645:0;ls
+: 1517868653:0;rm *.tar
+: 1517868656:0;rm *.gz
+: 1517868658:0;rm *.cpp
+: 1517868658:0;ls
+: 1517868670:0;vim submissions.zip
+: 1517868677:0;rm submissions.zip
+: 1517868678:0;ls
+: 1517868697:0;xdg-open Dasilva-David-Anthony
+: 1517868706:0;xdg-open Dasilva-David-Anthony-lab1apdf.pdf
+: 1517868750:0;open Dasilva-David-Anthony-lab1apdf.pdf
+: 1517868766:0;rm Dasilva-David-Anthony*
+: 1517868766:0;ls
+: 1517868769:0;cd a
+: 1517868771:0;..
+: 1517868772:0;rm a
+: 1517868775:0;rmdir a
+: 1517868781:0;vim test_inputs.py
+: 1517868784:0;vim test
+: 1517868786:0;rm test
+: 1517868789:0;rm sub
+: 1517868791:0;vim grades
+: 1517868801:0;rm extract_download_url.py
+: 1517868802:0;ls
+: 1517868849:0;tar -cvf canvas.tar canvas.sh extract_assignment_id.py download_submissions.py extract_course_id.py get_user_id.py
+: 1517868850:0;ls
+: 1517869164:0;vim download_submissions.py
+: 1517873862:0;scripts
+: 1517873865:0;cd grading
+: 1517873872:0;mkdir v1
+: 1517873879:0;mv canvas.tar v1
+: 1517873887:0;vim canvas.sh
+: 1517874228:0;ls
+: 1517874284:0;vim extract_course_id.py
+: 1517875795:0;exit
+: 1517941553:0;ls
+: 1517941557:0;scripts
+: 1517941562:0;cd grading
+: 1517941568:0;git init
+: 1517941606:0;git add canvas.sh download_submissions.py extract_assignment_id.py extract_course_id.py get_user_id.py
+: 1517941665:0;git commit -m "V1 pulls all submissions from canvas as the specified HOSTNAME and COURSE_CODE"
+: 1517941789:0;man git remote
+: 1517941814:0;git remote add origin https://github.com/Reprezent/Canvas-Submission-Downloader.git
+: 1517941821:0;git push origin master
+: 1517941830:0;ls
+: 1517941840:0;vim README.md
+: 1517941847:0;git add README.md
+: 1517941854:0;git commit -m "Added readme"
+: 1517942040:0;vls
+: 1517942042:0;ls
+: 1517942054:0;git push origin master
+: 1517942062:0;ls
+: 1517942071:0;git pull origin master
+: 1517942072:0;ls
+: 1517942446:0;git tag v1.0
+: 1517942456:0;git push origin master --tags
+: 1517942467:0;ls
+: 1517947175:0;bio2
+: 1517947196:0;vim egfalign.c
+: 1517947295:0;vim alignment.c
+: 1517947839:0;vim egfalign.c
+: 1517947892:0;./egfalign
+: 1517948031:0;vim alignment.c
+: 1517948173:0;vim egfalign.c
+: 1517948223:0;make
+: 1517948235:0;./egfalign
+: 1517948362:0;vim temp.f
+: 1517948389:0;vim h.f
+: 1517948405:0;./egfalign
+: 1517948567:0;vim h.f
+: 1517948592:0;./globalign
+: 1517948622:0;./localign
+: 1517948654:0;vim h.f
+: 1517948678:0;vim temp.f
+: 1517948693:0;make
+: 1517948704:0;./egfalign
+: 1517949105:0;vim egfalign.c
+: 1517949131:0;vim alignment.c
+: 1517949432:0;exit
+: 1517949525:0;bio2
+: 1517949531:0;vim egfalign.c
+: 1517949606:0;exit
+: 1517950578:0;bio2
+: 1517950584:0;vim alignment.c
+: 1517950596:0;quot
+: 1517950599:0;exit
+: 1517950606:0;bio2
+: 1517950613:0;vim alignment.c
+: 1517950630:0;htop
+: 1517950649:0;vim alignment.c
+: 1517950802:0;exit
+: 1517950812:0;top
+: 1517950814:0;htop
+: 1517950836:0;bio2
+: 1517950840:0;vim alignment.c
+: 1517951038:0;exit
+: 1517951248:0;ls
+: 1517951252:0;exit
+: 1517951258:0;ls
+: 1517951259:0;bio2
+: 1517951264:0;vim egfalign.c
+: 1517951289:0;make
+: 1517951298:0;vim alignment.c
+: 1517951332:0;make
+: 1517951340:0;./egfalign
+: 1517951368:0;./localign
+: 1517951589:0;ls
+: 1517951598:0;bio2
+: 1517951601:0;vim alignment.c
+: 1517952302:0;exit
+: 1517952657:0;exity
+: 1517952658:0;ls
+: 1517952699:0;bio2
+: 1517952703:0;vim alignment.c
+: 1517952828:0;make
+: 1517952835:0;./egfalign
+: 1517952857:0;cp human.fasta egf.h
+: 1517952867:0;cp fruitfly.fasta egf.f
+: 1517952870:0;vim egf.h
+: 1517952883:0;vim egf.f
+: 1517952900:0;cat egf.h
+: 1517952906:0;vim alignment.c
+: 1517952927:0;make
+: 1517952930:0;./egfalign
+: 1517952937:0;vim egfalign.c
+: 1517952954:0;make
+: 1517952956:0;./egfalign
+: 1517953074:0;cat alignment.h
+: 1517953077:0;cat alignment.h | less
+: 1517953154:0;./egfalign
+: 1517953702:0;ls
+: 1517954712:0;vim egfalign.c
+: 1517954742:0;vim alignment.c
+: 1517954979:0;make
+: 1517954992:0;vim alignment.h
+: 1517955011:0;make
+: 1517955014:0;make clean
+: 1517955015:0;make
+: 1517955022:0;vim alignment.c
+: 1517955034:0;make
+: 1517955039:0;./egfalign
+: 1517955045:0;vim egfalign.c
+: 1517955050:0;vim alignment.c
+: 1517955065:0;make
+: 1517955067:0;./egfalign
+: 1517955095:0;vim alignment.c
+: 1517955113:0;make
+: 1517955114:0;./egfalign
+: 1517955166:0;./egfalign > a
+: 1517955167:0;vim a
+: 1517955338:0;vim alignment.c
+: 1517955347:0;vim fruitfly.fasta
+: 1517955358:0;vim human.h
+: 1517955363:0;vim human.fasta
+: 1517955427:0;ls
+: 1517955438:0;..
+: 1517955439:0;cd 1
+: 1517955454:0;vim human_mito.fasta
+: 1517955466:0;vim neander_sample.fasta
+: 1517955478:0;cp neander_sample.fasta ../2
+: 1517955482:0;cp human_mito.fasta ../2
+: 1517955483:0;..
+: 1517955484:0;cd 2
+: 1517955489:0;vim egfalign.c
+: 1517955626:0;make
+: 1517955634:0;vim alignment.c
+: 1517955642:0;make
+: 1517955649:0;./egfalign
+: 1517955657:0;vim egfalign.c
+: 1517955662:0;make
+: 1517955670:0;./egfalign
+: 1517955680:0;vim alignment.c
+: 1517955686:0;make
+: 1517955688:0;./egfalign
+: 1517956054:0;vi report.txt
+: 1517956724:0;./globalign
+: 1517956763:0;vim report.txt
+: 1517957990:0;./egfalign
+: 1517957995:0;vim report.txt
+: 1517958019:0;./localign
+: 1517958033:0;vim report.txt
+: 1517958100:0;vim localign.c
+: 1517958264:0;make
+: 1517958275:0;vim alignment.c
+: 1517958334:0;make
+: 1517958337:0;./localign
+: 1517958344:0;vim localign.c
+: 1517958471:0;make
+: 1517958472:0;./localign
+: 1517958478:0;vim localign.c
+: 1517958563:0;make
+: 1517958576:0;vim localign.c
+: 1517958584:0;make
+: 1517958586:0;./localign
+: 1517958599:0;./localign > a
+: 1517958603:0;vim report.txt 
+: 1517958642:0;vim globalign.c
+: 1517958658:0;make
+: 1517958662:0;vim globalign.c
+: 1517958673:0;make
+: 1517958676:0;./localign > a
+: 1517958680:0;./globalign
+: 1517958692:0;./globalign > a
+: 1517958693:0;vim a
+: 1517958767:0;./globalign
+: 1517958785:0;vim globalign.c
+: 1517958906:0;make
+: 1517958908:0;./globalign
+: 1517958918:0;vim report.txt
+: 1517959039:0;vim extract_data.py
+: 1517959234:0;./globalign
+: 1517959241:0;./globalign | python extract_data.py a b
+: 1517959248:0;vim extract_data.py
+: 1517959261:0;./globalign | python extract_data.py a b
+: 1517959263:0;ls
+: 1517959264:0;vim a
+: 1517959266:0;vim b
+: 1517959269:0;rm a b
+: 1517959293:0;vim extract_data.py
+: 1517959302:0;./globalign | python extract_data.py a b
+: 1517959310:0;vim report.txt
+: 1517959584:0;cp egfalign.c egfalign_linear.c
+: 1517959588:0;vim egfalign_linear.c
+: 1517960504:0;make
+: 1517960513:0;vim makefile
+: 1517960522:0;ls
+: 1517960525:0;vim makefile
+: 1517960529:0;make
+: 1517960542:0;vim alignment.h
+: 1517960575:0;vim alignment.c
+: 1517960625:0;make
+: 1517960628:0;vim alignment.c
+: 1517960655:0;make
+: 1517960658:0;vim alignment.c
+: 1517960666:0;make
+: 1517963032:0;exit
+: 1517963051:0;bio2
+: 1517963057:0;vim alignment.c
+: 1517963524:0;vim egfalign_linear.c
+: 1517963533:0;make
+: 1517963536:0;vim egfalign_linear.c
+: 1517963543:0;make
+: 1517963551:0;vim alignment.c
+: 1517963568:0;make
+: 1517963573:0;./egfalign_linear
+: 1517963581:0;gdb egfalign_linear
+: 1517963631:0;less alignment.h
+: 1517963637:0;fg
+: 1517963681:0;vim alignment.c
+: 1517963786:0;make
+: 1517963789:0;./egfalign_linear
+: 1517963795:0;gdb egfalign_linear
+: 1517963832:0;vim alignment.c
+: 1517963848:0;make
+: 1517963850:0;./egfalign_linear
+: 1517963856:0;vim alignment.c
+: 1517963901:0;make
+: 1517963903:0;./egfalign_linear
+: 1517963909:0;gdb ./egfalign_linear
+: 1517963936:0;vim alignment.c
+: 1517964276:0;make
+: 1517964279:0;vim alignment.c
+: 1517964286:0;make
+: 1517964289:0;vim alignment.c
+: 1517964296:0;make
+: 1517964300:0;ls
+: 1517964306:0;vim egfalign_linear.c
+: 1517964346:0;make
+: 1517964350:0;gdb ./egfalign_linear
+: 1517964357:0;./egfalign_linear
+: 1517964374:0;vim alignment.c
+: 1517964382:0;make
+: 1517964384:0;./egfalign_linear
+: 1517964447:0;vim alignment.c
+: 1517964495:0;make
+: 1517964497:0;./egfalign_linear
+: 1517964500:0;vim alignment.c
+: 1517964513:0;vim egfalign_linear.c
+: 1517964522:0;make
+: 1517964523:0;./egfalign_linear
+: 1517964529:0;ls
+: 1517964533:0;vim egflinear.c
+: 1517964539:0;vim egfalign_linear.c
+: 1517964565:0;vim report.txt
+: 1517964756:0;fg
+: 1517964828:0;ls
+: 1517964830:0;make clean
+: 1517964831:0;ll
+: 1517964846:0;rm a b what
+: 1517964927:0;tar -cvf RichardAlexRiedel_Homework2.tar alignment.c alignment.h egfalign.c egfalign_linear.c extract_data.py file.c file.h fruitfly.fasta globalign.c human.fasta human_mito.fasta localign.c makefile neander_sample.fasta report.txt string.c string.h
+: 1517964944:0;ls
+: 1517964947:0;exit
+: 1517972532:0;Peden, Margie. World Report on Road Traffic Injury Prevention: Summary. World Health Organization, 2004.ls
+: 1517972536:0;ls
+: 1517972549:0;exit
+: 1517972552:0;bio2
+: 1517972557:0;vim report.txt
+: 1517972567:0;exit
+: 1518044679:0;ls
+: 1518044691:0;bio3
+: 1518044766:0;vim report.txt
+: 1518111582:0;bio3
+: 1518111697:0;ls
+: 1518111699:0;ta2
+: 1518111700:0;ls
+: 1518111703:0;mkdir grading
+: 1518111704:0;ls
+: 1518111801:0;..
+: 1518111804:0;cd grading
+: 1518111810:0;mkdir 1b
+: 1518111810:0;..
+: 1518111812:0;cd lab2
+: 1518111826:0;mv grading/* ../grading/1b
+: 1518111840:0;ls
+: 1518111860:0;../../labs/grading
+: 1518111862:0;cd 1b
+: 1518111871:0;cp lab1a.sh lab1b.sh
+: 1518111873:0;vim lab1b.sh
+: 1518112044:0;ls
+: 1518112051:0;mkdir backup
+: 1518112053:0;mv * backup
+: 1518112055:0;ls
+: 1518112085:0;cp ~/scripts/grading/* .
+: 1518112087:0;ls
+: 1518112090:0;rm grades
+: 1518112095:0;vim grading.py
+: 1518112100:0;rm grading.py
+: 1518112103:0;rm grade.sh
+: 1518112106:0;rm temp
+: 1518112110:0;rm test_inputs.py
+: 1518112111:0;ls
+: 1518112121:0;vim download_submissions.py
+: 1518112209:0;./canvas.sh
+: 1518112214:0;./canvas.sh "Lab 1b"
+: 1518112290:0;ls
+: 1518112294:0;cd student_files
+: 1518112441:0;..
+: 1518112477:0;cp extract_assignment_id.py split_into_groups.py
+: 1518112479:0;vim split_into_groups.py
+: 1518112543:0;ls
+: 1518112545:0;vim groups
+: 1518112556:0;cp groups groups.bak
+: 1518112559:0;vim groups
+: 1518112609:0;vim split_into_groups.py
+: 1518113408:0;vim canvas.sh
+: 1518113412:0;python split_into_groups.py
+: 1518113417:0;vim split_into_groups.py
+: 1518113425:0;python split_into_groups.py
+: 1518113450:0;vim split_into_groups.py
+: 1518113464:0;python split_into_groups.py
+: 1518113471:0;ls
+: 1518113473:0;cd student_files
+: 1518113478:0;..
+: 1518113481:0;vim split_into_groups.py
+: 1518113537:0;python split_into_groups.py
+: 1518113541:0;vim split_into_groups.py
+: 1518113544:0;python split_into_groups.py
+: 1518113553:0;vim split_into_groups.py
+: 1518113616:0;python split_into_groups.py
+: 1518113619:0;ls
+: 1518113621:0;cd student_files
+: 1518113633:0;cd 1
+: 1518113634:0;..
+: 1518113637:0;vim split_into_groups.py
+: 1518113664:0;python split_into_groups.py
+: 1518113669:0;vim split_into_groups.py
+: 1518113710:0;python split_into_groups.py
+: 1518113714:0;vim split_into_groups.py
+: 1518113727:0;python split_into_groups.py
+: 1518113734:0;ls
+: 1518113738:0;cd student_files
+: 1518113741:0;cd 1
+: 1518113757:0;cd 2
+: 1518113758:0;..
+: 1518113759:0;2
+: 1518113764:0;3
+: 1518113768:0;2
+: 1518113769:0;3
+: 1518113773:0;cd 1b
+: 1518113774:0;cd student_files
+: 1518113775:0;cd 1
+: 1518113776:0;..
+: 1518113777:0;cd 2
+: 1518113778:0;..
+: 1518113779:0;cd 3
+: 1518113780:0;..
+: 1518113780:0;cd 4
+: 1518113781:0;..
+: 1518113784:0;cd 5
+: 1518113784:0;..
+: 1518113786:0;cd 1
+: 1518113789:0;mv Hampton-Eric-Marcell-lab1b.tar ..
+: 1518113795:0;cd ..
+: 1518113800:0;.
+: 1518113801:0;..
+: 1518113803:0;vim split_into_groups.py
+: 1518113894:0;cp groups.bak groups
+: 1518113898:0;vim groups
+: 1518113911:0;vim split_into_groups.py
+: 1518113990:0;python split_into_groups.py
+: 1518113997:0;vim split_into_groups.py
+: 1518114003:0;cd student_files
+: 1518114006:0;cd 1
+: 1518114008:0;cd 2
+: 1518114009:0;..
+: 1518114010:0;cd 2
+: 1518114011:0;..
+: 1518114011:0;cd 3
+: 1518114012:0;..
+: 1518114013:0;cd 4
+: 1518114014:0;..
+: 1518114014:0;cd 5
+: 1518114015:0;..
+: 1518114017:0;vim split_into_groups.py
+: 1518114035:0;python split_into_groups.py
+: 1518114037:0;ls
+: 1518114039:0;cd student_files
+: 1518114042:0;cd 1
+: 1518114043:0;..
+: 1518114101:0;vim split_into_groups.py
+: 1518114127:0;cd student_files
+: 1518114129:0;..
+: 1518114217:0;vim split_into_groups.py
+: 1518114298:0;python split_into_groups.py
+: 1518114301:0;vim split_into_groups.py
+: 1518114340:0;python split_into_groups.py
+: 1518114348:0;vim split_into_groups.py
+: 1518114392:0;python split_into_groups.py
+: 1518114412:0;vim split_into_groups.py
+: 1518114435:0;python split_into_groups.py
+: 1518114474:0;vim split_into_groups.py
+: 1518114482:0;python split_into_groups.py
+: 1518114484:0;python split_into_groups.py | sort
+: 1518114496:0;python split_into_groups.py | sort | wc
+: 1518114502:0;python split_into_groups.py | sort | wc -l
+: 1518114504:0;python split_into_groups.py | sort
+: 1518114511:0;vim groups
+: 1518114549:0;ls
+: 1518114551:0;vim split_into_groups.py
+: 1518114557:0;ls
+: 1518114559:0;cd student_files
+: 1518114562:0;..
+: 1518114568:0;python split_into_groups.py
+: 1518114573:0;vim split_into_groups.py
+: 1518114580:0;python split_into_groups.py
+: 1518114583:0;cd student_files
+: 1518114584:0;cd 1
+: 1518114586:0;..
+: 1518114587:0;cd 2
+: 1518114588:0;..
+: 1518114589:0;cd 3
+: 1518114590:0;..
+: 1518114591:0;cd 4
+: 1518114591:0;..
+: 1518114592:0;cd 5
+: 1518114593:0;..
+: 1518114605:0;vim canvas.sh
+: 1518114621:0;ls
+: 1518114625:0;cd student_files
+: 1518114625:0;cd 1
+: 1518114762:0;ls
+: 1518114788:0;..
+: 1518114790:0;cd 4
+: 1518114800:0;mkdir temp
+: 1518114807:0;vim Partelow-Ethan-Scott-Quicksort.cpp
+: 1518114872:0;..
+: 1518114875:0;vim split_into_groups.py
+: 1518114994:0;ls
+: 1518115006:0;vim canvas.sh
+: 1518115025:0;ls
+: 1518115105:0;cp split_into_groups.py ~/scripts/grading
+: 1518115117:0;cp canvas.sh ~/scripts/grading
+: 1518115125:0;cp groups ~/scripts/grading
+: 1518115133:0;cp download_submissions.py ~/scripts/grading
+: 1518115135:0;..
+: 1518115138:0;scripts
+: 1518115140:0;cd grading
+: 1518115145:0;git status
+: 1518115157:0;git add groups split_into_groups.py canvas.sh download_submissions.py
+: 1518115158:0;ls
+: 1518115169:0;git commit -m "Added group splitting capabilties"
+: 1518115173:0;ls
+: 1518115197:0;cp v1/canvas.tar .
+: 1518115200:0;man tar
+: 1518115233:0;tar -uvf canvas.tar canvas.sh download_submissions.py groups split_into_groups.py
+: 1518115234:0;ls
+: 1518115252:0;mv canvas.tar canvas.txt
+: 1518115417:0;ls
+: 1518115418:0;..
+: 1518115421:0;ta2
+: 1518115422:0;..
+: 1518115424:0;cd grading
+: 1518115426:0;1b
+: 1518115432:0;vim template
+: 1518115655:0;ls
+: 1518115656:0;ta2
+: 1518115658:0;..
+: 1518115659:0;cd grading
+: 1518115661:0;cd 1b
+: 1518115661:0;ls
+: 1518115666:0;cd student_files
+: 1518115668:0;cd 4
+: 1518115707:0;ls
+: 1518115723:0;cp /home/cs302/labs/lab1/makefile .
+: 1518115723:0;ls
+: 1518115939:0;..
+: 1518115950:0;echo "Hi how are you lol" > wow.txt
+: 1518115950:0;ls
+: 1518115957:0;tar -tvvf wow.txt
+: 1518115962:0;cd 1
+: 1518115967:0;tar -tvvf Bates-Casey-Gray-lab1b.tar
+: 1518116009:0;exit
+: 1518200430:0;ls
+: 1518200432:0;bio3
+: 1518200433:0;ls
+: 1518200436:0;vim report.txt
+: 1518200600:0;vim 1.py
+: 1518201169:0;wget http://ccb.jhu.edu/software/glimmer/glimmer302b.tar.gz
+: 1518201175:0;tar -xvf glimmer302b.tar.gz
+: 1518201178:0;cd glimmer3.02
+: 1518201180:0;cd src
+: 1518201183:0;..
+: 1518201184:0;cd bin
+: 1518201184:0;..
+: 1518201185:0;cd docs
+: 1518201192:0;vim notes.bib
+: 1518201197:0;vim notes.pdf
+: 1518201210:0;xdg-open notes.pdf
+: 1518201248:0;evince notes.pdf
+: 1518201344:0;fg
+: 1518201367:0;bg
+: 1518201372:0;..
+: 1518201376:0;vim README
+: 1518201386:0;cd src
+: 1518201397:0;kill -9 %
+: 1518201404:0;make
+: 1518201422:0;..
+: 1518201423:0;cd bin
+: 1518201425:0;..
+: 1518201428:0;cd scripts
+: 1518201521:0;..
+: 1518201544:0;mv sequence.gb ames_ancestor
+: 1518201550:0;mv sequence\ \(1\).gb ames
+: 1518201551:0;ls
+: 1518201554:0;cd glimmer3.02
+: 1518201556:0;..
+: 1518201559:0;rm glimmer302b.tar.gz
+: 1518201560:0;cd glimmer3.02
+: 1518201563:0;cd scripts
+: 1518201605:0;....
+: 1518201606:0;cd 3
+: 1518201616:0;wget http://web.eecs.utk.edu/\~semrich/bc18/hw/hw3_1.txt
+: 1518201617:0;wget http://web.eecs.utk.edu/\~semrich/bc18/hw/hw3_2.txt
+: 1518201626:0;ls
+: 1518201631:0;vim hw3_1.txt
+: 1518202084:0;cd /home/plank
+: 1518202086:0;cd src
+: 1518202095:0;cd socketfun
+: 1518202100:0;vim socketfun.c
+: 1518202157:0;../sockex
+: 1518202162:0;vim t1.c
+: 1518202177:0;~
+: 1518203934:0;ls
+: 1518203938:0;cd linux
+: 1518203939:0;ls
+: 1518203941:0;ll
+: 1518203941:0;la
+: 1518203974:0;ln 
+: 1518203977:0;ln --help
+: 1518203988:0;ln .vimrc lol123
+: 1518203989:0;ls
+: 1518203993:0;git add lol123
+: 1518204000:0;git commit -m "testing symlinks"
+: 1518204004:0;git push origin master
+: 1518204012:0;ls
+: 1518204015:0;~
+: 1518204017:0;cd .ssh
+: 1518204020:0;vim known_hosts
+: 1518204177:0;ls
+: 1518204216:0;..
+: 1518204217:0;cd linux
+: 1518204221:0;git rm lol123
+: 1518204235:0;..
+: 1518204237:0;cd trash
+: 1518204238:0;ls
+: 1518204239:0;la
+: 1518204270:0;git pull git@github.com:Reprezent/linux-stuff.git
+: 1518204290:0;git pull https://github.com/Reprezent/linux-stuff.git
+: 1518204291:0;git init
+: 1518204307:0;git remote add git@github.com:Reprezent/linux-stuff.git
+: 1518204315:0;git remote add origin git@github.com:Reprezent/linux-stuff.git
+: 1518204318:0;git pull origin master
+: 1518204322:0;ls
+: 1518204325:0;vim lol123
+: 1518204328:0;la
+: 1518204332:0;rm *
+: 1518204337:0;rm -rf *\\
+: 1518207951:0;y
+: 1518204340:0;rm -rf *\
+y
+: 1518204342:0;ls
+: 1518204348:0;rm -rf *
+: 1518204351:0;ls
+: 1518204352:0;la
+: 1518204357:0;rm -rf .*
+: 1518204359:0;la
+: 1518204361:0;..
+: 1518204432:0;ls
+: 1518204442:0;cd linux
+: 1518204443:0;ls
+: 1518204444:0;ll
+: 1518204453:0;git push origin master
+: 1518204458:0;ls
+: 1518204461:0;git status
+: 1518204469:0;git commit -m "Removed symlink"
+: 1518204473:0;git push origin master
+: 1518204480:0;ls
+: 1518204483:0;ll
+: 1518204484:0;la
+: 1518204505:0;ls
+: 1518204506:0;la
+: 1518204551:0;ls
+: 1518204553:0;la
+: 1518204684:0;git rm .zshrc .zsh.history .zlogout .zcompdump .vimrc .tmux.conf
+: 1518204686:0;la
+: 1518204693:0;git rm .zsh
+: 1518204696:0;git rm -r .zsh
+: 1518204700:0;git rm -r .vim
+: 1518204702:0;ls
+: 1518204703:0;la
+: 1518204723:0;cd .oh-my-zsh
+: 1518204725:0;..
+: 1518204728:0;la
+: 1518204735:0;ls -a
+: 1518204748:0;ln ../.zsh .zsh
+: 1518204757:0;man ln
+: 1518204842:0;ln -s ../.zsh .zsh
+: 1518204852:0;ln -s ../.zshrc .zshrc
+: 1518204864:0;ln -s ../.zshrc.pre-oh-my-zsh .zshrc.pre-oh-my-zsh
+: 1518204880:0;ln -s ../.zsh-update .zsh-update
+: 1518204881:0;ls
+: 1518204883:0;la
+: 1518204980:0;ln -s ../.zlogout .zlogout
+: 1518204999:0;vim .gitconfig
+: 1518205029:0;ln -s ../.history .history
+: 1518205038:0;ln -s ../.hushlogin .hushlogin
+: 1518205052:0;ln -s ../.oh-my-zsh .oh-my-zsh
+: 1518205094:0;ln -s ../.tmux.conf .tmux.conf
+: 1518205105:0;ln -s ../.vim .vim
+: 1518205111:0;ln -s ../.vimrc .vimrc
+: 1518205116:0;la
+: 1518205133:0;ln -s ../.zcompdump .zcompdump
+: 1518205139:0;git add .*
+: 1518205152:0;git commit -m "trying using symlinks to i dont have to update these files all the time"
+: 1518205162:0;git push origin master
+: 1518205170:0;ls
+: 1518205307:0;git rm .git .gitconfig .history .hushlogin .oh-my-zsh .tmux.conf .vim .vimrc .zcompdump .zlogout .zsh .zshrc .zshrc.pre-oh-my-zsh .zsh-update 
+: 1518205308:0;ls
+: 1518205309:0;ll
+: 1518205310:0;la
+: 1518205368:0;git rm -r .history .hushlogin .oh-my-zsh .tmux.conf .vim .vimrc .zcompdump .zlogout .zsh .zshrc .zshrc.pre-oh-my-zsh
+: 1518205369:0;ls
+: 1518205370:0;la
+: 1518205373:0;..
+: 1518205374:0;la
+: 1518205381:0;cd linux
+: 1518205384:0;ls
+: 1518205386:0;la
+: 1518205393:0;git rm .zsh-update
+: 1518205394:0;ls
+: 1518205400:0;unlink
+: 1518205404:0;unlink --help
+: 1518205407:0;git link
+: 1518205411:0;git relink
+: 1518205421:0;git relink --help
+: 1518205520:0;git relink ../.zsh
+: 1518205526:0;ls
+: 1518205527:0;la
+: 1518205546:0;git relink ../.zsh
+: 1518205590:0;ls
+: 1518205606:0;la
+: 1518205617:0;vim .zshrc
+: 1518205632:0;cd .zsh
+: 1518205634:0;ls
+: 1518205634:0;la
+: 1518205643:0;vim .zshrc
+: 1518205656:0;vim .zsh-oh-my-zsh.stuff
+: 1518205667:0;..
+: 1518205678:0;mv -r .oh-my-zsh .zsh
+: 1518205687:0;mv .oh-my-zsh .zsh
+: 1518205689:0;la
+: 1518205710:0;vim .history
+: 1518205727:0;rm .history
+: 1518205734:0;vim .zsh-update
+: 1518205784:0;echo $ZSH_CACHE_DIR
+: 1518205796:0;..
+: 1518205797:0;la
+: 1518205803:0;vim .zlogout
+: 1518205869:0;vim .zshrc
+: 1518205891:0;mv .zlogout .zsh
+: 1518205892:0;la
+: 1518205903:0;mv .zsh-update .zsh
+: 1518205906:0;vim .zshrc
+: 1518205931:0;la
+: 1518205954:0;cd .zshrc
+: 1518205958:0;cd .zsh
+: 1518205959:0;ls
+: 1518205960:0;la
+: 1518205964:0;vim .zsh-oh-my-zsh.stuff
+: 1518206011:0;vim .utk
+: 1518206034:0;vim .zshrc
+: 1518206181:0;..
+: 1518206182:0;vim .zshrc
+: 1518206200:0;mv .zcompdump .zsh
+: 1518206201:0;ls
+: 1518206204:0;rm .zcompdump-hydra*
+: 1518206205:0;la
+: 1518206462:0;ls
+: 1518206470:0;cd scripts
+: 1518206471:0;ls
+: 1518206473:0;mkdir cron job
+: 1518206474:0;la
+: 1518206479:0;rmdir cron job
+: 1518206484:0;mkdir cronjobs
+: 1518206487:0;cd cronjobs
+: 1518206513:0;ls
+: 1518206564:0;vim -R /etc/crontab
+: 1518206583:0;man crontab
+: 1518206621:0;crontab -e
+: 1518206711:0;la
+: 1518206720:0;man crontab
+: 1518206851:0;ls
+: 1518206876:0;cd scripts
+: 1518206879:0;cd cronjobs
+: 1518206886:0;vim remove_trash.sh
+: 1518207594:0;ls
+: 1518207597:0;ll
+: 1518207598:0;la
+: 1518207648:0;..
+: 1518207655:0;cd cs302
+: 1518207656:0;cd labs
+: 1518207658:0;cd lab2
+: 1518207661:0;vim Sort_slist.cpp
+: 1518207905:0;vim remove_trash.sh
+: 1518207951:0;exit
+: 1518207957:0;tmux
+: 1518207966:0;ls
+: 1518207971:0;..
+: 1518207973:0;la
+: 1518207982:0;vim .zshrc
+: 1518207988:0;ls
+: 1518207998:0;ta2
+: 1518208002:0;ls
+: 1518208004:0;vim remove_trash.sh
+: 1518208208:0;man find
+: 1518208233:0;ls
+: 1518208235:0;vim remove_trash.sh
+: 1518208244:0;sh remove_trash.sh
+: 1518208248:0;man find
+: 1518208263:0;vim remove_trash.sh
+: 1518208277:0;sh remove_trash.sh
+: 1518208278:0;ls
+: 1518208288:0;chmod +x remove_trash.sh
+: 1518208289:0;vim remove_trash.sh
+: 1518208394:0;..
+: 1518208409:0;ls
+: 1518208414:0;cd src
+: 1518208415:0;..
+: 1518208421:0;cd trash
+: 1518208422:0;ls
+: 1518208475:0;man touch
+: 1518208497:0;time -d "2 days ago" hello
+: 1518208501:0;ls
+: 1518208508:0;touch -d "2 days ago" hello
+: 1518208509:0;ls
+: 1518208517:0;touch -d "4 days ago" byebye
+: 1518208524:0;touch -d "1 days ago" ahhh
+: 1518208529:0;touch  hi
+: 1518208530:0;ls
+: 1518208536:0;scripts
+: 1518208539:0;cd cronjobs
+: 1518208542:0;./remove_trash.sh
+: 1518208550:0;ls ~/trash
+: 1518208587:0;..
+: 1518208589:0;crontab
+: 1518208594:0;crontab -e
+: 1518208661:0;scripts
+: 1518208663:0;cd cronjobs
+: 1518208702:0;man crontab
+: 1518208710:0;crontab -l
+: 1518208810:0;ls
+: 1518208829:0;/home/rriedel1/scripts/cronjobs/remove_trash.sh
+: 1518208837:0;cd trash
+: 1518208860:0;..
+: 1518208863:0;vim linxu
+: 1518208869:0;mv linxu trash
+: 1518209004:0;cd Desktop
+: 1518209005:0;ls
+: 1518209010:0;rm Dedktop
+: 1518209016:0;..
+: 1518209018:0;rmdir Desktop
+: 1518209023:0;cd Downloads
+: 1518209024:0;la
+: 1518209025:0;..
+: 1518209028:0;rmdir Downloads
+: 1518209029:0;ls
+: 1518209033:0;cd Public
+: 1518209036:0;vim base64.cpp
+: 1518209041:0;..
+: 1518209043:0;cd test
+: 1518209048:0;vim ultimate_makefile
+: 1518209059:0;cd cash
+: 1518209062:0;cd cf-sh
+: 1518209071:0;vim README.md
+: 1518209078:0;..
+: 1518209078:0;.
+: 1518209079:0;..
+: 1518209093:0;vim test.cpp
+: 1518209101:0;vim sizeof.cpp
+: 1518209105:0;vim threadstuff.cpp
+: 1518209114:0;vim Lab_7_sort.ino
+: 1518209122:0;vim boost.cpp
+: 1518209128:0;vim amp.cpp
+: 1518209132:0;..
+: 1518209136:0;cd rriedel1
+: 1518209140:0;cd ctf
+: 1518209141:0;cd RSA
+: 1518209143:0;..
+: 1518209149:0;rm -rf ctf
+: 1518209149:0;ls
+: 1518209450:0;cd old
+: 1518209452:0;..
+: 1518209455:0;cd projects
+: 1518209459:0;vim copyScript.py
+: 1518209467:0;rm copyScript.py
+: 1518209468:0;vim main.cpp
+: 1518209473:0;rm main main.cpp
+: 1518209475:0;vim tarball.py
+: 1518209481:0;rm tarball.py
+: 1518209484:0;vim tar.py
+: 1518209488:0;rm tar.py
+: 1518209490:0;vim test.py
+: 1518209493:0;rm test.py
+: 1518209495:0;cd we
+: 1518209497:0;vim main.cpp
+: 1518209507:0;rm main.cpp
+: 1518209508:0;..
+: 1518209510:0;rmdir we
+: 1518209510:0;..
+: 1518209513:0;rmdir projects
+: 1518209516:0;cd src
+: 1518209521:0;cd BLAKE2
+: 1518209524:0;..
+: 1518209530:0;cd test
+: 1518209531:0;..
+: 1518209542:0;cd node_modules
+: 1518209544:0;la
+: 1518209545:0;..
+: 1518209546:0;ls
+: 1518209574:0;la
+: 1518209596:0;vim .pulse-cookie
+: 1518209599:0;rm .pulse-cookie
+: 1518209600:0;ls
+: 1518209605:0;vim .lesshst
+: 1518209609:0;rm .lesshst
+: 1518209614:0;vim .ICEauthority
+: 1518209625:0;vim .esd_auth
+: 1518209632:0;cd .spyder2
+: 1518209638:0;vim spyder.ini
+: 1518209677:0;ls
+: 1518209678:0;la
+: 1518209681:0;..
+: 1518209682:0;la
+: 1518209832:0;cp -r .zshrc .zshrc.pre-oh-my-zsh .zsh-update .zcompdump .zcompdump-hydra23-5.0.2 .vimrc .vim .tmux.conf scripts .hushlogin .gitconfig .zsh linux

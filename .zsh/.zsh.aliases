@@ -1,0 +1,130 @@
+##################################################################
+#
+#         .zsh_files/.zsh.aliases file
+#
+#         Read in every time a new interactive zsh is started.
+#         Defines some useful aliases.
+#
+##################################################################
+
+alias remake='make clean; make'
+alias RM='rm -f'
+
+alias regextest='~/scripts/regextest.sh'
+
+alias c='clear'
+alias ls="ls --color=auto -F" # color ls is cool
+alias la="ls -la"
+alias ll="ls -lh"
+alias lla="ls -lah"
+alias view="vim -R"
+alias l='less'
+alias termcolors='python ~/scripts/terminalcolors.py'
+
+alias list="ls -latrh --color"  
+alias mv="mv -i" 
+alias cp="cp -i" 
+alias vi="vim"
+
+
+
+# Shortcuts
+alias gist="git log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+alias zsha="$EDITOR ~/.zsh/.zsh.aliases"
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
+alias .....="cd ../../../.."
+alias ~="cd ~"
+alias todo="sh ~/scripts/todo/todo.sh -d ~/scripts/todo/todo.cfg" # ToDo Plugin
+alias cgrep="grep --color=always"
+
+# CURRENT CORE CLASS
+alias bio1="cd ~/cs594/hw/1"
+alias bio2="cd ~/cs594/hw/2"
+alias bio3="cd ~/cs594/hw/3"
+alias bio4="cd ~/cs594/hw/4"
+alias bio5="cd ~/cs594/hw/5"
+alias bio6="cd ~/cs594/hw/6"
+alias bio7="cd ~/cs594/hw/7"
+alias bio8="cd ~/cs594/hw/8"
+
+alias ta1="cd ~/cs302ta/labs/lab1"
+alias ta2="cd ~/cs302ta/labs/lab2"
+alias ta3="cd ~/cs302ta/labs/lab3"
+alias ta4="cd ~/cs302ta/labs/lab4"
+alias ta5="cd ~/cs302ta/labs/lab5"
+alias ta6="cd ~/cs302ta/labs/lab6"
+alias ta7="cd ~/cs302ta/labs/lab7"
+
+alias net="cd ~/ece453"
+
+
+#alias crypto="cd ~/cs583"
+#alias crypto1="cd ~/cs583/lab1"
+#alias crypto2="cd ~/cs583/lab2"
+#alias crypto3="cd ~/cs583/lab3"
+
+#alias plank="cd ~/cs594"
+#alias plank0="cd ~/cs594/lab0"
+#alias plank1="cd ~/cs594/lab1"
+#alias plank2="cd ~/cs594/lab2"
+#alias plank3="cd ~/cs594/lab3"
+#alias plank4="cd ~/cs594/lab4"
+#alias plank5="cd ~/cs594/lab5"
+#alias plank6="cd ~/cs594/lab6"
+
+#alias clab1="cd ~/cs365/labs/lab1"
+#alias clab2="cd ~/cs365/labs/lab2"
+#alias clab3="cd ~/cs365/labs/lab3"
+#alias clab4="cd ~/cs365/labs/lab4"
+#alias clab5="cd ~/cs365/labs/lab5"
+#alias clab6="cd ~/cs365/labs/lab6"
+#alias clab7="cd ~/cs365/labs/lab7"
+#alias clab8="cd ~/cs365/labs/lab8"
+#alias clab9="cd ~/cs365/labs/lab9"
+#alias clab10="cd ~/cs365/labs/lab10"
+#alias clab11="cd ~/cs365/labs/lab11"
+#
+#alias gfx1="cd ~/cs456/lab1/skeleton"
+#alias gfx2="cd ~/webhome/Oh2QvOgg/lab2"
+#alias gfx3="cd ~/webhome/Oh2QvOgg/lab3"
+#alias gfxf="cd ~/cs456/final"
+
+# CURRENT TA LABS
+# OTHER CLASS
+#alias ta1="cd ~/cs140ta/labs/lab1"
+#alias ta2="cd ~/cs140ta/labs/lab2"
+#alias ta3="cd ~/cs140ta/labs/lab3"
+#alias ta4="cd ~/cs140ta/labs/lab4"
+#alias ta5="cd ~/cs140ta/labs/lab5"
+#alias ta6="cd ~/cs140ta/labs/lab6"
+#alias ta7="cd ~/cs140ta/labs/lab7"
+#alias ta8="cd ~/cs140ta/labs/lab8"
+#alias ta9="cd ~/cs140ta/labs/lab9"
+
+#alias pr1="cd ~/ece471/lab1"
+#alias pr2="cd ~/ece471/lab2"
+#alias pr3="cd ~/ece471/lab3"
+
+#alias hw1="cd ~/cs465/homework1"
+#alias hw2="cd ~/cs465/homework2"
+#alias hw3="cd ~/cs465/homework3"
+#alias hw4="cd ~/cs465/homework4"
+#alias hw5="cd ~/cs465/homework5"
+#alias hw6="cd ~/cs465/homework6"
+#alias hw7="cd ~/cs465/homework7"
+#alias hw8="cd ~/cs465/homework8"
+#alias hw9="cd ~/cs465/homework9"
+#alias hw10="cd ~/cs465/homework10"
+
+#alias sql="mysql -h dbs.eecs.utk.edu -p COSC465FA2016_rriedel1 -u rriedel1"
+alias svnget="svn co https://web.eecs.utk.edu/courses/spring2017/cosc456svn/rriedel1 ."
+#alias cao2="cd ~/cs361/lab2"
+#alias cao1="cd ~/cs361/lab1"
+#alias cao3="cd ~/cs361/lab3"
+
+# MISC
+alias py="cd ~/projects"
+#alias python3="~/src/Python-3.5.2/python"
+alias scripts="cd ~/scripts"
