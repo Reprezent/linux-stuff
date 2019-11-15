@@ -1,2 +1,44 @@
 autoload -Uz compinit
-compinit -d ${HOME}/.zsh/.zcompdump
+compinit -d ${HOME}/.zsh/zcompdump
+
+# Deletes all existing keymaps and resets to the default state
+bindkey -d
+
+# Turn off core dumps
+limit coredumpsize 0
+
+# Set some useful options
+setopt nohup           # Don't kill jobs when the shell exits
+setopt nobeep          # Don't beep at me all the time
+setopt nocheckjobs     # Don't check for running jobs at shell exit
+setopt longlistjobs    # Show more information about jobs
+setopt pushdtohome     # pushd goes to $HOME if nothing else is given
+setopt noflowcontrol   # Disables ^S/^Q in line-edit mode
+
+
+
+####### MY STUFF ###################################
+
+# wall Supression
+mesg n
+
+setopt AUTO_CD		# Automatically cds
+setopt appendhistory
+# setopt sharehistory
+# setopt inc_append_history
+# setopt share_history
+setopt incappendhistory # Incrementally appends history so each terminal can share
+setopt extended_glob    # Allows for exclusions of files in globs
+
+
+eval "$(dircolors -b)" # LS Colors
+# Long list on each Directory change
+function chpwd()
+{
+	emulate -L zsh
+	ll
+}
+
+# Sets the capslock key to be the super key see /usr/share/X11/xkb/rules/xorg.lst
+# to see the list of options
+# setxkbmap -layout us -option caps:super

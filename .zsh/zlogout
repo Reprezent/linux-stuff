@@ -1,4 +1,8 @@
-if [ -n "$SSH_AUTH_SOCK" ] ; then
-    echo "Killing agent"
-    eval `/usr/bin/ssh-agent -k`
+#if [ -n "$SSH_AUTH_SOCK" ] ; then
+#    echo "Killing agent"
+#    eval `/usr/bin/ssh-agent -k`
+#fi
+# When leaving the console clear the screen to increase privacy
+if [ "$SHLVL" = 1 ]; then
+	[ -x /usr/bin/clear_console ] && /usr/bin/clear_console -q
 fi
