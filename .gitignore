@@ -1,1 +1,5 @@
 token
+
+# ZSH Stuff
+.zsh/zsh.history
+.zsh/zcompdump
