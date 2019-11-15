@@ -22,6 +22,8 @@ set tabstop=4
 set shiftwidth=4
 set softtabstop=4
 set smarttab
+set list
+set listchars=tab:>-
 
 " uncomment to insert spaces instead of a tab when tab is pressed
 set expandtab
