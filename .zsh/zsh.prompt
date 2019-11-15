@@ -8,6 +8,22 @@
 #
 ##################################################################
 
+# Git within status prompt
+autoload -Uz vcs_info
+zstyle ':vcs_info:*' enable git svn
+zstyle ':vcs_info:*' enable actionformats \
+	'[%b|%a]'
+zstyle ':vcs_info:*' enable formats \
+	'[%b] '
+zstyle ':vcs_info:(sn[nk]|bzr):*' branchformat '%b%F{1}:%F{3}%r'
+precmd() {
+	psvar()
+
+	vcs_info
+	[[ -n $vcs_info_msg_0_ ]] && psvar[1]="$vcs_info_msg_0_"
+}
+
+
 # Color shortcuts
   RED='%{[0;31m%}'
   LIGHTRED='%{[1;31m%}'
