@@ -24,3 +24,14 @@
 
 #Python3
 #export PATH="$PATH:/home/rriedel1/src/Python-3.5.2"
+
+typeset -U path
+
+# Add /usr/bin
+path=('/usr/bin' $path[@])
+path=('/usr/local/bin' $path[@])
+path=($HOME $path[@])
+path=('/usr/include' $path[@])
+
+# Personal scripts
+path+=("$HOME/scripts/bin")
