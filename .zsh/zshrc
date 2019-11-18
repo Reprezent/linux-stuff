@@ -25,9 +25,9 @@ mesg n
 setopt AUTO_CD		# Automatically cds
 setopt appendhistory
 # setopt sharehistory
-# setopt inc_append_history
-# setopt share_history
-setopt incappendhistory # Incrementally appends history so each terminal can share
+setopt inc_append_history
+setopt share_history
+#setopt incappendhistory # Incrementally appends history so each terminal can share
 setopt extended_glob    # Allows for exclusions of files in globs
 
 

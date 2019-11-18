@@ -55,9 +55,8 @@ alias gist="git log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%
 git1_decorate="%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(auto)%D%C(reset)"
 git2_decorate='%C(bold blue)%h%C(reset) - %C(bold cyan)%a%D%C(reset) %C(bold green)(%ar)%C(reset)%C(auto)%d%C(reset)%n''         %C(white)%s%C(reset) %C(dim white)- %an%C(reset)'
 git3_decorate='%C(bold blue)%h%C(reset) - %C(bold cyan)%a%D%C(reset) %C(bold green)(%ar)%C(reset) %C(bold cyan)(comitted: %cD)%C(reset) %C(auto)%d%C(reset)%n''          %C(white)%s%C(reset)%n''          %C(dim white)- %an <%ae> %C(reset) %C(dim white)(comitter: %cn <%ce>)%C(reset)'
-alias gitl"git log --graph --abbrev-commit --decorate --format=format:${(q)git1_decorate} --all $@"
-alias git7"git log --graph --abbrev-commit --decorate--all $@"
-alias gitl2"git log --graph --abbrev-commit --decorate --format=format:${(q)git2_decorate} --all $@"
-alias gitl3"git log --graph --abbrev-commit --decorate --format=format:${(q)git3_decorate} --all $@"
+alias gitl="git log --graph --abbrev-commit --decorate --format=format:${(q)git1_decorate} --all $@"
+alias gitl2="git log --graph --abbrev-commit --decorate --format=format:${(q)git2_decorate} --all $@"
+alias gitl3="git log --graph --abbrev-commit --decorate --format=format:${(q)git3_decorate} --all $@"
 
 
