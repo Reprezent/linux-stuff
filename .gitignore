@@ -3,3 +3,7 @@ token
 # ZSH Stuff
 .zsh/zsh.history
 .zsh/zcompdump
+
+
+.config/**
+!.config/i3
