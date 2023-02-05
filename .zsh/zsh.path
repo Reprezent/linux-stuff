@@ -29,6 +29,7 @@ typeset -U path
 
 # Add /usr/bin
 path=('/usr/bin' $path[@])
+path=('/home/alex/.local/bin' $path[@])
 path=('/usr/local/bin' $path[@])
 path=($HOME $path[@])
 path=('/usr/include' $path[@])
