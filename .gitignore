@@ -5,5 +5,9 @@ token
 .zsh/zcompdump
 
 
+# config files
 .config/**
 !.config/i3
+
+# .vim config
+.vim/view
