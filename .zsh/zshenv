@@ -3,6 +3,7 @@
 # Sometimes I like to keep a history...
 export SAVEHIST=2000
 export HISTFILE=$HOME/.zsh/zsh.history
+export LESSHISTFILE="/dev/null" # no 'less' history
 
 export CVS_RSH=ssh
 

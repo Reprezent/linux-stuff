@@ -184,3 +184,16 @@ exec setxkbmap -layout us -option caps:super
 
 # Set the default workspace layout to be tabbed instead of split
 workspace_layout tabbed
+
+# Swap the mointors :(
+# exec xrandr --output DVI-D-0 --left-of DP-0 --rotate left
+
+# Align the middle monitor correctly
+# exec xrandr --output DP-0 --auto --pos 1080x343
+
+# Huzzah night light!
+exec redshift
+
+# Sets the mouse to be 6/7 as fast
+exec xset m 6/7
+
