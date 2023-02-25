@@ -29,6 +29,7 @@ setopt inc_append_history
 setopt share_history
 #setopt incappendhistory # Incrementally appends history so each terminal can share
 setopt extended_glob    # Allows for exclusions of files in globs
+setopt prompt_subst    # Allows prompt substitutions
 
 
 eval "$(dircolors -b)" # LS Colors

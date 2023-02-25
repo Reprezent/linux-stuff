@@ -10,14 +10,15 @@
 
 # Git within status prompt
 autoload -Uz vcs_info
+#zstyle ':vcs_info:*+*' debug true
 zstyle ':vcs_info:*' enable git svn
-zstyle ':vcs_info:*' enable actionformats \
+zstyle ':vcs_info:git*' enable actionformats \
 	'[%b|%a]'
-zstyle ':vcs_info:*' enable formats \
+zstyle ':vcs_info:git*' enable formats \
 	'[%b] '
 zstyle ':vcs_info:(sn[nk]|bzr):*' branchformat '%b%F{1}:%F{3}%r'
 precmd() {
-	psvar()
+	psvar=()
 
 	vcs_info
 	[[ -n $vcs_info_msg_0_ ]] && psvar[1]="$vcs_info_msg_0_"
@@ -63,8 +64,8 @@ precmd() {
 #  PROMPT="$GRAY%n$RED|$GREEN%m$RED|$CYAN%~ $GRAY> $GRAY"
 
 # Prompt version 2
-  RPROMPT="$GRAY$CYAN<- %t$LIGHTGRAY"
-  PROMPT="$LIGHTRED%n$CYAN:$LIGHTRED%m $LIGHTGRAY%~$CYAN> $NOCOLOR"
+  RPROMPT='$GRAY$CYAN<- %t$LIGHTGRAY'
+  PROMPT='$LIGHTRED%n$CYAN:$LIGHTRED%m $LIGHTGRAY%~$CYAN> $NOCOLOR'
 
 # same prompt as above, except uses no colors
 # RPROMPT="<- %t"
