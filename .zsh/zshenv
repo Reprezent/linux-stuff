@@ -9,6 +9,7 @@ export CVS_RSH=ssh
 
 # Most people are ok with vim
 export EDITOR=vim
+export SYSTEMD_EDITOR=vim
 export VISUAL=vim
 
 # Set up the parameters for 'less' ... and use it
