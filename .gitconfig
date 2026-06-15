@@ -1,3 +1,5 @@
 [user]
 	name = Richard Riedel
 	email = richardalexriedel@yahoo.com
+[push]
+	autoSetupRemote = true

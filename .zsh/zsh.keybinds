@@ -18,6 +18,7 @@ bindkey "^D" end-of-line
 # to add other keys to this hash, see: man 5 terminfo
 typeset -g -A key
 
+key[LCtrl]="${terminfo[khome]}"
 key[Home]="${terminfo[khome]}"
 key[End]="${terminfo[kend]}"
 key[Insert]="${terminfo[kich1]}"

@@ -22,12 +22,11 @@ alias l='less'
 alias list="ls -latrh --color"  
 alias mv="mv -i" 
 alias cp="cp -i" 
-alias vi="vim"
-alias v="vim"
-alias sv="sudo vim"
-alias svi="sudo vim"
-alias svim="sudo vim"
-
+alias vi="nvim"
+alias v="nvim"
+alias sv="sudo nvim"
+alias svi="sudo nvim"
+alias svim="sudo vnim"
 
 
 # Shortcuts
@@ -49,6 +48,7 @@ alias -g Docs="$HOME/Documents"
 alias scripts="cd ~/scripts"
 alias i3config="$EDITOR $HOME/.config/i3/config"
 alias pyjson="python3 -m json.tool"
+alias dc="docker compose"
 
 # Git shortcuts
 alias gist="git log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
